@@ -7,21 +7,35 @@ function AdminDashboard() {
   const [shiftResult, setShiftResult] = useState(null); // { success: bool, missing: [] }
   const [showShiftModal, setShowShiftModal] = useState(false);
 
-  const handleCierreTurno = () => {
+  const handleCierreTurno = async () => {
     // Read local database
     const retirosDb = JSON.parse(localStorage.getItem('panol_retiros') || '{}');
     const missing = [];
     
     // Check if any user has tools not returned
-    Object.keys(retirosDb).forEach(userId => {
+    for (const userId of Object.keys(retirosDb)) {
       const tools = retirosDb[userId];
       if (tools && tools.length > 0) {
+        const toolsWithDesc = await Promise.all(tools.map(async (cod) => {
+          try {
+            const res = await fetch(`http://localhost:8000/herramientas/buscar?q=${cod}`);
+            if (res.ok) {
+              const data = await res.json();
+              const tool = data.find(t => t.codigo === cod);
+              return tool ? `${cod} - ${tool.descripcion}` : `${cod} - (No encontrada)`;
+            }
+            return `${cod}`;
+          } catch (e) {
+            return `${cod}`;
+          }
+        }));
+
         missing.push({
           usuario: userId.replace(/-/g, ' ').toUpperCase(),
-          herramientas: tools
+          herramientas: toolsWithDesc
         });
       }
-    });
+    }
 
     if (missing.length === 0) {
       setShiftResult({ success: true, missing: [] });
@@ -97,8 +111,21 @@ function AdminDashboard() {
                   </div>
                 </div>
               )}
-              <div className="modal-actions">
-                <button type="button" className="login-btn" onClick={closeShiftModal}>Entendido</button>
+              <div className="modal-actions" style={{ display: 'flex', gap: '10px' }}>
+                {!shiftResult.success && (
+                  <button type="button" className="cancel-btn" onClick={closeShiftModal}>Cancelar</button>
+                )}
+                <button 
+                  type="button" 
+                  className="login-btn" 
+                  style={!shiftResult.success ? { backgroundColor: '#f59e0b', color: 'white' } : {}}
+                  onClick={() => {
+                    closeShiftModal();
+                    navigate('/');
+                  }}
+                >
+                  {shiftResult.success ? 'Finalizar Turno' : 'Forzar Cierre'}
+                </button>
               </div>
             </div>
           </div>

@@ -27,16 +27,45 @@ function Devolucion() {
     
     const pending = getRetiros(currentUser);
     if (pending && pending.length > 0) {
-      setHerramientas(pending.map(cod => ({ codigo: cod, observaciones: '', checked: true })));
+      Promise.all(pending.map(async (cod) => {
+        try {
+          const res = await fetch(`http://localhost:8000/herramientas/buscar?q=${cod}`);
+          if (res.ok) {
+            const data = await res.json();
+            const tool = data.find(t => t.codigo === cod);
+            return { codigo: cod, observaciones: '', checked: true, descripcion: tool ? tool.descripcion : "Herramienta no encontrada" };
+          }
+          return { codigo: cod, observaciones: '', checked: true, descripcion: "Error al buscar" };
+        } catch (e) {
+          return { codigo: cod, observaciones: '', checked: true, descripcion: "Error de conexión" };
+        }
+      })).then(results => {
+        setHerramientas(results);
+      });
     }
   }, [usuario, navigate]);
 
-  const handleAdd = (e) => {
+  const handleAdd = async (e) => {
     e.preventDefault();
     if (codigo.trim() !== '') {
-      setHerramientas([...herramientas, { codigo: codigo.trim(), observaciones, checked: true }]);
+      const codeStr = codigo.trim();
+      const obsStr = observaciones;
       setCodigo('');
       setObservaciones('');
+      
+      try {
+        const response = await fetch(`http://localhost:8000/herramientas/buscar?q=${codeStr}`);
+        if (response.ok) {
+          const data = await response.json();
+          const tool = data.find(t => t.codigo === codeStr);
+          const desc = tool ? tool.descripcion : "Herramienta no encontrada";
+          setHerramientas(prev => [...prev, { codigo: codeStr, observaciones: obsStr, descripcion: desc, checked: true }]);
+        } else {
+          setHerramientas(prev => [...prev, { codigo: codeStr, observaciones: obsStr, descripcion: "Error al buscar", checked: true }]);
+        }
+      } catch (err) {
+        setHerramientas(prev => [...prev, { codigo: codeStr, observaciones: obsStr, descripcion: "Error de conexión", checked: true }]);
+      }
     }
   };
 
@@ -96,8 +125,8 @@ function Devolucion() {
                       checked={h.checked} 
                       onChange={() => handleToggle(i)} 
                     />
-                    <span className="item-code">{h.codigo}</span>
-                    {h.observaciones && <span className="item-obs"> - {h.observaciones}</span>}
+                    <span className="item-code">{h.codigo} - {h.descripcion}</span>
+                    {h.observaciones && <span className="item-obs"> - Obs: {h.observaciones}</span>}
                   </label>
                 </li>
               ))}

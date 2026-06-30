@@ -19,11 +19,25 @@ function Retiro() {
     }
   }, [usuario, navigate]);
 
-  const handleAdd = (e) => {
+  const handleAdd = async (e) => {
     e.preventDefault();
     if (codigo.trim() !== '') {
-      setHerramientas([...herramientas, { codigo: codigo.trim(), checked: true }]);
-      setCodigo('');
+      const codeStr = codigo.trim();
+      setCodigo(''); // Limpiar el input para mejor UX
+      
+      try {
+        const response = await fetch(`http://localhost:8000/herramientas/buscar?q=${codeStr}`);
+        if (response.ok) {
+          const data = await response.json();
+          const tool = data.find(t => t.codigo === codeStr);
+          const desc = tool ? tool.descripcion : "Herramienta no encontrada";
+          setHerramientas(prev => [...prev, { codigo: codeStr, descripcion: desc, checked: true }]);
+        } else {
+          setHerramientas(prev => [...prev, { codigo: codeStr, descripcion: "Error al buscar", checked: true }]);
+        }
+      } catch (err) {
+        setHerramientas(prev => [...prev, { codigo: codeStr, descripcion: "Error de conexión", checked: true }]);
+      }
     }
   };
 
@@ -76,7 +90,7 @@ function Retiro() {
                       checked={h.checked} 
                       onChange={() => handleToggle(i)} 
                     />
-                    <span className="item-code">{h.codigo}</span>
+                    <span className="item-code">{h.codigo} - {h.descripcion}</span>
                   </label>
                 </li>
               ))}

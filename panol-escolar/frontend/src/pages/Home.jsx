@@ -70,6 +70,10 @@ function Home() {
   const handleAdminLogin = (e) => {
     e.preventDefault();
     if (adminUser === 'admin' && adminPass === 'admin') {
+      clearSession();
+      setIsSessionActive(false);
+      setFormData({ nombre: '', apellido: '', cargo: '' });
+      
       setShowAdminModal(false);
       navigate('/admin');
     } else {
