@@ -1,5 +1,6 @@
 const SESSION_KEY = 'panol_session';
 const SESSION_TIMEOUT = 15 * 60 * 1000; // 15 minutos
+const API_URL = 'http://127.0.0.1:8000';
 
 export const saveSession = (usuario) => {
   localStorage.setItem(SESSION_KEY, JSON.stringify({
@@ -17,7 +18,7 @@ export const getSession = () => {
     return null;
   }
   // Renueva la sesión por otros 15 minutos
-  const activeUser = { nombre: session.nombre, apellido: session.apellido, cargo: session.cargo };
+  const activeUser = { nombre: session.nombre, apellido: session.apellido, cargo: session.cargo, token: session.token };
   saveSession(activeUser);
   return activeUser;
 };
@@ -26,34 +27,88 @@ export const clearSession = () => {
   localStorage.removeItem(SESSION_KEY);
 };
 
-const RETIROS_KEY = 'panol_retiros';
-
-export const saveRetiros = (usuario, herramientas) => {
-  if (!usuario || herramientas.length === 0) return;
-  const retiros = JSON.parse(localStorage.getItem(RETIROS_KEY) || '{}');
-  const userId = `${usuario.nombre}-${usuario.apellido}-${usuario.cargo}`.toLowerCase();
+export const saveRetiros = async (solicitante, herramientasIds) => {
+  if (!solicitante || herramientasIds.length === 0) return;
+  const session = getSession();
+  if (!session || !session.token) throw new Error("No hay sesión activa");
   
-  if (!retiros[userId]) retiros[userId] = [];
-  retiros[userId] = [...retiros[userId], ...herramientas];
-  
-  localStorage.setItem(RETIROS_KEY, JSON.stringify(retiros));
-};
+  const payload = {
+    herramientas_ids: herramientasIds,
+    nombre_solicitante: solicitante.nombre,
+    apellido_solicitante: solicitante.apellido,
+    cargo_solicitante: solicitante.cargo,
+    observacion: ""
+  };
 
-export const getRetiros = (usuario) => {
-  if (!usuario) return [];
-  const retiros = JSON.parse(localStorage.getItem(RETIROS_KEY) || '{}');
-  const userId = `${usuario.nombre}-${usuario.apellido}-${usuario.cargo}`.toLowerCase();
-  return retiros[userId] || [];
-};
+  const response = await fetch(`${API_URL}/prestamos/retiro/bulk`, {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+      'Authorization': `Bearer ${session.token}`
+    },
+    body: JSON.stringify(payload)
+  });
 
-export const clearRetiros = (usuario, herramientasDevueltas) => {
-  if (!usuario || herramientasDevueltas.length === 0) return;
-  const retiros = JSON.parse(localStorage.getItem(RETIROS_KEY) || '{}');
-  const userId = `${usuario.nombre}-${usuario.apellido}-${usuario.cargo}`.toLowerCase();
-  
-  if (retiros[userId]) {
-      const devueltosIds = herramientasDevueltas.map(h => h.codigo);
-      retiros[userId] = retiros[userId].filter(codigo => !devueltosIds.includes(codigo));
-      localStorage.setItem(RETIROS_KEY, JSON.stringify(retiros));
+  if (!response.ok) {
+    const errorData = await response.json();
+    throw new Error(errorData.detail || 'Error al registrar retiro');
   }
+  
+  return await response.json();
+};
+
+export const getRetiros = async (solicitante = null) => {
+  const session = getSession();
+  if (!session || !session.token) return [];
+  
+  const params = new URLSearchParams();
+  if (solicitante && solicitante.nombre) params.append('nombre', solicitante.nombre);
+  if (solicitante && solicitante.apellido) params.append('apellido', solicitante.apellido);
+  if (solicitante && solicitante.cargo) params.append('cargo', solicitante.cargo);
+
+  try {
+    const response = await fetch(`${API_URL}/prestamos/pendientes?${params.toString()}`, {
+      method: 'GET',
+      headers: {
+        'Authorization': `Bearer ${session.token}`
+      }
+    });
+
+    if (response.ok) {
+      const data = await response.json();
+      return data; // Returns list of Prestamos
+    }
+  } catch (err) {
+    console.error("Error fetching pendientes:", err);
+  }
+  return [];
+};
+
+export const clearRetiros = async (herramientasDevueltasIds, solicitante = null) => {
+  if (herramientasDevueltasIds.length === 0) return;
+  const session = getSession();
+  if (!session || !session.token) throw new Error("No hay sesión activa");
+  
+  const payload = {
+    prestamos_ids: herramientasDevueltasIds,
+    nombre_solicitante: solicitante?.nombre || null,
+    apellido_solicitante: solicitante?.apellido || null,
+    cargo_solicitante: solicitante?.cargo || null
+  };
+
+  const response = await fetch(`${API_URL}/prestamos/devolucion/bulk`, {
+    method: 'PUT',
+    headers: {
+      'Content-Type': 'application/json',
+      'Authorization': `Bearer ${session.token}`
+    },
+    body: JSON.stringify(payload)
+  });
+
+  if (!response.ok) {
+    const errorData = await response.json();
+    throw new Error(errorData.detail || 'Error al registrar devolución');
+  }
+  
+  return await response.json();
 };

@@ -11,14 +11,14 @@ function AdminDashboard() {
     // Read local database
     const retirosDb = JSON.parse(localStorage.getItem('panol_retiros') || '{}');
     const missing = [];
-    
+
     // Check if any user has tools not returned
     for (const userId of Object.keys(retirosDb)) {
       const tools = retirosDb[userId];
       if (tools && tools.length > 0) {
         const toolsWithDesc = await Promise.all(tools.map(async (cod) => {
           try {
-            const res = await fetch(`http://localhost:8000/herramientas/buscar?q=${cod}`);
+            const res = await fetch(`http://127.0.0.1:8000/herramientas/buscar?q=${cod}`);
             if (res.ok) {
               const data = await res.json();
               const tool = data.find(t => t.codigo === cod);
@@ -50,34 +50,29 @@ function AdminDashboard() {
     setShiftResult(null);
   };
 
-  const handlePlaceholder = (feature) => {
-    alert(`La pantalla de ${feature} se encuentra en desarrollo.`);
-  };
-
   return (
     <div className="app-container">
       <div className="bg-shape-1"></div>
       <div className="bg-shape-2"></div>
-      
+
       <main className="main-card admin-dashboard">
         <header className="welcome-header">
           <h1>Panel de Administración</h1>
           <p>Control de herramientas e inventario</p>
         </header>
-        
+
         <div className="admin-grid">
           <button className="admin-btn" onClick={() => navigate('/retiro')}>Retiro</button>
           <button className="admin-btn" onClick={() => navigate('/devolucion')}>Devolución</button>
-          <button className="admin-btn" onClick={() => handlePlaceholder('Buscador')}>Buscador</button>
-          <button className="admin-btn" onClick={() => handlePlaceholder('Carga de herramientas')}>Carga de herramientas</button>
-          <button className="admin-btn" onClick={() => handlePlaceholder('Modificaciones')}>Modificaciones</button>
-          <button className="admin-btn" onClick={() => handlePlaceholder('Inventario')}>Inventario</button>
+          <button className="admin-btn" onClick={() => navigate('/admin/inventario')}>Buscador / Inventario</button>
+          <button className="admin-btn" onClick={() => navigate('/admin/carga')}>Carga de herramientas</button>
+          <button className="admin-btn" onClick={() => navigate('/admin/modificaciones')}>Modificaciones</button>
         </div>
 
         <div style={{ display: 'flex', justifyContent: 'center', marginTop: '2rem', width: '100%' }}>
-          <button 
-            className="admin-btn shift-btn" 
-            onClick={handleCierreTurno} 
+          <button
+            className="admin-btn shift-btn"
+            onClick={handleCierreTurno}
             style={{ width: '100%', maxWidth: '350px' }}
           >
             Cierre de Turno
@@ -115,9 +110,9 @@ function AdminDashboard() {
                 {!shiftResult.success && (
                   <button type="button" className="cancel-btn" onClick={closeShiftModal}>Cancelar</button>
                 )}
-                <button 
-                  type="button" 
-                  className="login-btn" 
+                <button
+                  type="button"
+                  className="login-btn"
                   style={!shiftResult.success ? { backgroundColor: '#f59e0b', color: 'white' } : {}}
                   onClick={() => {
                     closeShiftModal();

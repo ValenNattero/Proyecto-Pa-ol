@@ -15,12 +15,11 @@ class CategoriaHerramienta(str, enum.Enum):
     material_proteccion = "material de proteccion"
 
 class CargoPanolero(str, enum.Enum):
-    mantenimiento = "Personal de mantenimiento"
-    alumno = "alumno"
-    docente = "docente"
-    fuerza_aerea = "Personal de fuerza aerea"
-    bufete = "personal de bufete"
-    admin = "Administrador"
+    # This enum is no longer used for DB columns but kept for compatibility if needed.
+    # However, it's safer to remove it completely to avoid confusion.
+    pass
+    
+# We removed CargoPanolero enum to allow flexible strings from the frontend
 
 class EstadoPrestamo(str, enum.Enum):
     pendiente = "pendiente"
@@ -34,7 +33,7 @@ class Admin(Base):
     hashed_password = Column(String, nullable=False)
     nombre = Column(String, nullable=False)
     apellido = Column(String, nullable=False)
-    cargo = Column(SQLEnum(CargoPanolero), nullable=False)
+    cargo = Column(String, nullable=False)
 
     prestamos_retiros = relationship("Prestamo", foreign_keys="[Prestamo.admin_id]", back_populates="admin")
     prestamos_devoluciones = relationship("Prestamo", foreign_keys="[Prestamo.admin_id_devolucion]", back_populates="admin_devolucion")
@@ -61,7 +60,11 @@ class Prestamo(Base):
     id = Column(Integer, primary_key=True, index=True)
     nombre_panolero = Column(String, nullable=False)
     apellido_panolero = Column(String, nullable=False)
-    cargo_panolero = Column(SQLEnum(CargoPanolero), nullable=False)
+    cargo_panolero = Column(String, nullable=False)
+    
+    nombre_solicitante = Column(String, nullable=False)
+    apellido_solicitante = Column(String, nullable=False)
+    cargo_solicitante = Column(String, nullable=False)
     herramienta_id = Column(Integer, ForeignKey("herramientas.id"), nullable=False)
     admin_id = Column(Integer, ForeignKey("admins.id"), nullable=True)
     fecha_retiro = Column(DateTime(timezone=True), server_default=func.now(), nullable=False)
@@ -69,7 +72,7 @@ class Prestamo(Base):
     
     nombre_devolucion = Column(String, nullable=True)
     apellido_devolucion = Column(String, nullable=True)
-    cargo_devolucion = Column(SQLEnum(CargoPanolero), nullable=True)
+    cargo_devolucion = Column(String, nullable=True)
     admin_id_devolucion = Column(Integer, ForeignKey("admins.id"), nullable=True)
     
     estado = Column(SQLEnum(EstadoPrestamo), nullable=False, default=EstadoPrestamo.pendiente)

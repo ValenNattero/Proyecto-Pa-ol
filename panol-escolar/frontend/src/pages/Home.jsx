@@ -1,7 +1,9 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { getSession, saveSession, clearSession } from '../utils/storage';
-import logoImg from '../../IMG/Logo Ciclo basico.jpeg';
+import logoImg from '../assets/logo-ciclo-basico.jpeg';
+import ToolCardModal from '../components/ToolCardModal';
+import { Search } from 'lucide-react';
 import '../App.css';
 
 const CARGOS = [
@@ -55,6 +57,31 @@ function Home() {
   const [adminPass, setAdminPass] = useState('');
   const [adminError, setAdminError] = useState('');
 
+  // Search states
+  const [searchResults, setSearchResults] = useState([]);
+  const [selectedTool, setSelectedTool] = useState(null);
+  const [isSearching, setIsSearching] = useState(false);
+  const searchRef = useRef(null);
+
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (searchRef.current && !searchRef.current.contains(event.target)) {
+        setSearchResults([]);
+      }
+    };
+    const handleKeyDown = (event) => {
+      if (event.key === 'Escape') {
+        setSearchResults([]);
+      }
+    };
+    document.addEventListener('mousedown', handleClickOutside);
+    document.addEventListener('keydown', handleKeyDown);
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+      document.removeEventListener('keydown', handleKeyDown);
+    };
+  }, []);
+
   useEffect(() => {
     const session = getSession();
     if (session) {
@@ -87,23 +114,67 @@ function Home() {
     setFormData(prev => ({ ...prev, [name]: value }));
   };
 
-  const handleSearch = (e) => {
+  const handleSearch = async (e) => {
     e.preventDefault();
-    console.log("Buscando: ", searchQuery);
+    if (!searchQuery.trim()) return;
+
+    setIsSearching(true);
+    try {
+      const response = await fetch(`http://127.0.0.1:8000/herramientas/buscar?q=${encodeURIComponent(searchQuery)}`);
+      if (response.ok) {
+        const data = await response.json();
+        setSearchResults(data);
+        if (data.length === 1) {
+          setSelectedTool(data[0]);
+          setSearchResults([]);
+        } else if (data.length === 0) {
+          alert('No se encontraron herramientas con ese término.');
+        }
+      }
+    } catch (err) {
+      console.error("Error buscando herramienta", err);
+      alert('Error de conexión con el servidor.');
+    } finally {
+      setIsSearching(false);
+    }
   };
 
-  const handleRetiro = (e) => {
-    e.preventDefault();
-    if (!isSessionActive && !e.target.form.reportValidity()) return;
-    saveSession(formData);
-    navigate('/retiro', { state: { usuario: formData } });
+  const handleSelectTool = (tool) => {
+    setSelectedTool(tool);
+    setSearchResults([]);
   };
 
-  const handleDevolucion = (e) => {
+  const handleIngreso = async (e) => {
     e.preventDefault();
     if (!isSessionActive && !e.target.form.reportValidity()) return;
-    saveSession(formData);
-    navigate('/devolucion', { state: { usuario: formData } });
+    
+    if (!isSessionActive) {
+      try {
+        const response = await fetch('http://127.0.0.1:8000/auth/login/panolero', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(formData)
+        });
+        
+        if (response.ok) {
+          const data = await response.json();
+          saveSession({ ...formData, token: data.access_token });
+          navigate('/menu');
+        } else {
+          alert('Error al iniciar sesión. Verifique los datos.');
+        }
+      } catch (err) {
+        console.error("Error logging in", err);
+        alert('Error de conexión con el servidor.');
+      }
+    } else {
+      saveSession(formData);
+      navigate('/menu');
+    }
+  };
+
+  const handleIrAlMenu = () => {
+    navigate('/menu');
   };
 
   const handleLogout = () => {
@@ -123,18 +194,85 @@ function Home() {
           <p>Sistema de gestión Pañol Escolar</p>
         </header>
 
-        <form className="search-section" onSubmit={handleSearch}>
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-            <circle cx="11" cy="11" r="8"></circle>
-            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
-          </svg>
-          <input 
-            type="text" 
-            placeholder="Buscador rápido de herramientas..." 
-            value={searchQuery}
-            onChange={(e) => setSearchQuery(e.target.value)}
-          />
-        </form>
+        <div ref={searchRef} style={{ position: 'relative', width: '100%', maxWidth: '600px', margin: '0 auto' }}>
+          <form className="search-section" onSubmit={handleSearch}>
+            <Search size={24} className="text-secondary" />
+            <input 
+              type="text" 
+              placeholder="Buscador rápido de herramientas (código o nombre)..." 
+              value={searchQuery}
+              onChange={(e) => setSearchQuery(e.target.value)}
+              disabled={isSearching}
+            />
+            {isSearching && <span style={{ color: 'var(--text-secondary)' }}>...</span>}
+          </form>
+
+          {searchResults.length > 1 && (
+            <div className="search-dropdown" style={{
+              position: 'absolute', top: 'calc(100% + 8px)', left: 0, right: 0,
+              background: '#131520', backdropFilter: 'blur(20px)',
+              border: '1px solid rgba(255, 255, 255, 0.18)', borderRadius: '16px',
+              padding: '0.6rem', zIndex: 9999, maxHeight: '280px', overflowY: 'auto',
+              boxShadow: '0 20px 40px rgba(0, 0, 0, 0.8), 0 0 0 1px rgba(255, 255, 255, 0.08)'
+            }}>
+              <div style={{
+                padding: '0.3rem 0.6rem 0.6rem 0.6rem',
+                fontSize: '0.75rem',
+                color: 'var(--text-secondary)',
+                fontWeight: '600',
+                textTransform: 'uppercase',
+                letterSpacing: '0.8px',
+                borderBottom: '1px solid rgba(255, 255, 255, 0.08)',
+                marginBottom: '0.4rem',
+                display: 'flex',
+                justifyContent: 'space-between'
+              }}>
+                <span>Herramienta encontrada ({searchResults.length})</span>
+                <span>Código</span>
+              </div>
+              {searchResults.map(tool => (
+                <div 
+                  key={tool.id} 
+                  onClick={() => handleSelectTool(tool)}
+                  style={{
+                    padding: '0.75rem 1rem', cursor: 'pointer', borderRadius: '10px',
+                    margin: '0.25rem 0',
+                    background: 'rgba(255, 255, 255, 0.05)',
+                    border: '1px solid rgba(255, 255, 255, 0.08)',
+                    display: 'flex', justifyContent: 'space-between', alignItems: 'center',
+                    transition: 'all 0.2s ease'
+                  }}
+                  onMouseOver={(e) => {
+                    e.currentTarget.style.background = 'rgba(99, 102, 241, 0.22)';
+                    e.currentTarget.style.borderColor = 'rgba(99, 102, 241, 0.5)';
+                    e.currentTarget.style.transform = 'translateX(4px)';
+                  }}
+                  onMouseOut={(e) => {
+                    e.currentTarget.style.background = 'rgba(255, 255, 255, 0.05)';
+                    e.currentTarget.style.borderColor = 'rgba(255, 255, 255, 0.08)';
+                    e.currentTarget.style.transform = 'translateX(0)';
+                  }}
+                >
+                  <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
+                    <span style={{ fontSize: '1.1rem' }}>🔧</span>
+                    <span style={{ fontWeight: '600', color: '#ffffff', fontSize: '0.95rem' }}>{tool.descripcion}</span>
+                  </div>
+                  <span style={{
+                    background: 'rgba(99, 102, 241, 0.25)',
+                    color: '#818cf8',
+                    fontWeight: '700',
+                    padding: '0.25rem 0.7rem',
+                    borderRadius: '20px',
+                    fontSize: '0.85rem',
+                    border: '1px solid rgba(99, 102, 241, 0.35)'
+                  }}>
+                    #{tool.codigo}
+                  </span>
+                </div>
+              ))}
+            </div>
+          )}
+        </div>
 
         <form className="form-section">
           <h2>
@@ -187,9 +325,12 @@ function Home() {
             </select>
           </div>
 
-          <div className="actions-section">
-            <button type="button" className="action-btn retiro-btn" onClick={handleRetiro}>Retiro</button>
-            <button type="button" className="action-btn devolucion-btn" onClick={handleDevolucion}>Devolución</button>
+          <div className="actions-section" style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
+            {!isSessionActive ? (
+              <button type="button" className="action-btn ingreso-btn" onClick={handleIngreso} style={{ width: '100%' }}>Ingresar</button>
+            ) : (
+              <button type="button" className="action-btn ingreso-btn" onClick={handleIrAlMenu} style={{ width: '100%' }}>Ir al Menú Principal</button>
+            )}
           </div>
 
           {isSessionActive && (
@@ -240,6 +381,12 @@ function Home() {
           </div>
         </div>
       )}
+
+      {/* Tool Card Modal */}
+      <ToolCardModal 
+        tool={selectedTool} 
+        onClose={() => setSelectedTool(null)} 
+      />
     </div>
   );
 }

@@ -1,14 +1,14 @@
 from pydantic import BaseModel, ConfigDict
 from datetime import datetime
 from typing import Optional
-from .models import EstadoHerramienta, CategoriaHerramienta, CargoPanolero, EstadoPrestamo
+from .models import EstadoHerramienta, CategoriaHerramienta, EstadoPrestamo
 
 # --- Admin Schemas ---
 class AdminBase(BaseModel):
     username: str
     nombre: str
     apellido: str
-    cargo: CargoPanolero
+    cargo: str
 
 class AdminCreate(AdminBase):
     password: str
@@ -53,13 +53,18 @@ class Herramienta(HerramientaBase):
 class PrestamoBase(BaseModel):
     nombre_panolero: str
     apellido_panolero: str
-    cargo_panolero: CargoPanolero
+    cargo_panolero: str
+    
+    nombre_solicitante: str
+    apellido_solicitante: str
+    cargo_solicitante: str
+    
     observacion: Optional[str] = None
 
 class PanoleroLogin(BaseModel):
     nombre: str
     apellido: str
-    cargo: CargoPanolero
+    cargo: str
 
 class PrestamoCreate(PrestamoBase):
     herramienta_id: int
@@ -67,10 +72,19 @@ class PrestamoCreate(PrestamoBase):
 
 class PrestamoMultipleCreate(BaseModel):
     herramientas_ids: list[int]
+    nombre_solicitante: str
+    apellido_solicitante: str
+    cargo_solicitante: str
     observacion: Optional[str] = None
 
 class PrestamoUpdate(BaseModel):
     observacion: Optional[str] = None
+
+class PrestamoDevolucionBulk(BaseModel):
+    prestamos_ids: list[int]
+    nombre_solicitante: Optional[str] = None
+    apellido_solicitante: Optional[str] = None
+    cargo_solicitante: Optional[str] = None
 
 class Prestamo(PrestamoBase):
     id: int
@@ -80,8 +94,23 @@ class Prestamo(PrestamoBase):
     fecha_devolucion: Optional[datetime] = None
     nombre_devolucion: Optional[str] = None
     apellido_devolucion: Optional[str] = None
-    cargo_devolucion: Optional[CargoPanolero] = None
+    cargo_devolucion: Optional[str] = None
     admin_id_devolucion: Optional[int] = None
+    estado: EstadoPrestamo
+    herramienta: Herramienta
+
+    model_config = ConfigDict(from_attributes=True)
+
+class PrestamoMovimiento(PrestamoBase):
+    id: int
+    fecha_retiro: datetime
+    fecha_devolucion: Optional[datetime] = None
+    nombre_devolucion: Optional[str] = None
+    apellido_devolucion: Optional[str] = None
+    cargo_devolucion: Optional[str] = None
     estado: EstadoPrestamo
 
     model_config = ConfigDict(from_attributes=True)
+
+class HerramientaConMovimientos(Herramienta):
+    movimientos: list[PrestamoMovimiento] = []

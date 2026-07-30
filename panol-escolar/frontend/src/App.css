@@ -202,22 +202,34 @@
   box-shadow: 0 8px 20px rgba(5, 150, 105, 0.35);
 }
 
+.ingreso-btn {
+  background: rgba(99, 102, 241, 0.85);
+  border: 1px solid rgba(99, 102, 241, 0.5);
+}
+
+.ingreso-btn:hover {
+  background: rgba(99, 102, 241, 1);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(99, 102, 241, 0.35);
+}
+
 .footer-logo {
-  position: absolute;
-  bottom: 2rem;
-  right: 2rem;
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 0.5rem;
-  opacity: 0.6;
-  transition: opacity 0.3s ease;
+  opacity: 0.9;
+  transition: all 0.3s ease;
   cursor: pointer;
-  z-index: 2;
+  z-index: 1000;
 }
 
 .footer-logo:hover {
   opacity: 1;
+  transform: translateY(-2px);
 }
 
 .logo-placeholder {
@@ -469,14 +481,17 @@
 .school-logo {
   width: 80px;
   height: 80px;
-  border-radius: 12px;
+  border-radius: 16px;
   object-fit: cover;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
-  transition: transform 0.3s ease;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4), 0 0 15px rgba(255, 255, 255, 0.15);
+  border: 2px solid rgba(255, 255, 255, 0.25);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .school-logo:hover {
-  transform: scale(1.05);
+  transform: scale(1.08);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.6), 0 0 20px rgba(255, 255, 255, 0.3);
+  border-color: rgba(255, 255, 255, 0.5);
 }
 
 .modal-overlay {
@@ -572,8 +587,9 @@
 }
 
 .admin-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 1.5rem;
   margin-top: 1rem;
 }
@@ -582,9 +598,9 @@
   background: rgba(255, 255, 255, 0.05);
   border: 1px solid var(--glass-border);
   color: white;
-  padding: 1.5rem;
+  padding: 1.5rem 1rem;
   border-radius: 16px;
-  font-size: 1.1rem;
+  font-size: 1.05rem;
   font-weight: 600;
   cursor: pointer;
   transition: all 0.3s ease;
@@ -593,6 +609,9 @@
   justify-content: center;
   text-align: center;
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  min-width: 210px;
+  flex: 1 1 210px;
+  max-width: 250px;
 }
 
 .admin-btn:hover {
@@ -605,6 +624,7 @@
   background: rgba(16, 185, 129, 0.2);
   border-color: rgba(16, 185, 129, 0.4);
   color: #10b981;
+  max-width: none;
 }
 
 .shift-btn:hover {

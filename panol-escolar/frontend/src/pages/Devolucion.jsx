@@ -4,83 +4,119 @@ import HamburgerMenu from '../components/HamburgerMenu';
 import { getSession, getRetiros, clearRetiros } from '../utils/storage';
 import '../App.css';
 
+const CARGOS = [
+  "ESTUDIANTE DE PRIMERO PRIMERA",
+  "ESTUDIANTE DE PRIMERO SEGUNDA",
+  "ESTUDIANTE DE PRIMERO TERCERA",
+  "ESTUDIANTE DE PRIMERO CUARTA",
+  "ESTUDIANTE - SEGUNDO PRIMERA",
+  "ESTUDIANTE - SEGUNDO SEGUNDA",
+  "ESTUDIANTE - SEGUNDO TERCERA",
+  "ESTUDIANTE - SEGUNDO CUARTA",
+  "ESTUDIANTE - TERCERO PRIMERA",
+  "ESTUDIANTE - TERCERO SEGUNDA",
+  "ESTUDIANTE - TERCERO TERCERA",
+  "ESTUDIANTE - TERCERO CUARTA",
+  "ESTUDIANTE - CUARTO PRIMERA",
+  "ESTUDIANTE - CUARTO SEGUNDA",
+  "ESTUDIANTE - CUARTO TERCERA",
+  "ESTUDIANTE - CUARTO CUARTA",
+  "ESTUDIANTE - QUINTO PRIMERA",
+  "ESTUDIANTE - QUINTO SEGUNDA",
+  "ESTUDIANTE - QUINTO TERCERA",
+  "ESTUDIANTE - QUINTO CUARTA",
+  "ESTUDIANTE - SEXTO PRIMERA",
+  "ESTUDIANTE - SEXTO SEGUNDA",
+  "ESTUDIANTE - SEXTO TERCERA",
+  "ESTUDIANTE - SEXTO CUARTA",
+  "ESTUDIANTE - SEPTIMO PRIMERA",
+  "ESTUDIANTE - SEPTIMO SEGUNDA",
+  "ESTUDIANTE - SEPTIMO TERCERA",
+  "ESTUDIANTE - SEPTIMO CUARTA",
+  "DOCENTE",
+  "PERSONAL MANTENIMIENTO",
+  "PERSONAL FUERZA AEREA",
+  "PERSONAL BUFFET"
+];
+
 function Devolucion() {
   const navigate = useNavigate();
   const location = useLocation();
-  const [usuario, setUsuario] = useState(location.state?.usuario || null);
-  const [codigo, setCodigo] = useState('');
-  const [observaciones, setObservaciones] = useState('');
+  const [panolero, setPanolero] = useState(null);
+  const [quienDevuelve, setQuienDevuelve] = useState({ nombre: '', apellido: '', cargo: '' });
+  const [filtroCodigo, setFiltroCodigo] = useState('');
+  const [filtroDescripcion, setFiltroDescripcion] = useState('');
   const [herramientas, setHerramientas] = useState([]);
+  const [showFaltantesModal, setShowFaltantesModal] = useState(false);
+
+  const loadRetiros = async () => {
+    const pending = await getRetiros();
+    if (pending && pending.length > 0) {
+      const mapped = pending.map(p => ({
+        id: p.id,
+        codigo: p.herramienta?.codigo || 'N/A',
+        descripcion: p.herramienta?.descripcion || 'Herramienta sin descripción',
+        observaciones: p.observacion || '',
+        prestadoA: `${p.nombre_solicitante} ${p.apellido_solicitante}`,
+        checked: false
+      }));
+      setHerramientas(mapped);
+    } else {
+      setHerramientas([]);
+    }
+  };
 
   useEffect(() => {
-    let currentUser = usuario;
-    if (!currentUser) {
-      const session = getSession();
-      if (session) {
-        setUsuario(session);
-        currentUser = session;
-      } else {
-        navigate('/');
-        return;
-      }
+    const session = getSession();
+    if (session) {
+      setPanolero(session);
+    } else {
+      setPanolero({ nombre: 'Administrador', apellido: 'Pañol', cargo: 'ADMINISTRADOR' });
     }
-    
-    const pending = getRetiros(currentUser);
-    if (pending && pending.length > 0) {
-      Promise.all(pending.map(async (cod) => {
-        try {
-          const res = await fetch(`http://localhost:8000/herramientas/buscar?q=${cod}`);
-          if (res.ok) {
-            const data = await res.json();
-            const tool = data.find(t => t.codigo === cod);
-            return { codigo: cod, observaciones: '', checked: true, descripcion: tool ? tool.descripcion : "Herramienta no encontrada" };
-          }
-          return { codigo: cod, observaciones: '', checked: true, descripcion: "Error al buscar" };
-        } catch (e) {
-          return { codigo: cod, observaciones: '', checked: true, descripcion: "Error de conexión" };
-        }
-      })).then(results => {
-        setHerramientas(results);
-      });
-    }
-  }, [usuario, navigate]);
+    loadRetiros();
+  }, []);
 
-  const handleAdd = async (e) => {
-    e.preventDefault();
-    if (codigo.trim() !== '') {
-      const codeStr = codigo.trim();
-      const obsStr = observaciones;
-      setCodigo('');
-      setObservaciones('');
-      
-      try {
-        const response = await fetch(`http://localhost:8000/herramientas/buscar?q=${codeStr}`);
-        if (response.ok) {
-          const data = await response.json();
-          const tool = data.find(t => t.codigo === codeStr);
-          const desc = tool ? tool.descripcion : "Herramienta no encontrada";
-          setHerramientas(prev => [...prev, { codigo: codeStr, observaciones: obsStr, descripcion: desc, checked: true }]);
-        } else {
-          setHerramientas(prev => [...prev, { codigo: codeStr, observaciones: obsStr, descripcion: "Error al buscar", checked: true }]);
-        }
-      } catch (err) {
-        setHerramientas(prev => [...prev, { codigo: codeStr, observaciones: obsStr, descripcion: "Error de conexión", checked: true }]);
-      }
+  const handleInputChange = (e) => {
+    const { name, value } = e.target;
+    setQuienDevuelve(prev => ({ ...prev, [name]: value }));
+  };
+
+  // handleAdd was removed as tools are now strictly retrieved from the database
+
+  const handleToggle = (id) => {
+    setHerramientas(prev => prev.map(h => h.id === id ? { ...h, checked: !h.checked } : h));
+  };
+
+  const handleFinish = async () => {
+    const seleccionadas = herramientas.filter(h => h.checked && h.id).map(h => h.id);
+    if (seleccionadas.length === 0) {
+      alert('No ha seleccionado ninguna herramienta para devolver.');
+      return;
+    }
+    if (!quienDevuelve.nombre || !quienDevuelve.apellido || !quienDevuelve.cargo) {
+      alert('Por favor, complete los datos de quien devuelve.');
+      return;
+    }
+    try {
+      await clearRetiros(seleccionadas, quienDevuelve);
+      alert('Devolución registrada correctamente.');
+      navigate('/menu');
+    } catch(err) {
+      alert(err.message);
     }
   };
 
-  const handleToggle = (index) => {
-    const nuevas = [...herramientas];
-    nuevas[index].checked = !nuevas[index].checked;
-    setHerramientas(nuevas);
-  };
+  const herramientasFiltradas = herramientas.filter(h => {
+    const matchCodigo = h.codigo.toLowerCase().includes(filtroCodigo.toLowerCase());
+    const matchDesc = h.descripcion.toLowerCase().includes(filtroDescripcion.toLowerCase());
+    return matchCodigo && matchDesc;
+  });
 
-  const handleFinish = () => {
-    const seleccionadas = herramientas.filter(h => h.checked);
-    console.log("Herramientas devueltas:", seleccionadas, "por", usuario);
-    clearRetiros(usuario, seleccionadas);
-    navigate('/');
-  };
+  const faltantesAgrupados = herramientas.reduce((acc, h) => {
+    if (!acc[h.prestadoA]) acc[h.prestadoA] = [];
+    acc[h.prestadoA].push(`${h.codigo} - ${h.descripcion}`);
+    return acc;
+  }, {});
 
   return (
     <div className="app-container">
@@ -91,42 +127,44 @@ function Devolucion() {
 
         <header className="welcome-header">
           <h1>Devolución de Herramientas</h1>
-          {usuario && <p>Pañolero: {usuario.nombre} {usuario.apellido}</p>}
+          {panolero && <p>Pañolero: {panolero.nombre} {panolero.apellido}</p>}
         </header>
 
-        <form className="inline-action-form" onSubmit={handleAdd}>
+        <div className="filters-section" style={{ marginBottom: '1.5rem', display: 'flex', gap: '1rem' }}>
           <input 
             type="text" 
-            placeholder="Código..." 
-            value={codigo}
-            onChange={(e) => setCodigo(e.target.value)}
-            autoFocus
+            placeholder="Buscar por código..." 
+            value={filtroCodigo}
+            onChange={e => setFiltroCodigo(e.target.value)}
+            style={{ flex: 1, padding: '0.8rem', borderRadius: '8px', border: '1px solid var(--glass-border)', background: 'var(--input-bg)', color: 'var(--text-primary)' }}
           />
           <input 
             type="text" 
-            placeholder="Observaciones (opcional)..." 
-            value={observaciones}
-            onChange={(e) => setObservaciones(e.target.value)}
-            className="obs-input"
+            placeholder="Filtrar por descripción..." 
+            value={filtroDescripcion}
+            onChange={e => setFiltroDescripcion(e.target.value)}
+            style={{ flex: 1, padding: '0.8rem', borderRadius: '8px', border: '1px solid var(--glass-border)', background: 'var(--input-bg)', color: 'var(--text-primary)' }}
           />
-          <button type="submit" className="action-btn-small devolucion-btn">+</button>
-        </form>
+        </div>
 
         <div className="items-list">
-          {herramientas.length === 0 ? (
-            <p className="empty-text">No hay herramientas en la lista.</p>
+          {herramientasFiltradas.length === 0 ? (
+            <p className="empty-text">No hay herramientas para devolver con esos filtros.</p>
           ) : (
             <ul>
-              {herramientas.map((h, i) => (
-                <li key={i} className={!h.checked ? "unchecked-item" : ""}>
+              {herramientasFiltradas.map((h) => (
+                <li key={h.id} className={!h.checked ? "unchecked-item" : ""}>
                   <label className="checkbox-label">
                     <input 
                       type="checkbox" 
                       checked={h.checked} 
-                      onChange={() => handleToggle(i)} 
+                      onChange={() => handleToggle(h.id)} 
                     />
-                    <span className="item-code">{h.codigo} - {h.descripcion}</span>
-                    {h.observaciones && <span className="item-obs"> - Obs: {h.observaciones}</span>}
+                    <div style={{ display: 'flex', flexDirection: 'column' }}>
+                      <span className="item-code">{h.codigo} - {h.descripcion}</span>
+                      <span className="item-obs" style={{ fontSize: '0.85em', color: 'var(--text-secondary)' }}>Prestado a: {h.prestadoA}</span>
+                      {h.observaciones && <span className="item-obs">Obs: {h.observaciones}</span>}
+                    </div>
                   </label>
                 </li>
               ))}
@@ -134,9 +172,83 @@ function Devolucion() {
           )}
         </div>
 
-        <div className="finish-section">
-          <button type="button" className="action-btn-small finish-btn" onClick={handleFinish}>Fin</button>
+        <div className="form-section" style={{ marginTop: '2rem', padding: '1.5rem', borderRadius: '12px', background: 'var(--input-bg)', border: '1px dashed var(--glass-border)' }}>
+          <h3 style={{ marginBottom: '1rem', color: 'var(--text-primary)' }}>Datos de quien devuelve</h3>
+          <div className="input-group">
+            <input 
+              type="text" 
+              name="nombre" 
+              placeholder="Nombre..." 
+              value={quienDevuelve.nombre}
+              onChange={handleInputChange}
+            />
+          </div>
+          <div className="input-group">
+            <input 
+              type="text" 
+              name="apellido" 
+              placeholder="Apellido..." 
+              value={quienDevuelve.apellido}
+              onChange={handleInputChange}
+            />
+          </div>
+          <div className="input-group">
+            <select 
+              name="cargo" 
+              value={quienDevuelve.cargo}
+              onChange={handleInputChange}
+            >
+              <option value="" disabled>Seleccione un cargo...</option>
+              {CARGOS.map((cargo, index) => (
+                <option key={index} value={cargo}>{cargo}</option>
+              ))}
+            </select>
+          </div>
         </div>
+
+        <div className="finish-section" style={{ marginTop: '1.5rem', display: 'flex', gap: '1rem', alignItems: 'center' }}>
+          <button type="button" className="action-btn" onClick={() => setShowFaltantesModal(true)} style={{ flex: 1, backgroundColor: 'var(--bg-card)', color: 'var(--text-primary)', border: '1px solid var(--glass-border)' }}>
+            Ver Faltantes
+          </button>
+          <button type="button" className="action-btn finish-btn" onClick={handleFinish} style={{ flex: 2, backgroundColor: 'var(--accent-color)' }}>
+            Confirmar Devolución
+          </button>
+          <button type="button" className="back-btn" onClick={() => navigate(-1)} style={{ margin: 0 }}>
+            Volver
+          </button>
+        </div>
+
+        {showFaltantesModal && (
+          <div className="modal-overlay">
+            <div className="modal-content shift-modal">
+              <h2>Herramientas Faltantes</h2>
+              {herramientas.length === 0 ? (
+                <div className="success-message">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+                  <p>¡Excelente! No hay herramientas prestadas actualmente.</p>
+                </div>
+              ) : (
+                <div className="error-message">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg>
+                  <p>Faltan devolver las siguientes herramientas:</p>
+                  <div className="missing-list" style={{ maxHeight: '300px', overflowY: 'auto' }}>
+                    {Object.keys(faltantesAgrupados).map((usuario, i) => (
+                      <div key={i} className="missing-item">
+                        <strong>{usuario}</strong>
+                        <ul>
+                          {faltantesAgrupados[usuario].map((h, j) => <li key={j}>{h}</li>)}
+                        </ul>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              )}
+              <div className="modal-actions" style={{ display: 'flex', justifyContent: 'center', marginTop: '1rem' }}>
+                <button type="button" className="cancel-btn" onClick={() => setShowFaltantesModal(false)}>Cerrar</button>
+              </div>
+            </div>
+          </div>
+        )}
       </main>
     </div>
   );

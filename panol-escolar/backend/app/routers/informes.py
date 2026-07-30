@@ -85,3 +85,59 @@ def generar_informe(
         media_type="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
         headers={"Content-Disposition": "attachment; filename=inventario.xlsx"}
     )
+
+@router.get("/inventario/excel")
+def descargar_excel_inventario(db: Session = Depends(get_db)):
+    wb = openpyxl.Workbook()
+    ws = wb.active
+    ws.title = "Inventario Pañol"
+
+    # Estilos del encabezado
+    headers = [
+        "Código", "Descripción", "Categoría", "Marca", 
+        "Estado Técnico", "Disponibilidad Actual", "Origen / PMI", "Fecha Alta"
+    ]
+    ws.append(headers)
+    for col_idx, cell in enumerate(ws[1], 1):
+        cell.font = Font(bold=True, color="FFFFFF")
+        cell.fill = openpyxl.styles.PatternFill(start_color="3B4252", end_color="3B4252", fill_type="solid")
+
+    herramientas_db = db.query(models.Herramienta).order_by(models.Herramienta.codigo.asc()).all()
+    for h in herramientas_db:
+        # Verificar si está prestada en este momento
+        prestamo_activo = db.query(models.Prestamo).filter(
+            models.Prestamo.herramienta_id == h.id,
+            models.Prestamo.estado == models.EstadoPrestamo.pendiente
+        ).first()
+
+        if prestamo_activo:
+            disponibilidad = f"PRESTADA A: {prestamo_activo.nombre_solicitante} {prestamo_activo.apellido_solicitante} ({prestamo_activo.cargo_solicitante})"
+        else:
+            disponibilidad = "DISPONIBLE EN PAÑOL"
+
+        ws.append([
+            h.codigo or str(h.id),
+            h.descripcion or "",
+            h.categoria.value if h.categoria else "",
+            h.marca or "-",
+            h.estado.value if h.estado else "En servicio",
+            disponibilidad,
+            h.origen or "PMI",
+            h.fecha_alta.strftime("%d/%m/%Y") if h.fecha_alta else ""
+        ])
+
+    # Ajustar ancho de las columnas automáticamente
+    for col in ws.columns:
+        max_len = max(len(str(cell.value or "")) for cell in col)
+        col_letter = openpyxl.utils.get_column_letter(col[0].column)
+        ws.column_dimensions[col_letter].width = max(max_len + 3, 12)
+
+    stream = io.BytesIO()
+    wb.save(stream)
+    stream.seek(0)
+
+    return StreamingResponse(
+        stream,
+        media_type="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+        headers={"Content-Disposition": "attachment; filename=Inventario_Panol_Escolar.xlsx"}
+    )
