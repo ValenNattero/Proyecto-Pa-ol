@@ -2,52 +2,18 @@ import React, { useState, useEffect } from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
 import HamburgerMenu from '../components/HamburgerMenu';
 import { getSession, getRetiros, clearRetiros } from '../utils/storage';
+import { ArrowUpDown } from 'lucide-react';
 import '../App.css';
-
-const CARGOS = [
-  "ESTUDIANTE DE PRIMERO PRIMERA",
-  "ESTUDIANTE DE PRIMERO SEGUNDA",
-  "ESTUDIANTE DE PRIMERO TERCERA",
-  "ESTUDIANTE DE PRIMERO CUARTA",
-  "ESTUDIANTE - SEGUNDO PRIMERA",
-  "ESTUDIANTE - SEGUNDO SEGUNDA",
-  "ESTUDIANTE - SEGUNDO TERCERA",
-  "ESTUDIANTE - SEGUNDO CUARTA",
-  "ESTUDIANTE - TERCERO PRIMERA",
-  "ESTUDIANTE - TERCERO SEGUNDA",
-  "ESTUDIANTE - TERCERO TERCERA",
-  "ESTUDIANTE - TERCERO CUARTA",
-  "ESTUDIANTE - CUARTO PRIMERA",
-  "ESTUDIANTE - CUARTO SEGUNDA",
-  "ESTUDIANTE - CUARTO TERCERA",
-  "ESTUDIANTE - CUARTO CUARTA",
-  "ESTUDIANTE - QUINTO PRIMERA",
-  "ESTUDIANTE - QUINTO SEGUNDA",
-  "ESTUDIANTE - QUINTO TERCERA",
-  "ESTUDIANTE - QUINTO CUARTA",
-  "ESTUDIANTE - SEXTO PRIMERA",
-  "ESTUDIANTE - SEXTO SEGUNDA",
-  "ESTUDIANTE - SEXTO TERCERA",
-  "ESTUDIANTE - SEXTO CUARTA",
-  "ESTUDIANTE - SEPTIMO PRIMERA",
-  "ESTUDIANTE - SEPTIMO SEGUNDA",
-  "ESTUDIANTE - SEPTIMO TERCERA",
-  "ESTUDIANTE - SEPTIMO CUARTA",
-  "DOCENTE",
-  "PERSONAL MANTENIMIENTO",
-  "PERSONAL FUERZA AEREA",
-  "PERSONAL BUFFET"
-];
 
 function Devolucion() {
   const navigate = useNavigate();
   const location = useLocation();
   const [panolero, setPanolero] = useState(null);
-  const [quienDevuelve, setQuienDevuelve] = useState({ nombre: '', apellido: '', cargo: '' });
   const [filtroCodigo, setFiltroCodigo] = useState('');
   const [filtroDescripcion, setFiltroDescripcion] = useState('');
   const [herramientas, setHerramientas] = useState([]);
   const [showFaltantesModal, setShowFaltantesModal] = useState(false);
+  const [orden, setOrden] = useState('codigo'); // 'codigo' | 'descripcion'
 
   const loadRetiros = async () => {
     const pending = await getRetiros();
@@ -76,13 +42,6 @@ function Devolucion() {
     loadRetiros();
   }, []);
 
-  const handleInputChange = (e) => {
-    const { name, value } = e.target;
-    setQuienDevuelve(prev => ({ ...prev, [name]: value }));
-  };
-
-  // handleAdd was removed as tools are now strictly retrieved from the database
-
   const handleToggle = (id) => {
     setHerramientas(prev => prev.map(h => h.id === id ? { ...h, checked: !h.checked } : h));
   };
@@ -93,30 +52,43 @@ function Devolucion() {
       alert('No ha seleccionado ninguna herramienta para devolver.');
       return;
     }
-    if (!quienDevuelve.nombre || !quienDevuelve.apellido || !quienDevuelve.cargo) {
-      alert('Por favor, complete los datos de quien devuelve.');
-      return;
-    }
     try {
-      await clearRetiros(seleccionadas, quienDevuelve);
+      await clearRetiros(seleccionadas);
       alert('Devolución registrada correctamente.');
-      navigate('/menu');
+      navigate(-1);
     } catch(err) {
       alert(err.message);
     }
   };
 
-  const herramientasFiltradas = herramientas.filter(h => {
-    const matchCodigo = h.codigo.toLowerCase().includes(filtroCodigo.toLowerCase());
-    const matchDesc = h.descripcion.toLowerCase().includes(filtroDescripcion.toLowerCase());
-    return matchCodigo && matchDesc;
-  });
+  const herramientasFiltradas = herramientas
+    .filter(h => {
+      const matchCodigo = h.codigo.toLowerCase().includes(filtroCodigo.toLowerCase());
+      const matchDesc = h.descripcion.toLowerCase().includes(filtroDescripcion.toLowerCase());
+      return matchCodigo && matchDesc;
+    })
+    .sort((a, b) => {
+      if (orden === 'codigo') {
+        return String(a.codigo).localeCompare(String(b.codigo), undefined, { numeric: true, sensitivity: 'base' });
+      } else {
+        return String(a.descripcion).localeCompare(String(b.descripcion), 'es', { sensitivity: 'base' });
+      }
+    });
 
-  const faltantesAgrupados = herramientas.reduce((acc, h) => {
-    if (!acc[h.prestadoA]) acc[h.prestadoA] = [];
-    acc[h.prestadoA].push(`${h.codigo} - ${h.descripcion}`);
-    return acc;
-  }, {});
+  const faltantesAgrupados = herramientas
+    .slice()
+    .sort((a, b) => {
+      if (orden === 'codigo') {
+        return String(a.codigo).localeCompare(String(b.codigo), undefined, { numeric: true, sensitivity: 'base' });
+      } else {
+        return String(a.descripcion).localeCompare(String(b.descripcion), 'es', { sensitivity: 'base' });
+      }
+    })
+    .reduce((acc, h) => {
+      if (!acc[h.prestadoA]) acc[h.prestadoA] = [];
+      acc[h.prestadoA].push(`${h.codigo} - ${h.descripcion}`);
+      return acc;
+    }, {});
 
   return (
     <div className="app-container">
@@ -130,21 +102,43 @@ function Devolucion() {
           {panolero && <p>Pañolero: {panolero.nombre} {panolero.apellido}</p>}
         </header>
 
-        <div className="filters-section" style={{ marginBottom: '1.5rem', display: 'flex', gap: '1rem' }}>
+        <div className="filters-section" style={{ marginBottom: '1.5rem', display: 'flex', gap: '1rem', flexWrap: 'wrap', alignItems: 'center' }}>
           <input 
             type="text" 
             placeholder="Buscar por código..." 
             value={filtroCodigo}
             onChange={e => setFiltroCodigo(e.target.value)}
-            style={{ flex: 1, padding: '0.8rem', borderRadius: '8px', border: '1px solid var(--glass-border)', background: 'var(--input-bg)', color: 'var(--text-primary)' }}
+            style={{ flex: '1 1 180px', padding: '0.8rem', borderRadius: '8px', border: '1px solid var(--glass-border)', background: 'var(--input-bg)', color: 'var(--text-primary)' }}
           />
           <input 
             type="text" 
             placeholder="Filtrar por descripción..." 
             value={filtroDescripcion}
             onChange={e => setFiltroDescripcion(e.target.value)}
-            style={{ flex: 1, padding: '0.8rem', borderRadius: '8px', border: '1px solid var(--glass-border)', background: 'var(--input-bg)', color: 'var(--text-primary)' }}
+            style={{ flex: '1 1 180px', padding: '0.8rem', borderRadius: '8px', border: '1px solid var(--glass-border)', background: 'var(--input-bg)', color: 'var(--text-primary)' }}
           />
+          <button
+            type="button"
+            onClick={() => setOrden(prev => prev === 'codigo' ? 'descripcion' : 'codigo')}
+            title="Cambiar criterio de ordenamiento"
+            style={{
+              padding: '0.8rem 1.2rem',
+              borderRadius: '8px',
+              border: '1px solid var(--glass-border)',
+              background: 'var(--bg-card)',
+              color: 'var(--text-primary)',
+              cursor: 'pointer',
+              fontWeight: '500',
+              display: 'flex',
+              alignItems: 'center',
+              gap: '0.5rem',
+              transition: 'all 0.2s ease',
+              whiteSpace: 'nowrap'
+            }}
+          >
+            <ArrowUpDown size={16} />
+            {orden === 'codigo' ? 'Por código ↓↑' : 'Por descripción ↓↑'}
+          </button>
         </div>
 
         <div className="items-list">
@@ -172,39 +166,6 @@ function Devolucion() {
           )}
         </div>
 
-        <div className="form-section" style={{ marginTop: '2rem', padding: '1.5rem', borderRadius: '12px', background: 'var(--input-bg)', border: '1px dashed var(--glass-border)' }}>
-          <h3 style={{ marginBottom: '1rem', color: 'var(--text-primary)' }}>Datos de quien devuelve</h3>
-          <div className="input-group">
-            <input 
-              type="text" 
-              name="nombre" 
-              placeholder="Nombre..." 
-              value={quienDevuelve.nombre}
-              onChange={handleInputChange}
-            />
-          </div>
-          <div className="input-group">
-            <input 
-              type="text" 
-              name="apellido" 
-              placeholder="Apellido..." 
-              value={quienDevuelve.apellido}
-              onChange={handleInputChange}
-            />
-          </div>
-          <div className="input-group">
-            <select 
-              name="cargo" 
-              value={quienDevuelve.cargo}
-              onChange={handleInputChange}
-            >
-              <option value="" disabled>Seleccione un cargo...</option>
-              {CARGOS.map((cargo, index) => (
-                <option key={index} value={cargo}>{cargo}</option>
-              ))}
-            </select>
-          </div>
-        </div>
 
         <div className="finish-section" style={{ marginTop: '1.5rem', display: 'flex', gap: '1rem', alignItems: 'center' }}>
           <button type="button" className="action-btn" onClick={() => setShowFaltantesModal(true)} style={{ flex: 1, backgroundColor: 'var(--bg-card)', color: 'var(--text-primary)', border: '1px solid var(--glass-border)' }}>

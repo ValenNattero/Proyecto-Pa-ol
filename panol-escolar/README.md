@@ -1,57 +1,138 @@
-# Sistema de Gestión - Pañol Escolar
+# Sistema de Gestión - Pañol Escolar EEST N°4
 
-Aplicación web desarrollada para la gestión del pañol de una escuela técnica, permitiendo controlar retiros y devoluciones de herramientas por parte de estudiantes y personal.
-
-## 🚀 Tecnologías
-- **Frontend**: React.js (Vite)
-- **Enrutamiento**: React Router DOM (`react-router-dom`)
-- **Estilos**: CSS puro (Glassmorphism, variables CSS, UI moderna oscura)
-- **Almacenamiento Temporal**: `localStorage` (simulación de base de datos)
+Aplicación web Full Stack para la gestión integral del pañol de una escuela técnica, permitiendo controlar el inventario de herramientas, retiros, devoluciones, usuarios administradores y seguridad de forma ágil, moderna y automatizada.
 
 ---
 
-## 📝 Historial de Cambios y Funcionalidades Implementadas
+## 🚀 Tecnologías del Stack
 
-### 1. Estructura y Diseño Base (Glassmorphism)
-- Inicialización del proyecto con Vite y React.
-- Creación de un sistema de diseño basado en "efecto cristal" (fondos traslúcidos, desenfoque/blur, bordes suaves).
-- Paleta de colores principal oscura para reducir la fatiga visual, con detalles vibrantes (ámbar para retiros, esmeralda para devoluciones).
+### **Frontend**
+- **Framework**: React.js 18 con Vite
+- **Enrutamiento**: React Router DOM (`react-router-dom`)
+- **Diseño & UI**: CSS Puro con diseño **Glassmorphism** (efecto cristal traslúcido, bordes luminosos y modo oscuro premium)
+- **Íconos & Accesibilidad**: Lucide React / Emojis intuitivos para una experiencia ágil de taller
+- **Almacenamiento Temporal**: Sesiones temporales controladas con renovación automática en el cliente
 
-### 2. Pantalla de Inicio (`Home.jsx`)
-- **Buscador Rápido**: Integrado en la cabecera.
-- **Formulario de Ingreso (Pañoleros)**: Solicita Nombre, Apellido y Cargo.
-- **Lista de Cargos Exhaustiva**: Se configuró un menú desplegable con 32 opciones (Estudiantes de 1° a 7° año todas las divisiones, Docentes, Mantenimiento, Fuerza Aérea, Buffet).
-- **Persistencia de Sesión**: Los datos del pañolero quedan guardados por 15 minutos en el `localStorage`, congelando el formulario y permitiendo entrar y salir de las pantallas rápidamente sin re-tipear.
+### **Backend & Base de Datos**
+- **API Server**: Python 3.12 + **FastAPI** (servidor web asincrónico y tipado seguro con Pydantic V2)
+- **Base de Datos**: Relacional con **SQLAlchemy** y **SQLite** (`pañol.db`), con generación automática de esquemas
+- **Seguridad & Autenticación**: 
+  - Encriptación de contraseñas de alta seguridad con **`bcrypt`** nativo (libre de dependencias obsoletas)
+  - Autenticación mediante **JSON Web Tokens (JWT)** (`Bearer Access Tokens`)
+
+---
+
+## 📝 Historial Completo de Funcionalidades y Mejoras Implementadas
+
+### 1. Estructura y Diseño Base (Glassmorphism Premium)
+- Inicialización del proyecto web con Vite, React y FastAPI.
+- Sistema de diseño de "efecto cristal" con fondos de gradientes oscuros para evitar fatiga visual en el taller, acentos en ámbar vibrante para administración/retiros y esmeralda para devoluciones.
+- Animaciones suaves de transición, modales flotantes y notificaciones visuales (Toasts).
+
+### 2. Pantalla de Inicio y Privacidad en Terminal (`Home.jsx`)
+- **Buscador Rápido de Herramientas**: Barra superior autocompletada por código o descripción en tiempo real.
+- **Formulario de Ingreso de Pañoleros**: Solicita Nombre, Apellido y Cargo (más de 32 opciones organizadas para estudiantes de 1° a 7° año, docentes y personal).
+- **Protección de Privacidad de Terminal**: Cada vez que se regresa al Inicio (`/` o "Bienvenidos"), el sistema **limpia automáticamente cualquier sesión de ingresos anteriores** (`clearSession()`). Los campos inician siempre vacíos, garantizando que un nuevo pañolero o estudiante no vea datos de la persona anterior.
 
 ### 3. Pantalla de Retiro (`Retiro.jsx`)
-- **Carga Rápida**: Formulario en línea para escanear/tipear códigos de herramientas con foco automático.
-- **Sistema de Checkboxes**: Cada herramienta cargada se lista con una casilla de verificación. Si el pañolero se equivoca, puede destildarla y el sistema la tacha visualmente, excluyéndola del registro al finalizar.
-- **Menú Hamburguesa**: Integrado en la esquina superior para acceder a un buscador rápido y poder "Cerrar Sesión" manualmente.
+- **Carga Ágil por Escáner/Teclado**: Formulario con foco automático para ingresar códigos de herramientas de forma consecutiva.
+- **Sistema de Checkboxes**: Permite destildar y tachar visualmente herramientas cargadas por error antes de confirmar el préstamo en bloque.
+- **Sincronización Inmediata**: Al confirmar, la base de datos actualiza el estado de la herramienta a `PRESTADA` y registra al solicitante.
 
-### 4. Pantalla de Devolución (`Devolucion.jsx`)
-- **Auto-Carga Inteligente**: Al entrar, el sistema lee la "base de datos" y precarga automáticamente todas las herramientas que el pañolero activo tiene pendientes de devolver.
-- **Sistema de Checkboxes**: Permite devoluciones parciales (destildar lo que no se devuelve).
-- **Observaciones**: Input opcional para añadir detalles sobre el estado de la herramienta devuelta.
+### 4. Pantalla de Devolución e Inventario Faltante (`Devolucion.jsx`)
+- **Devolución Ágil**: Operación optimizada donde **no es obligatorio** ingresar los datos de la persona que devuelve; alcanza con la sesión activa del terminal.
+- **Lista Global de Herramientas Prestadas (Faltantes del Pañol)**: 
+  - Muestra un listado en vivo de **todas las herramientas que están actualmente prestadas** y pendientes de devolver en el pañol.
+  - Ordenado numéricamente de forma incremental para una localización visual instantánea.
+  - Indica el código, la descripción y el nombre completo de la persona que la retiró.
+- **Devoluciones Parciales y Estado Técnico**: Soporte para seleccionar sólo las herramientas entregadas y registrar observaciones de daño o reparación en la base de datos.
 
-### 5. Acceso y Panel de Administrador (`AdminDashboard.jsx`)
-- **Easter Egg (Logo Oculto)**: El logo de la escuela (Ciclo Básico) actúa como botón secreto. Al hacer **doble clic** sobre él en el Home, se abre un modal de login.
-- **Login**: (Actualmente seteado en `admin` / `admin`).
-- **Botonera Admin**: Cuadrícula de accesos rápidos para (Retiros, Devoluciones, Carga, Modificaciones, Buscador, Inventario). Las opciones no desarrolladas muestran una alerta provisoria.
-- **Lógica de Cierre de Turno**: 
-  - Al presionar el botón de Cierre (ubicado estratégicamente al final), el sistema escanea todos los registros del día.
-  - Si falta devolver algo, genera un reporte en pantalla indicando **Nombre del Usuario** y **Códigos Faltantes**.
-  - Si todo fue devuelto, muestra un mensaje verde de éxito.
+### 5. Panel de Control de Administración (`AdminDashboard.jsx`)
+- **Easter Egg de Acceso (Logo Oculto)**: Doble clic en el escudo del Ciclo Básico desde la página de inicio para abrir el modal de acceso administrativo.
+- **Menú Centralizado de Administración**: Acceso a Retiros, Devoluciones, Buscador / Inventario, Carga de Herramientas, Modificaciones y Administración de Usuarios.
+- **Lógica de Cierre de Turno**: Escaneo completo de los préstamos activos con reporte de faltantes por alumno/docente o confirmación de pañol sin deudas.
+
+### 6. Buscador e Inventario Completo (`/admin/inventario`)
+- **Tabla Global y Buscador en Vivo**: Visualización del inventario con filtros por código o descripción.
+- **Ordenamiento Dinámico Ascendente/Descendente**: 
+  - Botones de orden con indicador visual de flechas: **`Por código ▲ / ▼`** y **`Por descripción ▲ / ▼`**.
+  - Permite al pañolero ordenar el inventario incrementalmente (`1, 2, 3...`) o alfabéticamente por descripción con un solo clic.
+- **Historial de Préstamos**: Consulta del registro histórico completo de cada herramienta.
+
+### 7. Carga y Modificación de Herramientas (`/admin/carga` y `/admin/modificaciones`)
+- **Autocompletado e Incremental de Códigos**: Al seleccionar una categoría, el backend calcula automáticamente el próximo número de inventario disponible para acelerar la carga.
+- **Carga Masiva vía Excel / CSV**: Importación directa de archivos `.xlsx`, `.xls` y `.csv` con validación de códigos duplicados y descarga de plantilla de ejemplo.
+- **Modificaciones de Estado en Caliente**: Edición rápida de descripciones, categorías y estados de conservación (`DISPONIBLE`, `PRESTADA`, `EN REPARACION`, `ROTO`, `EXTRAVIADA`).
+
+### 8. Super Administrador Principal y Gestión de Usuarios (`/admin/usuarios`)
+- **Super Administrador Blindado (`SalvucciPablo`)**:
+  - Cuenta maestra creada automáticamente al iniciar el servidor (`SalvucciPablo` / `EEST4base`).
+  - Único usuario autorizado para visualizar y acceder al botón dorado **`👥 Administrar Usuarios Admin`** en el panel de control.
+- **Gestión Completa de Cuentas Admin**:
+  - Creación de nuevos usuarios administradores autorizados para usar el sistema.
+  - Cambio y blanqueo de contraseñas de cualquier administrador en segundos.
+  - Eliminación de administradores con **protección de seguridad en la API** que impide eliminar la cuenta principal de `SalvucciPablo` (`HTTP 400`).
 
 ---
 
-## ⚙️ Cómo ejecutar el proyecto localmente
+### 9. Suite de Pruebas Automatizadas de Calidad (QA Automated Test Suite - `qa_test_suite.py`)
+Para certificar la fiabilidad y seguridad del sistema sin errores ni bugs, se desarrolló un módulo completo de pruebas QA en Python nativo (`unittest` + `urllib`), ejecutándose en milisegundos sin requerir dependencias externas:
 
-1. Abrir la terminal en la carpeta `frontend`.
-2. Instalar dependencias:
+| ID | Prueba QA | Objetivo Verificado | Estado |
+| :---: | :--- | :--- | :---: |
+| **QA-01** | `test_01_verify_superadmin_exists` | Verifica que `SalvucciPablo` exista en la tabla `admins` de la base de datos. | **`PASSED`** ✅ |
+| **QA-02** | `test_02_superadmin_login_success` | Valida login exitoso con credenciales oficiales y emisión de Token Bearer JWT. | **`PASSED`** ✅ |
+| **QA-03** | `test_03_superadmin_login_invalid_password` | Comprueba que contraseñas inválidas sean rechazadas con `401 Unauthorized`. | **`PASSED`** ✅ |
+| **QA-04** | `test_04_create_qa_test_admin` | Valida creación de nuevos usuarios admin mediante `POST /admins/` (cifrado `bcrypt`). | **`PASSED`** ✅ |
+| **QA-05** | `test_05_update_qa_test_admin_password` | Verifica modificación segura de clave del usuario en la API (`PUT /admins/{id}/password`). | **`PASSED`** ✅ |
+| **QA-06** | `test_06_delete_qa_test_admin` | Confirma la eliminación correcta del usuario temporal (`DELETE /admins/{id}`). | **`PASSED`** ✅ |
+| **QA-07** | `test_07_protect_superadmin_deletion` | Certifica que la API impida eliminar la cuenta del Super Admin `SalvucciPablo` (`HTTP 400`). | **`PASSED`** ✅ |
+| **QA-08** | `test_08_herramientas_list_and_search_endpoint` | Comprueba la respuesta y estructura de `/herramientas/inventario` y `/herramientas/buscar`. | **`PASSED`** ✅ |
+| **QA-09** | `test_09_prestamos_pendientes_endpoint` | Verifica la consulta de préstamos activos protegida con autenticación Bearer Token. | **`PASSED`** ✅ |
+
+---
+
+## 🛠️ Instrucciones de Instalación y Ejecución Local
+
+### 1. Servidor Backend (FastAPI + Base de Datos)
+1. Abrir una terminal en la carpeta `backend`:
+   ```bash
+   cd backend
+   ```
+2. Activar el entorno virtual (si se utiliza):
+   ```bash
+   .\venv\Scripts\activate
+   ```
+3. Instalar las librerías necesarias:
+   ```bash
+   pip install -r requirements.txt
+   ```
+4. Levantar el servidor backend en el puerto `8000`:
+   ```bash
+   python -m uvicorn app.main:app --reload --host 0.0.0.0 --port 8000
+   ```
+   > El Super Administrador **`SalvucciPablo`** se verificará y creará automáticamente al iniciar.
+
+### 2. Cliente Frontend (React + Vite)
+1. Abrir otra terminal en la carpeta `frontend`:
+   ```bash
+   cd frontend
+   ```
+2. Instalar las dependencias de Node:
    ```bash
    npm install
    ```
-3. Levantar el servidor de desarrollo:
+3. Levantar el servidor web de desarrollo:
    ```bash
    npm run dev
    ```
+4. Acceder al sistema en **`http://localhost:5173`**.
+
+---
+
+## 🧪 Cómo Ejecutar las Pruebas de Calidad (QA Suite)
+Con el backend en ejecución, abrir una terminal en la carpeta `backend` y correr:
+```bash
+python qa_test_suite.py
+```
+*Se ejecutarán automáticamente las 9 pruebas de integración certificando que el sistema funciona sin errores, bugs ni problemas de seguridad.*

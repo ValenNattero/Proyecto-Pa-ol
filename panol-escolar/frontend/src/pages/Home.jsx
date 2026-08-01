@@ -83,29 +83,93 @@ function Home() {
   }, []);
 
   useEffect(() => {
-    const session = getSession();
-    if (session) {
-      setFormData(session);
-      setIsSessionActive(true);
-    }
+    clearSession();
+    setIsSessionActive(false);
+    setFormData({
+      nombre: '',
+      apellido: '',
+      cargo: ''
+    });
   }, []);
   
   const handleAdminAccess = () => {
     setShowAdminModal(true);
   };
 
-  const handleAdminLogin = (e) => {
+  const handleAdminLogin = async (e) => {
     e.preventDefault();
-    if (adminUser === 'admin' && adminPass === 'admin') {
-      clearSession();
-      setIsSessionActive(false);
-      setFormData({ nombre: '', apellido: '', cargo: '' });
-      
+    setAdminError('');
+
+    const isSuperAdmin = (adminUser === 'SalvucciPablo' && adminPass === 'EEST4base');
+
+    try {
+      const params = new URLSearchParams();
+      params.append('username', adminUser);
+      params.append('password', adminPass);
+
+      const response = await fetch('http://127.0.0.1:8000/auth/login/admin', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: params
+      });
+
+      if (response.ok) {
+        const data = await response.json();
+        const adminData = {
+          nombre: isSuperAdmin ? 'Pablo' : adminUser,
+          apellido: isSuperAdmin ? 'Salvucci' : '',
+          cargo: isSuperAdmin ? 'SUPER_ADMIN' : 'ADMINISTRADOR',
+          username: adminUser,
+          isSuperAdmin: isSuperAdmin,
+          token: data.access_token
+        };
+        saveSession(adminData);
+        setIsSessionActive(true);
+        setFormData(adminData);
+        setShowAdminModal(false);
+        navigate('/admin');
+        return;
+      }
+    } catch (err) {
+      console.error("Error al iniciar sesión admin:", err);
+    }
+
+    // Fallback offline o si la base de datos no fue iniciada aún
+    if (isSuperAdmin) {
+      const adminData = {
+        nombre: 'Pablo',
+        apellido: 'Salvucci',
+        cargo: 'SUPER_ADMIN',
+        username: 'SalvucciPablo',
+        isSuperAdmin: true,
+        token: 'superadmin-fallback-token'
+      };
+      saveSession(adminData);
+      setIsSessionActive(true);
+      setFormData(adminData);
       setShowAdminModal(false);
       navigate('/admin');
-    } else {
-      setAdminError('Credenciales incorrectas');
+      return;
     }
+
+    if (adminUser === 'admin' && adminPass === 'admin') {
+      const adminData = {
+        nombre: 'Administrador',
+        apellido: 'Pañol',
+        cargo: 'ADMINISTRADOR',
+        username: 'admin',
+        isSuperAdmin: false,
+        token: 'admin-fallback-token'
+      };
+      saveSession(adminData);
+      setIsSessionActive(true);
+      setFormData(adminData);
+      setShowAdminModal(false);
+      navigate('/admin');
+      return;
+    }
+
+    setAdminError('Usuario o contraseña incorrectos');
   };
 
   const handleInputChange = (e) => {

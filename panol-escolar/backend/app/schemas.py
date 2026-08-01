@@ -12,7 +12,10 @@ class AdminBase(BaseModel):
 
 class AdminCreate(AdminBase):
     password: str
-    clave_jefe: str
+    clave_jefe: Optional[str] = None
+
+class AdminUpdatePassword(BaseModel):
+    password: str
 
 class Admin(AdminBase):
     id: int

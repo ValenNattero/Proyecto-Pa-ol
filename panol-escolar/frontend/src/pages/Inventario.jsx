@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import HamburgerMenu from '../components/HamburgerMenu';
 import ToolCardModal from '../components/ToolCardModal';
-import { Search, Filter, Download, ArrowLeft, Package, CheckCircle, Clock } from 'lucide-react';
+import { Search, Filter, Download, ArrowLeft, Package, CheckCircle, Clock, ArrowUpDown } from 'lucide-react';
 import '../App.css';
 
 function Inventario() {
@@ -14,6 +14,7 @@ function Inventario() {
   const [disponibilidad, setDisponibilidad] = useState(''); // '' | 'disponible' | 'prestada'
   const [selectedTool, setSelectedTool] = useState(null);
   const [descargando, setDescargando] = useState(false);
+  const [orden, setOrden] = useState('codigo'); // 'codigo' | 'descripcion'
 
   const fetchInventario = async () => {
     setLoading(true);
@@ -71,25 +72,33 @@ function Inventario() {
   const disponiblesCount = itemsAll.filter(h => h.disponible_en_panol === true).length;
   const prestadasCount = itemsAll.filter(h => h.disponible_en_panol === false).length;
 
-  const listaHerramientas = itemsAll.filter(h => {
-    if (q.trim()) {
-      const term = q.toLowerCase().trim();
-      const matchCodigo = h.codigo && h.codigo.toString().toLowerCase().includes(term);
-      const matchDesc = h.descripcion && h.descripcion.toLowerCase().includes(term);
-      const matchMarca = h.marca && h.marca.toLowerCase().includes(term);
-      if (!matchCodigo && !matchDesc && !matchMarca) return false;
-    }
-    if (categoria && h.categoria !== categoria) {
-      return false;
-    }
-    if (disponibilidad === 'disponible' && h.disponible_en_panol !== true) {
-      return false;
-    }
-    if (disponibilidad === 'prestada' && h.disponible_en_panol !== false) {
-      return false;
-    }
-    return true;
-  });
+  const listaHerramientas = itemsAll
+    .filter(h => {
+      if (q.trim()) {
+        const term = q.toLowerCase().trim();
+        const matchCodigo = h.codigo && h.codigo.toString().toLowerCase().includes(term);
+        const matchDesc = h.descripcion && h.descripcion.toLowerCase().includes(term);
+        const matchMarca = h.marca && h.marca.toLowerCase().includes(term);
+        if (!matchCodigo && !matchDesc && !matchMarca) return false;
+      }
+      if (categoria && h.categoria !== categoria) {
+        return false;
+      }
+      if (disponibilidad === 'disponible' && h.disponible_en_panol !== true) {
+        return false;
+      }
+      if (disponibilidad === 'prestada' && h.disponible_en_panol !== false) {
+        return false;
+      }
+      return true;
+    })
+    .sort((a, b) => {
+      if (orden === 'codigo') {
+        return String(a.codigo).localeCompare(String(b.codigo), undefined, { numeric: true, sensitivity: 'base' });
+      } else {
+        return String(a.descripcion).localeCompare(String(b.descripcion), 'es', { sensitivity: 'base' });
+      }
+    });
 
   return (
     <div style={{
@@ -354,6 +363,29 @@ function Inventario() {
             }}
           >
             Limpiar
+          </button>
+
+          <button
+            type="button"
+            onClick={() => setOrden(prev => prev === 'codigo' ? 'descripcion' : 'codigo')}
+            title="Cambiar criterio de ordenamiento"
+            style={{
+              padding: '0.65rem 1rem',
+              borderRadius: '10px',
+              border: '1px solid rgba(255,255,255,0.15)',
+              background: 'rgba(255,255,255,0.08)',
+              color: '#fff',
+              cursor: 'pointer',
+              fontWeight: '600',
+              display: 'flex',
+              alignItems: 'center',
+              gap: '0.5rem',
+              transition: 'all 0.2s ease',
+              whiteSpace: 'nowrap'
+            }}
+          >
+            <ArrowUpDown size={16} />
+            {orden === 'codigo' ? 'Por código ↓↑' : 'Por descripción ↓↑'}
           </button>
         </form>
 

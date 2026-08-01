@@ -1,41 +1,38 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { getRetiros, getSession } from '../utils/storage';
 import '../App.css';
 
 function AdminDashboard() {
   const navigate = useNavigate();
   const [shiftResult, setShiftResult] = useState(null); // { success: bool, missing: [] }
   const [showShiftModal, setShowShiftModal] = useState(false);
+  const [session, setSession] = useState(null);
+
+  useEffect(() => {
+    setSession(getSession());
+  }, []);
 
   const handleCierreTurno = async () => {
-    // Read local database
-    const retirosDb = JSON.parse(localStorage.getItem('panol_retiros') || '{}');
-    const missing = [];
-
-    // Check if any user has tools not returned
-    for (const userId of Object.keys(retirosDb)) {
-      const tools = retirosDb[userId];
-      if (tools && tools.length > 0) {
-        const toolsWithDesc = await Promise.all(tools.map(async (cod) => {
-          try {
-            const res = await fetch(`http://127.0.0.1:8000/herramientas/buscar?q=${cod}`);
-            if (res.ok) {
-              const data = await res.json();
-              const tool = data.find(t => t.codigo === cod);
-              return tool ? `${cod} - ${tool.descripcion}` : `${cod} - (No encontrada)`;
-            }
-            return `${cod}`;
-          } catch (e) {
-            return `${cod}`;
-          }
-        }));
-
-        missing.push({
-          usuario: userId.replace(/-/g, ' ').toUpperCase(),
-          herramientas: toolsWithDesc
+    const pending = await getRetiros();
+    const missingMap = {};
+    if (pending && pending.length > 0) {
+      pending
+        .slice()
+        .sort((a, b) => String(a.herramienta?.codigo || '').localeCompare(String(b.herramienta?.codigo || ''), undefined, { numeric: true, sensitivity: 'base' }))
+        .forEach(p => {
+          const usuario = `${p.nombre_solicitante} ${p.apellido_solicitante} (${p.cargo_solicitante})`.toUpperCase();
+          if (!missingMap[usuario]) missingMap[usuario] = [];
+          const codigo = p.herramienta?.codigo || 'N/A';
+          const desc = p.herramienta?.descripcion || 'Sin descripción';
+          missingMap[usuario].push(`${codigo} - ${desc}`);
         });
-      }
     }
+
+    const missing = Object.keys(missingMap).map(usuario => ({
+      usuario,
+      herramientas: missingMap[usuario]
+    }));
 
     if (missing.length === 0) {
       setShiftResult({ success: true, missing: [] });
@@ -67,6 +64,21 @@ function AdminDashboard() {
           <button className="admin-btn" onClick={() => navigate('/admin/inventario')}>Buscador / Inventario</button>
           <button className="admin-btn" onClick={() => navigate('/admin/carga')}>Carga de herramientas</button>
           <button className="admin-btn" onClick={() => navigate('/admin/modificaciones')}>Modificaciones</button>
+          {(session?.isSuperAdmin || session?.username === 'SalvucciPablo' || session?.cargo === 'ADMINISTRADOR PRINCIPAL' || session?.cargo === 'SUPER_ADMIN') && (
+            <button
+              className="admin-btn"
+              onClick={() => navigate('/admin/usuarios')}
+              style={{
+                background: 'linear-gradient(135deg, #f59e0b 0%, #d97706 100%)',
+                color: '#ffffff',
+                fontWeight: '800',
+                border: '2px solid #fbbf24',
+                boxShadow: '0 4px 15px rgba(245, 158, 11, 0.4)'
+              }}
+            >
+              👥 Administrar Usuarios Admin
+            </button>
+          )}
         </div>
 
         <div style={{ display: 'flex', justifyContent: 'center', marginTop: '2rem', width: '100%' }}>

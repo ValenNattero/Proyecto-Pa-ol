@@ -104,7 +104,7 @@ function Retiro() {
     try {
       await saveRetiros(solicitante, seleccionadas);
       alert('Retiro registrado correctamente.');
-      navigate('/menu');
+      navigate(-1);
     } catch (err) {
       alert(err.message);
     }

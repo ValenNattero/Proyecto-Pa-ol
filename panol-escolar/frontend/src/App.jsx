@@ -8,6 +8,7 @@ import MenuPanolero from './pages/MenuPanolero';
 import Inventario from './pages/Inventario';
 import CargaHerramientas from './pages/CargaHerramientas';
 import ModificacionHerramientas from './pages/ModificacionHerramientas';
+import AdminUsuarios from './pages/AdminUsuarios';
 import DesktopNav from './components/DesktopNav';
 import './App.css';
 
@@ -28,6 +29,8 @@ function App() {
         <Route path="/carga" element={<CargaHerramientas />} />
         <Route path="/admin/modificaciones" element={<ModificacionHerramientas />} />
         <Route path="/modificaciones" element={<ModificacionHerramientas />} />
+        <Route path="/admin/usuarios" element={<AdminUsuarios />} />
+        <Route path="/usuarios" element={<AdminUsuarios />} />
         <Route path="/menu" element={<MenuPanolero />} />
       </Routes>
     </Router>
