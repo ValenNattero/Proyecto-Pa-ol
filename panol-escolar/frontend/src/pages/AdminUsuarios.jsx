@@ -6,7 +6,7 @@ import '../App.css';
 
 function AdminUsuarios() {
   const navigate = useNavigate();
-  const [session, setSession] = useState(null);
+  const [_session, setSession] = useState(null);
   const [admins, setAdmins] = useState([]);
   const [loading, setLoading] = useState(true);
   const [errorMsg, setErrorMsg] = useState('');
@@ -95,7 +95,7 @@ function AdminUsuarios() {
         const errorData = await res.json();
         setErrorMsg(errorData.detail || 'No se pudo crear el usuario.');
       }
-    } catch (err) {
+    } catch {
       setErrorMsg('Error de conexión al crear el usuario.');
     }
   };
@@ -125,7 +125,7 @@ function AdminUsuarios() {
       } else {
         setErrorMsg('No se pudo actualizar la contraseña.');
       }
-    } catch (err) {
+    } catch {
       setErrorMsg('Error de conexión al cambiar la contraseña.');
     }
   };
@@ -154,7 +154,7 @@ function AdminUsuarios() {
       } else {
         setErrorMsg('Error al dar de baja el usuario.');
       }
-    } catch (err) {
+    } catch {
       setErrorMsg('Error de conexión con el servidor.');
     }
   };

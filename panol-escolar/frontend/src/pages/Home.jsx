@@ -1,16 +1,16 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { getSession, saveSession, clearSession } from '../utils/storage';
+import { saveSession, clearSession } from '../utils/storage';
 import logoImg from '../assets/logo-ciclo-basico.jpeg';
 import ToolCardModal from '../components/ToolCardModal';
 import { Search } from 'lucide-react';
 import '../App.css';
 
 const CARGOS = [
-  "ESTUDIANTE DE PRIMERO PRIMERA",
-  "ESTUDIANTE DE PRIMERO SEGUNDA",
-  "ESTUDIANTE DE PRIMERO TERCERA",
-  "ESTUDIANTE DE PRIMERO CUARTA",
+  "ESTUDIANTE - PRIMERO PRIMERA",
+  "ESTUDIANTE - PRIMERO SEGUNDA",
+  "ESTUDIANTE - PRIMERO TERCERA",
+  "ESTUDIANTE - PRIMERO CUARTA",
   "ESTUDIANTE - SEGUNDO PRIMERA",
   "ESTUDIANTE - SEGUNDO SEGUNDA",
   "ESTUDIANTE - SEGUNDO TERCERA",
@@ -50,7 +50,7 @@ function Home() {
   });
   const [searchQuery, setSearchQuery] = useState('');
   const [isSessionActive, setIsSessionActive] = useState(false);
-  
+
   // Admin states
   const [showAdminModal, setShowAdminModal] = useState(false);
   const [adminUser, setAdminUser] = useState('');
@@ -91,7 +91,7 @@ function Home() {
       cargo: ''
     });
   }, []);
-  
+
   const handleAdminAccess = () => {
     setShowAdminModal(true);
   };
@@ -184,7 +184,7 @@ function Home() {
 
     setIsSearching(true);
     try {
-      const response = await fetch(`http://127.0.0.1:8000/herramientas/buscar?q=${encodeURIComponent(searchQuery)}`);
+      const response = await fetch(`http://127.0.0.1:8000/herramientas/buscar?q=${encodeURIComponent(searchQuery.trim())}`);
       if (response.ok) {
         const data = await response.json();
         setSearchResults(data);
@@ -211,7 +211,7 @@ function Home() {
   const handleIngreso = async (e) => {
     e.preventDefault();
     if (!isSessionActive && !e.target.form.reportValidity()) return;
-    
+
     if (!isSessionActive) {
       try {
         const response = await fetch('http://127.0.0.1:8000/auth/login/panolero', {
@@ -219,7 +219,7 @@ function Home() {
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify(formData)
         });
-        
+
         if (response.ok) {
           const data = await response.json();
           saveSession({ ...formData, token: data.access_token });
@@ -261,11 +261,16 @@ function Home() {
         <div ref={searchRef} style={{ position: 'relative', width: '100%', maxWidth: '600px', margin: '0 auto' }}>
           <form className="search-section" onSubmit={handleSearch}>
             <Search size={24} className="text-secondary" />
-            <input 
-              type="text" 
-              placeholder="Buscador rápido de herramientas (código o nombre)..." 
+            <input
+              type="text"
+              placeholder="Buscador rápido de herramientas (código o nombre)..."
               value={searchQuery}
-              onChange={(e) => setSearchQuery(e.target.value)}
+              onChange={(e) => {
+                setSearchQuery(e.target.value);
+                if (!e.target.value.trim()) {
+                  setSearchResults([]);
+                }
+              }}
               disabled={isSearching}
             />
             {isSearching && <span style={{ color: 'var(--text-secondary)' }}>...</span>}
@@ -295,8 +300,8 @@ function Home() {
                 <span>Código</span>
               </div>
               {searchResults.map(tool => (
-                <div 
-                  key={tool.id} 
+                <div
+                  key={tool.id}
                   onClick={() => handleSelectTool(tool)}
                   style={{
                     padding: '0.75rem 1rem', cursor: 'pointer', borderRadius: '10px',
@@ -343,40 +348,40 @@ function Home() {
             {isSessionActive ? "Sesión Activa" : "Ingreso Pañoleros"}
           </h2>
           {isSessionActive && <p style={{ color: 'var(--text-secondary)', marginBottom: '1rem', fontSize: '0.9rem' }}>Tus datos están guardados temporalmente.</p>}
-          
+
           <div className="input-group">
             <label htmlFor="nombre">Nombre</label>
-            <input 
-              type="text" 
-              id="nombre" 
-              name="nombre" 
-              placeholder="Ej. Juan" 
+            <input
+              type="text"
+              id="nombre"
+              name="nombre"
+              placeholder="Ej. Juan"
               value={formData.nombre}
               onChange={handleInputChange}
-              required 
+              required
               disabled={isSessionActive}
             />
           </div>
 
           <div className="input-group">
             <label htmlFor="apellido">Apellido</label>
-            <input 
-              type="text" 
-              id="apellido" 
-              name="apellido" 
-              placeholder="Ej. Pérez" 
+            <input
+              type="text"
+              id="apellido"
+              name="apellido"
+              placeholder="Ej. Pérez"
               value={formData.apellido}
               onChange={handleInputChange}
-              required 
+              required
               disabled={isSessionActive}
             />
           </div>
 
           <div className="input-group">
             <label htmlFor="cargo">Cargo</label>
-            <select 
-              id="cargo" 
-              name="cargo" 
+            <select
+              id="cargo"
+              name="cargo"
               value={formData.cargo}
               onChange={handleInputChange}
               required
@@ -399,9 +404,9 @@ function Home() {
 
           {isSessionActive && (
             <div style={{ display: 'flex', justifyContent: 'center', marginTop: '0.5rem' }}>
-              <button 
-                type="button" 
-                className="logout-btn" 
+              <button
+                type="button"
+                className="logout-btn"
                 onClick={handleLogout}
                 style={{ width: '100%', maxWidth: '250px' }}
               >
@@ -423,16 +428,16 @@ function Home() {
           <div className="modal-content">
             <h2>Acceso Administrador</h2>
             <form onSubmit={handleAdminLogin} className="admin-form">
-              <input 
-                type="text" 
-                placeholder="Usuario" 
+              <input
+                type="text"
+                placeholder="Usuario"
                 value={adminUser}
                 onChange={(e) => setAdminUser(e.target.value)}
                 autoFocus
               />
-              <input 
-                type="password" 
-                placeholder="Contraseña" 
+              <input
+                type="password"
+                placeholder="Contraseña"
                 value={adminPass}
                 onChange={(e) => setAdminPass(e.target.value)}
               />
@@ -447,9 +452,9 @@ function Home() {
       )}
 
       {/* Tool Card Modal */}
-      <ToolCardModal 
-        tool={selectedTool} 
-        onClose={() => setSelectedTool(null)} 
+      <ToolCardModal
+        tool={selectedTool}
+        onClose={() => setSelectedTool(null)}
       />
     </div>
   );

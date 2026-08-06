@@ -17,6 +17,28 @@ class TestPanolEscolarQA(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
         cls.qa_admin_id = None
+        import threading
+        import time
+        def is_server_running():
+            try:
+                req = urllib.request.Request(f"{BASE_URL}/", method="GET")
+                with urllib.request.urlopen(req, timeout=1) as res:
+                    return True
+            except Exception:
+                return False
+
+        if not is_server_running():
+            print("Iniciando servidor FastAPI local para pruebas QA...")
+            def run_server():
+                import uvicorn
+                from app.main import app
+                uvicorn.run(app, host="127.0.0.1", port=8000, log_level="critical")
+            t = threading.Thread(target=run_server, daemon=True)
+            t.start()
+            for _ in range(30):
+                if is_server_running():
+                    break
+                time.sleep(0.3)
 
     def _get(self, path):
         req = urllib.request.Request(f"{BASE_URL}{path}", method="GET")

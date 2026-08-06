@@ -1,0 +1,3164 @@
+('C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+ 'Pañol\\panol-escolar\\backend\\dist\\PanolEscolar_EEST4.exe',
+ False,
+ False,
+ False,
+ 'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+ 'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\PyInstaller\\bootloader\\images\\icon-windowed.ico',
+ None,
+ False,
+ False,
+ b'<?xml version="1.0" encoding="UTF-8" standalone="yes"?>\n<assembly xmlns='
+ b'"urn:schemas-microsoft-com:asm.v1" manifestVersion="1.0">\n  <trustInfo x'
+ b'mlns="urn:schemas-microsoft-com:asm.v3">\n    <security>\n      <requested'
+ b'Privileges>\n        <requestedExecutionLevel level="asInvoker" uiAccess='
+ b'"false"/>\n      </requestedPrivileges>\n    </security>\n  </trustInfo>\n  '
+ b'<compatibility xmlns="urn:schemas-microsoft-com:compatibility.v1">\n    <'
+ b'application>\n      <supportedOS Id="{e2011457-1546-43c5-a5fe-008deee3d3f'
+ b'0}"/>\n      <supportedOS Id="{35138b9a-5d96-4fbd-8e2d-a2440225f93a}"/>\n '
+ b'     <supportedOS Id="{4a2f28e3-53b9-4441-ba9c-d69d4a4a6e38}"/>\n      <s'
+ b'upportedOS Id="{1f676c76-80e1-4239-95bb-83d0f6d0da78}"/>\n      <supporte'
+ b'dOS Id="{8e0f7a12-bfb3-4fe8-b9a5-48fd50a15a9a}"/>\n    </application>\n  <'
+ b'/compatibility>\n  <application xmlns="urn:schemas-microsoft-com:asm.v3">'
+ b'\n    <windowsSettings>\n      <longPathAware xmlns="http://schemas.micros'
+ b'oft.com/SMI/2016/WindowsSettings">true</longPathAware>\n    </windowsSett'
+ b'ings>\n  </application>\n  <dependency>\n    <dependentAssembly>\n      <ass'
+ b'emblyIdentity type="win32" name="Microsoft.Windows.Common-Controls" version='
+ b'"6.0.0.0" processorArchitecture="*" publicKeyToken="6595b64144ccf1df" langua'
+ b'ge="*"/>\n    </dependentAssembly>\n  </dependency>\n</assembly>',
+ True,
+ False,
+ None,
+ None,
+ None,
+ 'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+ 'Pañol\\panol-escolar\\backend\\build\\PanolEscolar_EEST4\\PanolEscolar_EEST4.pkg',
+ [('pyi-contents-directory _internal', '', 'OPTION'),
+  ('PYZ-00.pyz',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\build\\PanolEscolar_EEST4\\PYZ-00.pyz',
+   'PYZ'),
+  ('struct',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\build\\PanolEscolar_EEST4\\localpycs\\struct.pyc',
+   'PYMODULE'),
+  ('pyimod01_archive',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\build\\PanolEscolar_EEST4\\localpycs\\pyimod01_archive.pyc',
+   'PYMODULE'),
+  ('pyimod02_importers',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\build\\PanolEscolar_EEST4\\localpycs\\pyimod02_importers.pyc',
+   'PYMODULE'),
+  ('pyimod03_ctypes',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\build\\PanolEscolar_EEST4\\localpycs\\pyimod03_ctypes.pyc',
+   'PYMODULE'),
+  ('pyimod04_pywin32',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\build\\PanolEscolar_EEST4\\localpycs\\pyimod04_pywin32.pyc',
+   'PYMODULE'),
+  ('pyiboot01_bootstrap',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\PyInstaller\\loader\\pyiboot01_bootstrap.py',
+   'PYSOURCE'),
+  ('pyi_rth_pkgutil',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\PyInstaller\\hooks\\rthooks\\pyi_rth_pkgutil.py',
+   'PYSOURCE'),
+  ('pyi_rth_multiprocessing',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\PyInstaller\\hooks\\rthooks\\pyi_rth_multiprocessing.py',
+   'PYSOURCE'),
+  ('pyi_rth_inspect',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\PyInstaller\\hooks\\rthooks\\pyi_rth_inspect.py',
+   'PYSOURCE'),
+  ('pyi_rth_setuptools',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\PyInstaller\\hooks\\rthooks\\pyi_rth_setuptools.py',
+   'PYSOURCE'),
+  ('desktop_launcher',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\desktop_launcher.py',
+   'PYSOURCE'),
+  ('webview\\lib\\Microsoft.Web.WebView2.Core.dll',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\webview\\lib\\Microsoft.Web.WebView2.Core.dll',
+   'BINARY'),
+  ('webview\\lib\\Microsoft.Web.WebView2.WinForms.dll',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\webview\\lib\\Microsoft.Web.WebView2.WinForms.dll',
+   'BINARY'),
+  ('webview\\lib\\WebBrowserInterop.x64.dll',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\webview\\lib\\WebBrowserInterop.x64.dll',
+   'BINARY'),
+  ('webview\\lib\\WebBrowserInterop.x86.dll',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\webview\\lib\\WebBrowserInterop.x86.dll',
+   'BINARY'),
+  ('webview\\lib\\runtimes\\win-arm64\\native\\WebView2Loader.dll',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\webview\\lib\\runtimes\\win-arm64\\native\\WebView2Loader.dll',
+   'BINARY'),
+  ('webview\\lib\\runtimes\\win-x64\\native\\WebView2Loader.dll',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\webview\\lib\\runtimes\\win-x64\\native\\WebView2Loader.dll',
+   'BINARY'),
+  ('webview\\lib\\runtimes\\win-x86\\native\\WebView2Loader.dll',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\webview\\lib\\runtimes\\win-x86\\native\\WebView2Loader.dll',
+   'BINARY'),
+  ('pythonnet\\runtime\\System.Runtime.dll',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\pythonnet\\runtime\\System.Runtime.dll',
+   'BINARY'),
+  ('pythonnet\\runtime\\System.Resources.ResourceManager.dll',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\pythonnet\\runtime\\System.Resources.ResourceManager.dll',
+   'BINARY'),
+  ('pythonnet\\runtime\\System.Runtime.Serialization.Json.dll',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\pythonnet\\runtime\\System.Runtime.Serialization.Json.dll',
+   'BINARY'),
+  ('pythonnet\\runtime\\System.Security.Cryptography.X509Certificates.dll',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\pythonnet\\runtime\\System.Security.Cryptography.X509Certificates.dll',
+   'BINARY'),
+  ('pythonnet\\runtime\\System.Reflection.dll',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\pythonnet\\runtime\\System.Reflection.dll',
+   'BINARY'),
+  ('pythonnet\\runtime\\System.Runtime.Serialization.Formatters.dll',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\pythonnet\\runtime\\System.Runtime.Serialization.Formatters.dll',
+   'BINARY'),
+  ('pythonnet\\runtime\\System.Collections.dll',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\pythonnet\\runtime\\System.Collections.dll',
+   'BINARY'),
+  ('pythonnet\\runtime\\System.Threading.Tasks.Parallel.dll',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\pythonnet\\runtime\\System.Threading.Tasks.Parallel.dll',
+   'BINARY'),
+  ('pythonnet\\runtime\\System.IO.MemoryMappedFiles.dll',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\pythonnet\\runtime\\System.IO.MemoryMappedFiles.dll',
+   'BINARY'),
+  ('pythonnet\\runtime\\System.Runtime.Numerics.dll',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\pythonnet\\runtime\\System.Runtime.Numerics.dll',
+   'BINARY'),
+  ('pythonnet\\runtime\\System.Globalization.Calendars.dll',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\pythonnet\\runtime\\System.Globalization.Calendars.dll',
+   'BINARY'),
+  ('pythonnet\\runtime\\System.Net.Requests.dll',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\pythonnet\\runtime\\System.Net.Requests.dll',
+   'BINARY'),
+  ('pythonnet\\runtime\\System.IO.FileSystem.DriveInfo.dll',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\pythonnet\\runtime\\System.IO.FileSystem.DriveInfo.dll',
+   'BINARY'),
+  ('pythonnet\\runtime\\System.Reflection.Primitives.dll',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\pythonnet\\runtime\\System.Reflection.Primitives.dll',
+   'BINARY'),
+  ('pythonnet\\runtime\\System.Xml.ReaderWriter.dll',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\pythonnet\\runtime\\System.Xml.ReaderWriter.dll',
+   'BINARY'),
+  ('pythonnet\\runtime\\System.Net.NetworkInformation.dll',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\pythonnet\\runtime\\System.Net.NetworkInformation.dll',
+   'BINARY'),
+  ('pythonnet\\runtime\\System.Globalization.dll',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\pythonnet\\runtime\\System.Globalization.dll',
+   'BINARY'),
+  ('pythonnet\\runtime\\System.Diagnostics.StackTrace.dll',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\pythonnet\\runtime\\System.Diagnostics.StackTrace.dll',
+   'BINARY'),
+  ('pythonnet\\runtime\\System.Dynamic.Runtime.dll',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\pythonnet\\runtime\\System.Dynamic.Runtime.dll',
+   'BINARY'),
+  ('pythonnet\\runtime\\System.IO.Pipes.dll',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\pythonnet\\runtime\\System.IO.Pipes.dll',
+   'BINARY'),
+  ('pythonnet\\runtime\\System.Text.RegularExpressions.dll',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\pythonnet\\runtime\\System.Text.RegularExpressions.dll',
+   'BINARY'),
+  ('pythonnet\\runtime\\System.Runtime.Handles.dll',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\pythonnet\\runtime\\System.Runtime.Handles.dll',
+   'BINARY'),
+  ('pythonnet\\runtime\\System.Threading.Overlapped.dll',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\pythonnet\\runtime\\System.Threading.Overlapped.dll',
+   'BINARY'),
+  ('pythonnet\\runtime\\System.Net.Sockets.dll',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\pythonnet\\runtime\\System.Net.Sockets.dll',
+   'BINARY'),
+  ('pythonnet\\runtime\\System.Xml.XDocument.dll',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\pythonnet\\runtime\\System.Xml.XDocument.dll',
+   'BINARY'),
+  ('pythonnet\\runtime\\System.Security.Cryptography.Csp.dll',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\pythonnet\\runtime\\System.Security.Cryptography.Csp.dll',
+   'BINARY'),
+  ('pythonnet\\runtime\\System.Reflection.Extensions.dll',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\pythonnet\\runtime\\System.Reflection.Extensions.dll',
+   'BINARY'),
+  ('pythonnet\\runtime\\System.Net.Primitives.dll',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\pythonnet\\runtime\\System.Net.Primitives.dll',
+   'BINARY'),
+  ('pythonnet\\runtime\\System.Linq.Queryable.dll',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\pythonnet\\runtime\\System.Linq.Queryable.dll',
+   'BINARY'),
+  ('pythonnet\\runtime\\System.AppContext.dll',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\pythonnet\\runtime\\System.AppContext.dll',
+   'BINARY'),
+  ('pythonnet\\runtime\\Microsoft.Win32.Primitives.dll',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\pythonnet\\runtime\\Microsoft.Win32.Primitives.dll',
+   'BINARY'),
+  ('pythonnet\\runtime\\System.Data.Common.dll',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\pythonnet\\runtime\\System.Data.Common.dll',
+   'BINARY'),
+  ('pythonnet\\runtime\\System.IO.FileSystem.dll',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\pythonnet\\runtime\\System.IO.FileSystem.dll',
+   'BINARY'),
+  ('pythonnet\\runtime\\System.Diagnostics.Contracts.dll',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\pythonnet\\runtime\\System.Diagnostics.Contracts.dll',
+   'BINARY'),
+  ('pythonnet\\runtime\\System.Net.NameResolution.dll',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\pythonnet\\runtime\\System.Net.NameResolution.dll',
+   'BINARY'),
+  ('pythonnet\\runtime\\System.IO.dll',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\pythonnet\\runtime\\System.IO.dll',
+   'BINARY'),
+  ('pythonnet\\runtime\\System.Runtime.CompilerServices.VisualC.dll',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\pythonnet\\runtime\\System.Runtime.CompilerServices.VisualC.dll',
+   'BINARY'),
+  ('pythonnet\\runtime\\System.ObjectModel.dll',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\pythonnet\\runtime\\System.ObjectModel.dll',
+   'BINARY'),
+  ('pythonnet\\runtime\\System.Threading.Thread.dll',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\pythonnet\\runtime\\System.Threading.Thread.dll',
+   'BINARY'),
+  ('pythonnet\\runtime\\System.Collections.NonGeneric.dll',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\pythonnet\\runtime\\System.Collections.NonGeneric.dll',
+   'BINARY'),
+  ('pythonnet\\runtime\\System.Drawing.Primitives.dll',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\pythonnet\\runtime\\System.Drawing.Primitives.dll',
+   'BINARY'),
+  ('pythonnet\\runtime\\netstandard.dll',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\pythonnet\\runtime\\netstandard.dll',
+   'BINARY'),
+  ('pythonnet\\runtime\\System.Xml.XPath.XDocument.dll',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\pythonnet\\runtime\\System.Xml.XPath.XDocument.dll',
+   'BINARY'),
+  ('pythonnet\\runtime\\System.Text.Encoding.dll',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\pythonnet\\runtime\\System.Text.Encoding.dll',
+   'BINARY'),
+  ('pythonnet\\runtime\\System.Runtime.Extensions.dll',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\pythonnet\\runtime\\System.Runtime.Extensions.dll',
+   'BINARY'),
+  ('pythonnet\\runtime\\System.Globalization.Extensions.dll',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\pythonnet\\runtime\\System.Globalization.Extensions.dll',
+   'BINARY'),
+  ('pythonnet\\runtime\\System.Collections.Specialized.dll',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\pythonnet\\runtime\\System.Collections.Specialized.dll',
+   'BINARY'),
+  ('pythonnet\\runtime\\System.Net.Http.dll',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\pythonnet\\runtime\\System.Net.Http.dll',
+   'BINARY'),
+  ('pythonnet\\runtime\\System.Diagnostics.Tracing.dll',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\pythonnet\\runtime\\System.Diagnostics.Tracing.dll',
+   'BINARY'),
+  ('pythonnet\\runtime\\System.ComponentModel.dll',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\pythonnet\\runtime\\System.ComponentModel.dll',
+   'BINARY'),
+  ('pythonnet\\runtime\\System.Security.Cryptography.Algorithms.dll',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\pythonnet\\runtime\\System.Security.Cryptography.Algorithms.dll',
+   'BINARY'),
+  ('pythonnet\\runtime\\System.Security.Cryptography.Primitives.dll',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\pythonnet\\runtime\\System.Security.Cryptography.Primitives.dll',
+   'BINARY'),
+  ('pythonnet\\runtime\\System.Resources.Reader.dll',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\pythonnet\\runtime\\System.Resources.Reader.dll',
+   'BINARY'),
+  ('pythonnet\\runtime\\System.Console.dll',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\pythonnet\\runtime\\System.Console.dll',
+   'BINARY'),
+  ('pythonnet\\runtime\\Python.Runtime.dll',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\pythonnet\\runtime\\Python.Runtime.dll',
+   'BINARY'),
+  ('pythonnet\\runtime\\System.Collections.Concurrent.dll',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\pythonnet\\runtime\\System.Collections.Concurrent.dll',
+   'BINARY'),
+  ('pythonnet\\runtime\\System.Security.Claims.dll',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\pythonnet\\runtime\\System.Security.Claims.dll',
+   'BINARY'),
+  ('pythonnet\\runtime\\System.Threading.ThreadPool.dll',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\pythonnet\\runtime\\System.Threading.ThreadPool.dll',
+   'BINARY'),
+  ('pythonnet\\runtime\\System.ValueTuple.dll',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\pythonnet\\runtime\\System.ValueTuple.dll',
+   'BINARY'),
+  ('pythonnet\\runtime\\System.ComponentModel.TypeConverter.dll',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\pythonnet\\runtime\\System.ComponentModel.TypeConverter.dll',
+   'BINARY'),
+  ('pythonnet\\runtime\\System.Runtime.InteropServices.RuntimeInformation.dll',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\pythonnet\\runtime\\System.Runtime.InteropServices.RuntimeInformation.dll',
+   'BINARY'),
+  ('pythonnet\\runtime\\System.Threading.dll',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\pythonnet\\runtime\\System.Threading.dll',
+   'BINARY'),
+  ('pythonnet\\runtime\\System.Net.WebSockets.dll',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\pythonnet\\runtime\\System.Net.WebSockets.dll',
+   'BINARY'),
+  ('pythonnet\\runtime\\System.IO.Compression.dll',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\pythonnet\\runtime\\System.IO.Compression.dll',
+   'BINARY'),
+  ('pythonnet\\runtime\\System.Diagnostics.TraceSource.dll',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\pythonnet\\runtime\\System.Diagnostics.TraceSource.dll',
+   'BINARY'),
+  ('pythonnet\\runtime\\System.Net.WebSockets.Client.dll',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\pythonnet\\runtime\\System.Net.WebSockets.Client.dll',
+   'BINARY'),
+  ('pythonnet\\runtime\\System.Threading.Timer.dll',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\pythonnet\\runtime\\System.Threading.Timer.dll',
+   'BINARY'),
+  ('pythonnet\\runtime\\System.Xml.XmlDocument.dll',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\pythonnet\\runtime\\System.Xml.XmlDocument.dll',
+   'BINARY'),
+  ('pythonnet\\runtime\\System.Net.WebHeaderCollection.dll',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\pythonnet\\runtime\\System.Net.WebHeaderCollection.dll',
+   'BINARY'),
+  ('pythonnet\\runtime\\System.Diagnostics.Tools.dll',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\pythonnet\\runtime\\System.Diagnostics.Tools.dll',
+   'BINARY'),
+  ('pythonnet\\runtime\\System.Xml.XmlSerializer.dll',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\pythonnet\\runtime\\System.Xml.XmlSerializer.dll',
+   'BINARY'),
+  ('pythonnet\\runtime\\System.IO.FileSystem.Watcher.dll',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\pythonnet\\runtime\\System.IO.FileSystem.Watcher.dll',
+   'BINARY'),
+  ('pythonnet\\runtime\\System.Linq.Parallel.dll',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\pythonnet\\runtime\\System.Linq.Parallel.dll',
+   'BINARY'),
+  ('pythonnet\\runtime\\System.Runtime.Serialization.Primitives.dll',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\pythonnet\\runtime\\System.Runtime.Serialization.Primitives.dll',
+   'BINARY'),
+  ('pythonnet\\runtime\\System.Net.Security.dll',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\pythonnet\\runtime\\System.Net.Security.dll',
+   'BINARY'),
+  ('pythonnet\\runtime\\System.Diagnostics.FileVersionInfo.dll',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\pythonnet\\runtime\\System.Diagnostics.FileVersionInfo.dll',
+   'BINARY'),
+  ('pythonnet\\runtime\\System.Runtime.InteropServices.dll',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\pythonnet\\runtime\\System.Runtime.InteropServices.dll',
+   'BINARY'),
+  ('pythonnet\\runtime\\System.Linq.dll',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\pythonnet\\runtime\\System.Linq.dll',
+   'BINARY'),
+  ('pythonnet\\runtime\\System.Xml.XPath.dll',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\pythonnet\\runtime\\System.Xml.XPath.dll',
+   'BINARY'),
+  ('pythonnet\\runtime\\System.Diagnostics.Debug.dll',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\pythonnet\\runtime\\System.Diagnostics.Debug.dll',
+   'BINARY'),
+  ('pythonnet\\runtime\\System.Threading.Tasks.dll',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\pythonnet\\runtime\\System.Threading.Tasks.dll',
+   'BINARY'),
+  ('pythonnet\\runtime\\System.Diagnostics.Process.dll',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\pythonnet\\runtime\\System.Diagnostics.Process.dll',
+   'BINARY'),
+  ('pythonnet\\runtime\\System.Linq.Expressions.dll',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\pythonnet\\runtime\\System.Linq.Expressions.dll',
+   'BINARY'),
+  ('pythonnet\\runtime\\System.ComponentModel.Primitives.dll',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\pythonnet\\runtime\\System.ComponentModel.Primitives.dll',
+   'BINARY'),
+  ('pythonnet\\runtime\\System.Net.Ping.dll',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\pythonnet\\runtime\\System.Net.Ping.dll',
+   'BINARY'),
+  ('pythonnet\\runtime\\System.Diagnostics.TextWriterTraceListener.dll',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\pythonnet\\runtime\\System.Diagnostics.TextWriterTraceListener.dll',
+   'BINARY'),
+  ('pythonnet\\runtime\\System.IO.IsolatedStorage.dll',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\pythonnet\\runtime\\System.IO.IsolatedStorage.dll',
+   'BINARY'),
+  ('pythonnet\\runtime\\System.Resources.Writer.dll',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\pythonnet\\runtime\\System.Resources.Writer.dll',
+   'BINARY'),
+  ('pythonnet\\runtime\\System.Security.SecureString.dll',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\pythonnet\\runtime\\System.Security.SecureString.dll',
+   'BINARY'),
+  ('pythonnet\\runtime\\System.Security.Principal.dll',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\pythonnet\\runtime\\System.Security.Principal.dll',
+   'BINARY'),
+  ('pythonnet\\runtime\\System.IO.FileSystem.Primitives.dll',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\pythonnet\\runtime\\System.IO.FileSystem.Primitives.dll',
+   'BINARY'),
+  ('pythonnet\\runtime\\System.IO.Compression.ZipFile.dll',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\pythonnet\\runtime\\System.IO.Compression.ZipFile.dll',
+   'BINARY'),
+  ('pythonnet\\runtime\\System.Runtime.Serialization.Xml.dll',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\pythonnet\\runtime\\System.Runtime.Serialization.Xml.dll',
+   'BINARY'),
+  ('pythonnet\\runtime\\System.IO.UnmanagedMemoryStream.dll',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\pythonnet\\runtime\\System.IO.UnmanagedMemoryStream.dll',
+   'BINARY'),
+  ('pythonnet\\runtime\\System.ComponentModel.EventBasedAsync.dll',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\pythonnet\\runtime\\System.ComponentModel.EventBasedAsync.dll',
+   'BINARY'),
+  ('pythonnet\\runtime\\System.Text.Encoding.Extensions.dll',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\pythonnet\\runtime\\System.Text.Encoding.Extensions.dll',
+   'BINARY'),
+  ('pythonnet\\runtime\\System.Security.Cryptography.Encoding.dll',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\pythonnet\\runtime\\System.Security.Cryptography.Encoding.dll',
+   'BINARY'),
+  ('python312.dll', 'C:\\Program Files\\Python312\\python312.dll', 'BINARY'),
+  ('clr_loader\\ffi\\dlls\\amd64\\ClrLoader.dll',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\clr_loader\\ffi\\dlls\\amd64\\ClrLoader.dll',
+   'BINARY'),
+  ('clr_loader\\ffi\\dlls\\x86\\ClrLoader.dll',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\clr_loader\\ffi\\dlls\\x86\\ClrLoader.dll',
+   'BINARY'),
+  ('_decimal.pyd',
+   'C:\\Program Files\\Python312\\DLLs\\_decimal.pyd',
+   'EXTENSION'),
+  ('_hashlib.pyd',
+   'C:\\Program Files\\Python312\\DLLs\\_hashlib.pyd',
+   'EXTENSION'),
+  ('_lzma.pyd', 'C:\\Program Files\\Python312\\DLLs\\_lzma.pyd', 'EXTENSION'),
+  ('_bz2.pyd', 'C:\\Program Files\\Python312\\DLLs\\_bz2.pyd', 'EXTENSION'),
+  ('unicodedata.pyd',
+   'C:\\Program Files\\Python312\\DLLs\\unicodedata.pyd',
+   'EXTENSION'),
+  ('select.pyd', 'C:\\Program Files\\Python312\\DLLs\\select.pyd', 'EXTENSION'),
+  ('_socket.pyd',
+   'C:\\Program Files\\Python312\\DLLs\\_socket.pyd',
+   'EXTENSION'),
+  ('_overlapped.pyd',
+   'C:\\Program Files\\Python312\\DLLs\\_overlapped.pyd',
+   'EXTENSION'),
+  ('_ssl.pyd', 'C:\\Program Files\\Python312\\DLLs\\_ssl.pyd', 'EXTENSION'),
+  ('_queue.pyd', 'C:\\Program Files\\Python312\\DLLs\\_queue.pyd', 'EXTENSION'),
+  ('_ctypes.pyd',
+   'C:\\Program Files\\Python312\\DLLs\\_ctypes.pyd',
+   'EXTENSION'),
+  ('_multiprocessing.pyd',
+   'C:\\Program Files\\Python312\\DLLs\\_multiprocessing.pyd',
+   'EXTENSION'),
+  ('pyexpat.pyd',
+   'C:\\Program Files\\Python312\\DLLs\\pyexpat.pyd',
+   'EXTENSION'),
+  ('_asyncio.pyd',
+   'C:\\Program Files\\Python312\\DLLs\\_asyncio.pyd',
+   'EXTENSION'),
+  ('_wmi.pyd', 'C:\\Program Files\\Python312\\DLLs\\_wmi.pyd', 'EXTENSION'),
+  ('_uuid.pyd', 'C:\\Program Files\\Python312\\DLLs\\_uuid.pyd', 'EXTENSION'),
+  ('_cffi_backend.cp312-win_amd64.pyd',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\_cffi_backend.cp312-win_amd64.pyd',
+   'EXTENSION'),
+  ('_elementtree.pyd',
+   'C:\\Program Files\\Python312\\DLLs\\_elementtree.pyd',
+   'EXTENSION'),
+  ('bcrypt\\_bcrypt.pyd',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\bcrypt\\_bcrypt.pyd',
+   'EXTENSION'),
+  ('greenlet\\_greenlet.cp312-win_amd64.pyd',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\greenlet\\_greenlet.cp312-win_amd64.pyd',
+   'EXTENSION'),
+  ('_sqlite3.pyd',
+   'C:\\Program Files\\Python312\\DLLs\\_sqlite3.pyd',
+   'EXTENSION'),
+  ('sqlalchemy\\cyextension\\util.cp312-win_amd64.pyd',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\sqlalchemy\\cyextension\\util.cp312-win_amd64.pyd',
+   'EXTENSION'),
+  ('sqlalchemy\\cyextension\\resultproxy.cp312-win_amd64.pyd',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\sqlalchemy\\cyextension\\resultproxy.cp312-win_amd64.pyd',
+   'EXTENSION'),
+  ('sqlalchemy\\cyextension\\processors.cp312-win_amd64.pyd',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\sqlalchemy\\cyextension\\processors.cp312-win_amd64.pyd',
+   'EXTENSION'),
+  ('sqlalchemy\\cyextension\\immutabledict.cp312-win_amd64.pyd',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\sqlalchemy\\cyextension\\immutabledict.cp312-win_amd64.pyd',
+   'EXTENSION'),
+  ('sqlalchemy\\cyextension\\collections.cp312-win_amd64.pyd',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\sqlalchemy\\cyextension\\collections.cp312-win_amd64.pyd',
+   'EXTENSION'),
+  ('yaml\\_yaml.cp312-win_amd64.pyd',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\yaml\\_yaml.cp312-win_amd64.pyd',
+   'EXTENSION'),
+  ('pydantic_core\\_pydantic_core.cp312-win_amd64.pyd',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\pydantic_core\\_pydantic_core.cp312-win_amd64.pyd',
+   'EXTENSION'),
+  ('_zoneinfo.pyd',
+   'C:\\Program Files\\Python312\\DLLs\\_zoneinfo.pyd',
+   'EXTENSION'),
+  ('watchfiles\\_rust_notify.cp312-win_amd64.pyd',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\watchfiles\\_rust_notify.cp312-win_amd64.pyd',
+   'EXTENSION'),
+  ('websockets\\speedups.cp312-win_amd64.pyd',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\websockets\\speedups.cp312-win_amd64.pyd',
+   'EXTENSION'),
+  ('httptools\\parser\\url_parser.cp312-win_amd64.pyd',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\httptools\\parser\\url_parser.cp312-win_amd64.pyd',
+   'EXTENSION'),
+  ('httptools\\parser\\parser.cp312-win_amd64.pyd',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\httptools\\parser\\parser.cp312-win_amd64.pyd',
+   'EXTENSION'),
+  ('VCRUNTIME140.dll',
+   'C:\\Program Files\\Python312\\VCRUNTIME140.dll',
+   'BINARY'),
+  ('libcrypto-3.dll',
+   'C:\\Program Files\\Python312\\DLLs\\libcrypto-3.dll',
+   'BINARY'),
+  ('libssl-3.dll',
+   'C:\\Program Files\\Python312\\DLLs\\libssl-3.dll',
+   'BINARY'),
+  ('libffi-8.dll',
+   'C:\\Program Files\\Python312\\DLLs\\libffi-8.dll',
+   'BINARY'),
+  ('python3.dll', 'C:\\Program Files\\Python312\\python3.dll', 'BINARY'),
+  ('MSVCP140.dll', 'C:\\WINDOWS\\system32\\MSVCP140.dll', 'BINARY'),
+  ('VCRUNTIME140_1.dll',
+   'C:\\Program Files\\Python312\\VCRUNTIME140_1.dll',
+   'BINARY'),
+  ('sqlite3.dll', 'C:\\Program Files\\Python312\\DLLs\\sqlite3.dll', 'BINARY'),
+  ('bcrypt-5.0.0.dist-info\\INSTALLER',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\bcrypt-5.0.0.dist-info\\INSTALLER',
+   'DATA'),
+  ('bcrypt-5.0.0.dist-info\\LICENSE',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\bcrypt-5.0.0.dist-info\\LICENSE',
+   'DATA'),
+  ('bcrypt-5.0.0.dist-info\\METADATA',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\bcrypt-5.0.0.dist-info\\METADATA',
+   'DATA'),
+  ('bcrypt-5.0.0.dist-info\\RECORD',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\bcrypt-5.0.0.dist-info\\RECORD',
+   'DATA'),
+  ('bcrypt-5.0.0.dist-info\\WHEEL',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\bcrypt-5.0.0.dist-info\\WHEEL',
+   'DATA'),
+  ('bcrypt-5.0.0.dist-info\\top_level.txt',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\bcrypt-5.0.0.dist-info\\top_level.txt',
+   'DATA'),
+  ('bcrypt\\__init__.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\bcrypt\\__init__.py',
+   'DATA'),
+  ('bcrypt\\__init__.pyi',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\bcrypt\\__init__.pyi',
+   'DATA'),
+  ('bcrypt\\py.typed',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\bcrypt\\py.typed',
+   'DATA'),
+  ('fastapi-0.137.2.dist-info\\INSTALLER',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\fastapi-0.137.2.dist-info\\INSTALLER',
+   'DATA'),
+  ('fastapi-0.137.2.dist-info\\METADATA',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\fastapi-0.137.2.dist-info\\METADATA',
+   'DATA'),
+  ('fastapi-0.137.2.dist-info\\RECORD',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\fastapi-0.137.2.dist-info\\RECORD',
+   'DATA'),
+  ('fastapi-0.137.2.dist-info\\REQUESTED',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\fastapi-0.137.2.dist-info\\REQUESTED',
+   'DATA'),
+  ('fastapi-0.137.2.dist-info\\WHEEL',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\fastapi-0.137.2.dist-info\\WHEEL',
+   'DATA'),
+  ('fastapi-0.137.2.dist-info\\entry_points.txt',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\fastapi-0.137.2.dist-info\\entry_points.txt',
+   'DATA'),
+  ('fastapi-0.137.2.dist-info\\licenses\\LICENSE',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\fastapi-0.137.2.dist-info\\licenses\\LICENSE',
+   'DATA'),
+  ('fastapi\\.agents\\skills\\fastapi\\SKILL.md',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\fastapi\\.agents\\skills\\fastapi\\SKILL.md',
+   'DATA'),
+  ('fastapi\\.agents\\skills\\fastapi\\references\\dependencies.md',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\fastapi\\.agents\\skills\\fastapi\\references\\dependencies.md',
+   'DATA'),
+  ('fastapi\\.agents\\skills\\fastapi\\references\\other-tools.md',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\fastapi\\.agents\\skills\\fastapi\\references\\other-tools.md',
+   'DATA'),
+  ('fastapi\\.agents\\skills\\fastapi\\references\\streaming.md',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\fastapi\\.agents\\skills\\fastapi\\references\\streaming.md',
+   'DATA'),
+  ('fastapi\\__init__.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\fastapi\\__init__.py',
+   'DATA'),
+  ('fastapi\\__main__.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\fastapi\\__main__.py',
+   'DATA'),
+  ('fastapi\\_compat\\__init__.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\fastapi\\_compat\\__init__.py',
+   'DATA'),
+  ('fastapi\\_compat\\shared.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\fastapi\\_compat\\shared.py',
+   'DATA'),
+  ('fastapi\\_compat\\v2.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\fastapi\\_compat\\v2.py',
+   'DATA'),
+  ('fastapi\\applications.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\fastapi\\applications.py',
+   'DATA'),
+  ('fastapi\\background.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\fastapi\\background.py',
+   'DATA'),
+  ('fastapi\\cli.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\fastapi\\cli.py',
+   'DATA'),
+  ('fastapi\\concurrency.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\fastapi\\concurrency.py',
+   'DATA'),
+  ('fastapi\\datastructures.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\fastapi\\datastructures.py',
+   'DATA'),
+  ('fastapi\\dependencies\\__init__.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\fastapi\\dependencies\\__init__.py',
+   'DATA'),
+  ('fastapi\\dependencies\\models.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\fastapi\\dependencies\\models.py',
+   'DATA'),
+  ('fastapi\\dependencies\\utils.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\fastapi\\dependencies\\utils.py',
+   'DATA'),
+  ('fastapi\\encoders.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\fastapi\\encoders.py',
+   'DATA'),
+  ('fastapi\\exception_handlers.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\fastapi\\exception_handlers.py',
+   'DATA'),
+  ('fastapi\\exceptions.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\fastapi\\exceptions.py',
+   'DATA'),
+  ('fastapi\\logger.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\fastapi\\logger.py',
+   'DATA'),
+  ('fastapi\\middleware\\__init__.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\fastapi\\middleware\\__init__.py',
+   'DATA'),
+  ('fastapi\\middleware\\asyncexitstack.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\fastapi\\middleware\\asyncexitstack.py',
+   'DATA'),
+  ('fastapi\\middleware\\cors.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\fastapi\\middleware\\cors.py',
+   'DATA'),
+  ('fastapi\\middleware\\gzip.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\fastapi\\middleware\\gzip.py',
+   'DATA'),
+  ('fastapi\\middleware\\httpsredirect.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\fastapi\\middleware\\httpsredirect.py',
+   'DATA'),
+  ('fastapi\\middleware\\trustedhost.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\fastapi\\middleware\\trustedhost.py',
+   'DATA'),
+  ('fastapi\\middleware\\wsgi.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\fastapi\\middleware\\wsgi.py',
+   'DATA'),
+  ('fastapi\\openapi\\__init__.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\fastapi\\openapi\\__init__.py',
+   'DATA'),
+  ('fastapi\\openapi\\constants.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\fastapi\\openapi\\constants.py',
+   'DATA'),
+  ('fastapi\\openapi\\docs.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\fastapi\\openapi\\docs.py',
+   'DATA'),
+  ('fastapi\\openapi\\models.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\fastapi\\openapi\\models.py',
+   'DATA'),
+  ('fastapi\\openapi\\utils.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\fastapi\\openapi\\utils.py',
+   'DATA'),
+  ('fastapi\\param_functions.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\fastapi\\param_functions.py',
+   'DATA'),
+  ('fastapi\\params.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\fastapi\\params.py',
+   'DATA'),
+  ('fastapi\\py.typed',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\fastapi\\py.typed',
+   'DATA'),
+  ('fastapi\\requests.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\fastapi\\requests.py',
+   'DATA'),
+  ('fastapi\\responses.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\fastapi\\responses.py',
+   'DATA'),
+  ('fastapi\\routing.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\fastapi\\routing.py',
+   'DATA'),
+  ('fastapi\\security\\__init__.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\fastapi\\security\\__init__.py',
+   'DATA'),
+  ('fastapi\\security\\api_key.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\fastapi\\security\\api_key.py',
+   'DATA'),
+  ('fastapi\\security\\base.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\fastapi\\security\\base.py',
+   'DATA'),
+  ('fastapi\\security\\http.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\fastapi\\security\\http.py',
+   'DATA'),
+  ('fastapi\\security\\oauth2.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\fastapi\\security\\oauth2.py',
+   'DATA'),
+  ('fastapi\\security\\open_id_connect_url.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\fastapi\\security\\open_id_connect_url.py',
+   'DATA'),
+  ('fastapi\\security\\utils.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\fastapi\\security\\utils.py',
+   'DATA'),
+  ('fastapi\\sse.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\fastapi\\sse.py',
+   'DATA'),
+  ('fastapi\\staticfiles.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\fastapi\\staticfiles.py',
+   'DATA'),
+  ('fastapi\\templating.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\fastapi\\templating.py',
+   'DATA'),
+  ('fastapi\\testclient.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\fastapi\\testclient.py',
+   'DATA'),
+  ('fastapi\\types.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\fastapi\\types.py',
+   'DATA'),
+  ('fastapi\\utils.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\fastapi\\utils.py',
+   'DATA'),
+  ('fastapi\\websockets.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\fastapi\\websockets.py',
+   'DATA'),
+  ('frontend\\dist\\assets\\index-DI-bUWTx.css',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\frontend\\dist\\assets\\index-DI-bUWTx.css',
+   'DATA'),
+  ('frontend\\dist\\assets\\index-DTjplw-P.js',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\frontend\\dist\\assets\\index-DTjplw-P.js',
+   'DATA'),
+  ('frontend\\dist\\assets\\logo-ciclo-basico-Dx8X2rLf.jpeg',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\frontend\\dist\\assets\\logo-ciclo-basico-Dx8X2rLf.jpeg',
+   'DATA'),
+  ('frontend\\dist\\favicon.svg',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\frontend\\dist\\favicon.svg',
+   'DATA'),
+  ('frontend\\dist\\icons.svg',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\frontend\\dist\\icons.svg',
+   'DATA'),
+  ('frontend\\dist\\index.html',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\frontend\\dist\\index.html',
+   'DATA'),
+  ('frontend\\dist\\logo-ciclo-basico.jpeg',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\frontend\\dist\\logo-ciclo-basico.jpeg',
+   'DATA'),
+  ('pydantic-2.13.4.dist-info\\INSTALLER',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\pydantic-2.13.4.dist-info\\INSTALLER',
+   'DATA'),
+  ('pydantic-2.13.4.dist-info\\METADATA',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\pydantic-2.13.4.dist-info\\METADATA',
+   'DATA'),
+  ('pydantic-2.13.4.dist-info\\RECORD',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\pydantic-2.13.4.dist-info\\RECORD',
+   'DATA'),
+  ('pydantic-2.13.4.dist-info\\REQUESTED',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\pydantic-2.13.4.dist-info\\REQUESTED',
+   'DATA'),
+  ('pydantic-2.13.4.dist-info\\WHEEL',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\pydantic-2.13.4.dist-info\\WHEEL',
+   'DATA'),
+  ('pydantic-2.13.4.dist-info\\licenses\\LICENSE',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\pydantic-2.13.4.dist-info\\licenses\\LICENSE',
+   'DATA'),
+  ('pydantic\\__init__.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\pydantic\\__init__.py',
+   'DATA'),
+  ('pydantic\\_internal\\__init__.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\pydantic\\_internal\\__init__.py',
+   'DATA'),
+  ('pydantic\\_internal\\_config.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\pydantic\\_internal\\_config.py',
+   'DATA'),
+  ('pydantic\\_internal\\_core_metadata.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\pydantic\\_internal\\_core_metadata.py',
+   'DATA'),
+  ('pydantic\\_internal\\_core_utils.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\pydantic\\_internal\\_core_utils.py',
+   'DATA'),
+  ('pydantic\\_internal\\_dataclasses.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\pydantic\\_internal\\_dataclasses.py',
+   'DATA'),
+  ('pydantic\\_internal\\_decorators.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\pydantic\\_internal\\_decorators.py',
+   'DATA'),
+  ('pydantic\\_internal\\_decorators_v1.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\pydantic\\_internal\\_decorators_v1.py',
+   'DATA'),
+  ('pydantic\\_internal\\_discriminated_union.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\pydantic\\_internal\\_discriminated_union.py',
+   'DATA'),
+  ('pydantic\\_internal\\_docs_extraction.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\pydantic\\_internal\\_docs_extraction.py',
+   'DATA'),
+  ('pydantic\\_internal\\_fields.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\pydantic\\_internal\\_fields.py',
+   'DATA'),
+  ('pydantic\\_internal\\_forward_ref.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\pydantic\\_internal\\_forward_ref.py',
+   'DATA'),
+  ('pydantic\\_internal\\_generate_schema.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\pydantic\\_internal\\_generate_schema.py',
+   'DATA'),
+  ('pydantic\\_internal\\_generics.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\pydantic\\_internal\\_generics.py',
+   'DATA'),
+  ('pydantic\\_internal\\_git.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\pydantic\\_internal\\_git.py',
+   'DATA'),
+  ('pydantic\\_internal\\_import_utils.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\pydantic\\_internal\\_import_utils.py',
+   'DATA'),
+  ('pydantic\\_internal\\_internal_dataclass.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\pydantic\\_internal\\_internal_dataclass.py',
+   'DATA'),
+  ('pydantic\\_internal\\_known_annotated_metadata.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\pydantic\\_internal\\_known_annotated_metadata.py',
+   'DATA'),
+  ('pydantic\\_internal\\_mock_val_ser.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\pydantic\\_internal\\_mock_val_ser.py',
+   'DATA'),
+  ('pydantic\\_internal\\_model_construction.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\pydantic\\_internal\\_model_construction.py',
+   'DATA'),
+  ('pydantic\\_internal\\_namespace_utils.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\pydantic\\_internal\\_namespace_utils.py',
+   'DATA'),
+  ('pydantic\\_internal\\_repr.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\pydantic\\_internal\\_repr.py',
+   'DATA'),
+  ('pydantic\\_internal\\_schema_gather.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\pydantic\\_internal\\_schema_gather.py',
+   'DATA'),
+  ('pydantic\\_internal\\_schema_generation_shared.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\pydantic\\_internal\\_schema_generation_shared.py',
+   'DATA'),
+  ('pydantic\\_internal\\_serializers.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\pydantic\\_internal\\_serializers.py',
+   'DATA'),
+  ('pydantic\\_internal\\_signature.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\pydantic\\_internal\\_signature.py',
+   'DATA'),
+  ('pydantic\\_internal\\_typing_extra.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\pydantic\\_internal\\_typing_extra.py',
+   'DATA'),
+  ('pydantic\\_internal\\_utils.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\pydantic\\_internal\\_utils.py',
+   'DATA'),
+  ('pydantic\\_internal\\_validate_call.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\pydantic\\_internal\\_validate_call.py',
+   'DATA'),
+  ('pydantic\\_internal\\_validators.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\pydantic\\_internal\\_validators.py',
+   'DATA'),
+  ('pydantic\\_migration.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\pydantic\\_migration.py',
+   'DATA'),
+  ('pydantic\\alias_generators.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\pydantic\\alias_generators.py',
+   'DATA'),
+  ('pydantic\\aliases.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\pydantic\\aliases.py',
+   'DATA'),
+  ('pydantic\\annotated_handlers.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\pydantic\\annotated_handlers.py',
+   'DATA'),
+  ('pydantic\\class_validators.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\pydantic\\class_validators.py',
+   'DATA'),
+  ('pydantic\\color.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\pydantic\\color.py',
+   'DATA'),
+  ('pydantic\\config.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\pydantic\\config.py',
+   'DATA'),
+  ('pydantic\\dataclasses.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\pydantic\\dataclasses.py',
+   'DATA'),
+  ('pydantic\\datetime_parse.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\pydantic\\datetime_parse.py',
+   'DATA'),
+  ('pydantic\\decorator.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\pydantic\\decorator.py',
+   'DATA'),
+  ('pydantic\\deprecated\\__init__.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\pydantic\\deprecated\\__init__.py',
+   'DATA'),
+  ('pydantic\\deprecated\\class_validators.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\pydantic\\deprecated\\class_validators.py',
+   'DATA'),
+  ('pydantic\\deprecated\\config.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\pydantic\\deprecated\\config.py',
+   'DATA'),
+  ('pydantic\\deprecated\\copy_internals.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\pydantic\\deprecated\\copy_internals.py',
+   'DATA'),
+  ('pydantic\\deprecated\\decorator.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\pydantic\\deprecated\\decorator.py',
+   'DATA'),
+  ('pydantic\\deprecated\\json.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\pydantic\\deprecated\\json.py',
+   'DATA'),
+  ('pydantic\\deprecated\\parse.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\pydantic\\deprecated\\parse.py',
+   'DATA'),
+  ('pydantic\\deprecated\\tools.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\pydantic\\deprecated\\tools.py',
+   'DATA'),
+  ('pydantic\\env_settings.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\pydantic\\env_settings.py',
+   'DATA'),
+  ('pydantic\\error_wrappers.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\pydantic\\error_wrappers.py',
+   'DATA'),
+  ('pydantic\\errors.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\pydantic\\errors.py',
+   'DATA'),
+  ('pydantic\\experimental\\__init__.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\pydantic\\experimental\\__init__.py',
+   'DATA'),
+  ('pydantic\\experimental\\arguments_schema.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\pydantic\\experimental\\arguments_schema.py',
+   'DATA'),
+  ('pydantic\\experimental\\missing_sentinel.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\pydantic\\experimental\\missing_sentinel.py',
+   'DATA'),
+  ('pydantic\\experimental\\pipeline.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\pydantic\\experimental\\pipeline.py',
+   'DATA'),
+  ('pydantic\\fields.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\pydantic\\fields.py',
+   'DATA'),
+  ('pydantic\\functional_serializers.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\pydantic\\functional_serializers.py',
+   'DATA'),
+  ('pydantic\\functional_validators.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\pydantic\\functional_validators.py',
+   'DATA'),
+  ('pydantic\\generics.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\pydantic\\generics.py',
+   'DATA'),
+  ('pydantic\\json.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\pydantic\\json.py',
+   'DATA'),
+  ('pydantic\\json_schema.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\pydantic\\json_schema.py',
+   'DATA'),
+  ('pydantic\\main.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\pydantic\\main.py',
+   'DATA'),
+  ('pydantic\\mypy.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\pydantic\\mypy.py',
+   'DATA'),
+  ('pydantic\\networks.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\pydantic\\networks.py',
+   'DATA'),
+  ('pydantic\\parse.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\pydantic\\parse.py',
+   'DATA'),
+  ('pydantic\\plugin\\__init__.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\pydantic\\plugin\\__init__.py',
+   'DATA'),
+  ('pydantic\\plugin\\_loader.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\pydantic\\plugin\\_loader.py',
+   'DATA'),
+  ('pydantic\\plugin\\_schema_validator.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\pydantic\\plugin\\_schema_validator.py',
+   'DATA'),
+  ('pydantic\\py.typed',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\pydantic\\py.typed',
+   'DATA'),
+  ('pydantic\\root_model.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\pydantic\\root_model.py',
+   'DATA'),
+  ('pydantic\\schema.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\pydantic\\schema.py',
+   'DATA'),
+  ('pydantic\\tools.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\pydantic\\tools.py',
+   'DATA'),
+  ('pydantic\\type_adapter.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\pydantic\\type_adapter.py',
+   'DATA'),
+  ('pydantic\\types.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\pydantic\\types.py',
+   'DATA'),
+  ('pydantic\\typing.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\pydantic\\typing.py',
+   'DATA'),
+  ('pydantic\\utils.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\pydantic\\utils.py',
+   'DATA'),
+  ('pydantic\\v1\\__init__.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\pydantic\\v1\\__init__.py',
+   'DATA'),
+  ('pydantic\\v1\\_hypothesis_plugin.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\pydantic\\v1\\_hypothesis_plugin.py',
+   'DATA'),
+  ('pydantic\\v1\\annotated_types.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\pydantic\\v1\\annotated_types.py',
+   'DATA'),
+  ('pydantic\\v1\\class_validators.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\pydantic\\v1\\class_validators.py',
+   'DATA'),
+  ('pydantic\\v1\\color.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\pydantic\\v1\\color.py',
+   'DATA'),
+  ('pydantic\\v1\\config.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\pydantic\\v1\\config.py',
+   'DATA'),
+  ('pydantic\\v1\\dataclasses.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\pydantic\\v1\\dataclasses.py',
+   'DATA'),
+  ('pydantic\\v1\\datetime_parse.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\pydantic\\v1\\datetime_parse.py',
+   'DATA'),
+  ('pydantic\\v1\\decorator.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\pydantic\\v1\\decorator.py',
+   'DATA'),
+  ('pydantic\\v1\\env_settings.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\pydantic\\v1\\env_settings.py',
+   'DATA'),
+  ('pydantic\\v1\\error_wrappers.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\pydantic\\v1\\error_wrappers.py',
+   'DATA'),
+  ('pydantic\\v1\\errors.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\pydantic\\v1\\errors.py',
+   'DATA'),
+  ('pydantic\\v1\\fields.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\pydantic\\v1\\fields.py',
+   'DATA'),
+  ('pydantic\\v1\\generics.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\pydantic\\v1\\generics.py',
+   'DATA'),
+  ('pydantic\\v1\\json.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\pydantic\\v1\\json.py',
+   'DATA'),
+  ('pydantic\\v1\\main.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\pydantic\\v1\\main.py',
+   'DATA'),
+  ('pydantic\\v1\\mypy.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\pydantic\\v1\\mypy.py',
+   'DATA'),
+  ('pydantic\\v1\\networks.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\pydantic\\v1\\networks.py',
+   'DATA'),
+  ('pydantic\\v1\\parse.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\pydantic\\v1\\parse.py',
+   'DATA'),
+  ('pydantic\\v1\\py.typed',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\pydantic\\v1\\py.typed',
+   'DATA'),
+  ('pydantic\\v1\\schema.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\pydantic\\v1\\schema.py',
+   'DATA'),
+  ('pydantic\\v1\\tools.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\pydantic\\v1\\tools.py',
+   'DATA'),
+  ('pydantic\\v1\\types.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\pydantic\\v1\\types.py',
+   'DATA'),
+  ('pydantic\\v1\\typing.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\pydantic\\v1\\typing.py',
+   'DATA'),
+  ('pydantic\\v1\\utils.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\pydantic\\v1\\utils.py',
+   'DATA'),
+  ('pydantic\\v1\\validators.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\pydantic\\v1\\validators.py',
+   'DATA'),
+  ('pydantic\\v1\\version.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\pydantic\\v1\\version.py',
+   'DATA'),
+  ('pydantic\\validate_call_decorator.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\pydantic\\validate_call_decorator.py',
+   'DATA'),
+  ('pydantic\\validators.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\pydantic\\validators.py',
+   'DATA'),
+  ('pydantic\\version.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\pydantic\\version.py',
+   'DATA'),
+  ('pydantic\\warnings.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\pydantic\\warnings.py',
+   'DATA'),
+  ('pywebview-6.2.1.dist-info\\INSTALLER',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\pywebview-6.2.1.dist-info\\INSTALLER',
+   'DATA'),
+  ('pywebview-6.2.1.dist-info\\METADATA',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\pywebview-6.2.1.dist-info\\METADATA',
+   'DATA'),
+  ('pywebview-6.2.1.dist-info\\RECORD',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\pywebview-6.2.1.dist-info\\RECORD',
+   'DATA'),
+  ('pywebview-6.2.1.dist-info\\REQUESTED',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\pywebview-6.2.1.dist-info\\REQUESTED',
+   'DATA'),
+  ('pywebview-6.2.1.dist-info\\WHEEL',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\pywebview-6.2.1.dist-info\\WHEEL',
+   'DATA'),
+  ('pywebview-6.2.1.dist-info\\entry_points.txt',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\pywebview-6.2.1.dist-info\\entry_points.txt',
+   'DATA'),
+  ('pywebview-6.2.1.dist-info\\licenses\\LICENSE',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\pywebview-6.2.1.dist-info\\licenses\\LICENSE',
+   'DATA'),
+  ('pywebview-6.2.1.dist-info\\top_level.txt',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\pywebview-6.2.1.dist-info\\top_level.txt',
+   'DATA'),
+  ('sqlalchemy-2.0.51.dist-info\\INSTALLER',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\sqlalchemy-2.0.51.dist-info\\INSTALLER',
+   'DATA'),
+  ('sqlalchemy-2.0.51.dist-info\\METADATA',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\sqlalchemy-2.0.51.dist-info\\METADATA',
+   'DATA'),
+  ('sqlalchemy-2.0.51.dist-info\\RECORD',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\sqlalchemy-2.0.51.dist-info\\RECORD',
+   'DATA'),
+  ('sqlalchemy-2.0.51.dist-info\\REQUESTED',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\sqlalchemy-2.0.51.dist-info\\REQUESTED',
+   'DATA'),
+  ('sqlalchemy-2.0.51.dist-info\\WHEEL',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\sqlalchemy-2.0.51.dist-info\\WHEEL',
+   'DATA'),
+  ('sqlalchemy-2.0.51.dist-info\\licenses\\LICENSE',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\sqlalchemy-2.0.51.dist-info\\licenses\\LICENSE',
+   'DATA'),
+  ('sqlalchemy-2.0.51.dist-info\\top_level.txt',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\sqlalchemy-2.0.51.dist-info\\top_level.txt',
+   'DATA'),
+  ('sqlalchemy\\__init__.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\sqlalchemy\\__init__.py',
+   'DATA'),
+  ('sqlalchemy\\connectors\\__init__.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\sqlalchemy\\connectors\\__init__.py',
+   'DATA'),
+  ('sqlalchemy\\connectors\\aioodbc.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\sqlalchemy\\connectors\\aioodbc.py',
+   'DATA'),
+  ('sqlalchemy\\connectors\\asyncio.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\sqlalchemy\\connectors\\asyncio.py',
+   'DATA'),
+  ('sqlalchemy\\connectors\\pyodbc.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\sqlalchemy\\connectors\\pyodbc.py',
+   'DATA'),
+  ('sqlalchemy\\cyextension\\__init__.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\sqlalchemy\\cyextension\\__init__.py',
+   'DATA'),
+  ('sqlalchemy\\cyextension\\collections.pyx',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\sqlalchemy\\cyextension\\collections.pyx',
+   'DATA'),
+  ('sqlalchemy\\cyextension\\immutabledict.pxd',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\sqlalchemy\\cyextension\\immutabledict.pxd',
+   'DATA'),
+  ('sqlalchemy\\cyextension\\immutabledict.pyx',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\sqlalchemy\\cyextension\\immutabledict.pyx',
+   'DATA'),
+  ('sqlalchemy\\cyextension\\processors.pyx',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\sqlalchemy\\cyextension\\processors.pyx',
+   'DATA'),
+  ('sqlalchemy\\cyextension\\resultproxy.pyx',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\sqlalchemy\\cyextension\\resultproxy.pyx',
+   'DATA'),
+  ('sqlalchemy\\cyextension\\util.pyx',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\sqlalchemy\\cyextension\\util.pyx',
+   'DATA'),
+  ('sqlalchemy\\dialects\\__init__.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\sqlalchemy\\dialects\\__init__.py',
+   'DATA'),
+  ('sqlalchemy\\dialects\\_typing.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\sqlalchemy\\dialects\\_typing.py',
+   'DATA'),
+  ('sqlalchemy\\dialects\\mssql\\__init__.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\sqlalchemy\\dialects\\mssql\\__init__.py',
+   'DATA'),
+  ('sqlalchemy\\dialects\\mssql\\aioodbc.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\sqlalchemy\\dialects\\mssql\\aioodbc.py',
+   'DATA'),
+  ('sqlalchemy\\dialects\\mssql\\base.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\sqlalchemy\\dialects\\mssql\\base.py',
+   'DATA'),
+  ('sqlalchemy\\dialects\\mssql\\information_schema.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\sqlalchemy\\dialects\\mssql\\information_schema.py',
+   'DATA'),
+  ('sqlalchemy\\dialects\\mssql\\json.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\sqlalchemy\\dialects\\mssql\\json.py',
+   'DATA'),
+  ('sqlalchemy\\dialects\\mssql\\provision.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\sqlalchemy\\dialects\\mssql\\provision.py',
+   'DATA'),
+  ('sqlalchemy\\dialects\\mssql\\pymssql.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\sqlalchemy\\dialects\\mssql\\pymssql.py',
+   'DATA'),
+  ('sqlalchemy\\dialects\\mssql\\pyodbc.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\sqlalchemy\\dialects\\mssql\\pyodbc.py',
+   'DATA'),
+  ('sqlalchemy\\dialects\\mysql\\__init__.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\sqlalchemy\\dialects\\mysql\\__init__.py',
+   'DATA'),
+  ('sqlalchemy\\dialects\\mysql\\aiomysql.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\sqlalchemy\\dialects\\mysql\\aiomysql.py',
+   'DATA'),
+  ('sqlalchemy\\dialects\\mysql\\asyncmy.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\sqlalchemy\\dialects\\mysql\\asyncmy.py',
+   'DATA'),
+  ('sqlalchemy\\dialects\\mysql\\base.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\sqlalchemy\\dialects\\mysql\\base.py',
+   'DATA'),
+  ('sqlalchemy\\dialects\\mysql\\cymysql.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\sqlalchemy\\dialects\\mysql\\cymysql.py',
+   'DATA'),
+  ('sqlalchemy\\dialects\\mysql\\dml.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\sqlalchemy\\dialects\\mysql\\dml.py',
+   'DATA'),
+  ('sqlalchemy\\dialects\\mysql\\enumerated.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\sqlalchemy\\dialects\\mysql\\enumerated.py',
+   'DATA'),
+  ('sqlalchemy\\dialects\\mysql\\expression.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\sqlalchemy\\dialects\\mysql\\expression.py',
+   'DATA'),
+  ('sqlalchemy\\dialects\\mysql\\json.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\sqlalchemy\\dialects\\mysql\\json.py',
+   'DATA'),
+  ('sqlalchemy\\dialects\\mysql\\mariadb.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\sqlalchemy\\dialects\\mysql\\mariadb.py',
+   'DATA'),
+  ('sqlalchemy\\dialects\\mysql\\mariadbconnector.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\sqlalchemy\\dialects\\mysql\\mariadbconnector.py',
+   'DATA'),
+  ('sqlalchemy\\dialects\\mysql\\mysqlconnector.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\sqlalchemy\\dialects\\mysql\\mysqlconnector.py',
+   'DATA'),
+  ('sqlalchemy\\dialects\\mysql\\mysqldb.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\sqlalchemy\\dialects\\mysql\\mysqldb.py',
+   'DATA'),
+  ('sqlalchemy\\dialects\\mysql\\provision.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\sqlalchemy\\dialects\\mysql\\provision.py',
+   'DATA'),
+  ('sqlalchemy\\dialects\\mysql\\pymysql.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\sqlalchemy\\dialects\\mysql\\pymysql.py',
+   'DATA'),
+  ('sqlalchemy\\dialects\\mysql\\pyodbc.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\sqlalchemy\\dialects\\mysql\\pyodbc.py',
+   'DATA'),
+  ('sqlalchemy\\dialects\\mysql\\reflection.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\sqlalchemy\\dialects\\mysql\\reflection.py',
+   'DATA'),
+  ('sqlalchemy\\dialects\\mysql\\reserved_words.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\sqlalchemy\\dialects\\mysql\\reserved_words.py',
+   'DATA'),
+  ('sqlalchemy\\dialects\\mysql\\types.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\sqlalchemy\\dialects\\mysql\\types.py',
+   'DATA'),
+  ('sqlalchemy\\dialects\\oracle\\__init__.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\sqlalchemy\\dialects\\oracle\\__init__.py',
+   'DATA'),
+  ('sqlalchemy\\dialects\\oracle\\base.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\sqlalchemy\\dialects\\oracle\\base.py',
+   'DATA'),
+  ('sqlalchemy\\dialects\\oracle\\cx_oracle.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\sqlalchemy\\dialects\\oracle\\cx_oracle.py',
+   'DATA'),
+  ('sqlalchemy\\dialects\\oracle\\dictionary.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\sqlalchemy\\dialects\\oracle\\dictionary.py',
+   'DATA'),
+  ('sqlalchemy\\dialects\\oracle\\oracledb.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\sqlalchemy\\dialects\\oracle\\oracledb.py',
+   'DATA'),
+  ('sqlalchemy\\dialects\\oracle\\provision.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\sqlalchemy\\dialects\\oracle\\provision.py',
+   'DATA'),
+  ('sqlalchemy\\dialects\\oracle\\types.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\sqlalchemy\\dialects\\oracle\\types.py',
+   'DATA'),
+  ('sqlalchemy\\dialects\\oracle\\vector.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\sqlalchemy\\dialects\\oracle\\vector.py',
+   'DATA'),
+  ('sqlalchemy\\dialects\\postgresql\\__init__.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\sqlalchemy\\dialects\\postgresql\\__init__.py',
+   'DATA'),
+  ('sqlalchemy\\dialects\\postgresql\\_psycopg_common.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\sqlalchemy\\dialects\\postgresql\\_psycopg_common.py',
+   'DATA'),
+  ('sqlalchemy\\dialects\\postgresql\\array.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\sqlalchemy\\dialects\\postgresql\\array.py',
+   'DATA'),
+  ('sqlalchemy\\dialects\\postgresql\\asyncpg.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\sqlalchemy\\dialects\\postgresql\\asyncpg.py',
+   'DATA'),
+  ('sqlalchemy\\dialects\\postgresql\\base.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\sqlalchemy\\dialects\\postgresql\\base.py',
+   'DATA'),
+  ('sqlalchemy\\dialects\\postgresql\\dml.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\sqlalchemy\\dialects\\postgresql\\dml.py',
+   'DATA'),
+  ('sqlalchemy\\dialects\\postgresql\\ext.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\sqlalchemy\\dialects\\postgresql\\ext.py',
+   'DATA'),
+  ('sqlalchemy\\dialects\\postgresql\\hstore.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\sqlalchemy\\dialects\\postgresql\\hstore.py',
+   'DATA'),
+  ('sqlalchemy\\dialects\\postgresql\\json.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\sqlalchemy\\dialects\\postgresql\\json.py',
+   'DATA'),
+  ('sqlalchemy\\dialects\\postgresql\\named_types.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\sqlalchemy\\dialects\\postgresql\\named_types.py',
+   'DATA'),
+  ('sqlalchemy\\dialects\\postgresql\\operators.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\sqlalchemy\\dialects\\postgresql\\operators.py',
+   'DATA'),
+  ('sqlalchemy\\dialects\\postgresql\\pg8000.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\sqlalchemy\\dialects\\postgresql\\pg8000.py',
+   'DATA'),
+  ('sqlalchemy\\dialects\\postgresql\\pg_catalog.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\sqlalchemy\\dialects\\postgresql\\pg_catalog.py',
+   'DATA'),
+  ('sqlalchemy\\dialects\\postgresql\\provision.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\sqlalchemy\\dialects\\postgresql\\provision.py',
+   'DATA'),
+  ('sqlalchemy\\dialects\\postgresql\\psycopg.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\sqlalchemy\\dialects\\postgresql\\psycopg.py',
+   'DATA'),
+  ('sqlalchemy\\dialects\\postgresql\\psycopg2.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\sqlalchemy\\dialects\\postgresql\\psycopg2.py',
+   'DATA'),
+  ('sqlalchemy\\dialects\\postgresql\\psycopg2cffi.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\sqlalchemy\\dialects\\postgresql\\psycopg2cffi.py',
+   'DATA'),
+  ('sqlalchemy\\dialects\\postgresql\\ranges.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\sqlalchemy\\dialects\\postgresql\\ranges.py',
+   'DATA'),
+  ('sqlalchemy\\dialects\\postgresql\\types.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\sqlalchemy\\dialects\\postgresql\\types.py',
+   'DATA'),
+  ('sqlalchemy\\dialects\\sqlite\\__init__.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\sqlalchemy\\dialects\\sqlite\\__init__.py',
+   'DATA'),
+  ('sqlalchemy\\dialects\\sqlite\\aiosqlite.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\sqlalchemy\\dialects\\sqlite\\aiosqlite.py',
+   'DATA'),
+  ('sqlalchemy\\dialects\\sqlite\\base.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\sqlalchemy\\dialects\\sqlite\\base.py',
+   'DATA'),
+  ('sqlalchemy\\dialects\\sqlite\\dml.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\sqlalchemy\\dialects\\sqlite\\dml.py',
+   'DATA'),
+  ('sqlalchemy\\dialects\\sqlite\\json.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\sqlalchemy\\dialects\\sqlite\\json.py',
+   'DATA'),
+  ('sqlalchemy\\dialects\\sqlite\\provision.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\sqlalchemy\\dialects\\sqlite\\provision.py',
+   'DATA'),
+  ('sqlalchemy\\dialects\\sqlite\\pysqlcipher.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\sqlalchemy\\dialects\\sqlite\\pysqlcipher.py',
+   'DATA'),
+  ('sqlalchemy\\dialects\\sqlite\\pysqlite.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\sqlalchemy\\dialects\\sqlite\\pysqlite.py',
+   'DATA'),
+  ('sqlalchemy\\dialects\\type_migration_guidelines.txt',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\sqlalchemy\\dialects\\type_migration_guidelines.txt',
+   'DATA'),
+  ('sqlalchemy\\engine\\__init__.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\sqlalchemy\\engine\\__init__.py',
+   'DATA'),
+  ('sqlalchemy\\engine\\_py_processors.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\sqlalchemy\\engine\\_py_processors.py',
+   'DATA'),
+  ('sqlalchemy\\engine\\_py_row.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\sqlalchemy\\engine\\_py_row.py',
+   'DATA'),
+  ('sqlalchemy\\engine\\_py_util.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\sqlalchemy\\engine\\_py_util.py',
+   'DATA'),
+  ('sqlalchemy\\engine\\base.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\sqlalchemy\\engine\\base.py',
+   'DATA'),
+  ('sqlalchemy\\engine\\characteristics.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\sqlalchemy\\engine\\characteristics.py',
+   'DATA'),
+  ('sqlalchemy\\engine\\create.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\sqlalchemy\\engine\\create.py',
+   'DATA'),
+  ('sqlalchemy\\engine\\cursor.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\sqlalchemy\\engine\\cursor.py',
+   'DATA'),
+  ('sqlalchemy\\engine\\default.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\sqlalchemy\\engine\\default.py',
+   'DATA'),
+  ('sqlalchemy\\engine\\events.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\sqlalchemy\\engine\\events.py',
+   'DATA'),
+  ('sqlalchemy\\engine\\interfaces.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\sqlalchemy\\engine\\interfaces.py',
+   'DATA'),
+  ('sqlalchemy\\engine\\mock.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\sqlalchemy\\engine\\mock.py',
+   'DATA'),
+  ('sqlalchemy\\engine\\processors.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\sqlalchemy\\engine\\processors.py',
+   'DATA'),
+  ('sqlalchemy\\engine\\reflection.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\sqlalchemy\\engine\\reflection.py',
+   'DATA'),
+  ('sqlalchemy\\engine\\result.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\sqlalchemy\\engine\\result.py',
+   'DATA'),
+  ('sqlalchemy\\engine\\row.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\sqlalchemy\\engine\\row.py',
+   'DATA'),
+  ('sqlalchemy\\engine\\strategies.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\sqlalchemy\\engine\\strategies.py',
+   'DATA'),
+  ('sqlalchemy\\engine\\url.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\sqlalchemy\\engine\\url.py',
+   'DATA'),
+  ('sqlalchemy\\engine\\util.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\sqlalchemy\\engine\\util.py',
+   'DATA'),
+  ('sqlalchemy\\event\\__init__.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\sqlalchemy\\event\\__init__.py',
+   'DATA'),
+  ('sqlalchemy\\event\\api.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\sqlalchemy\\event\\api.py',
+   'DATA'),
+  ('sqlalchemy\\event\\attr.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\sqlalchemy\\event\\attr.py',
+   'DATA'),
+  ('sqlalchemy\\event\\base.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\sqlalchemy\\event\\base.py',
+   'DATA'),
+  ('sqlalchemy\\event\\legacy.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\sqlalchemy\\event\\legacy.py',
+   'DATA'),
+  ('sqlalchemy\\event\\registry.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\sqlalchemy\\event\\registry.py',
+   'DATA'),
+  ('sqlalchemy\\events.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\sqlalchemy\\events.py',
+   'DATA'),
+  ('sqlalchemy\\exc.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\sqlalchemy\\exc.py',
+   'DATA'),
+  ('sqlalchemy\\ext\\__init__.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\sqlalchemy\\ext\\__init__.py',
+   'DATA'),
+  ('sqlalchemy\\ext\\associationproxy.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\sqlalchemy\\ext\\associationproxy.py',
+   'DATA'),
+  ('sqlalchemy\\ext\\asyncio\\__init__.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\sqlalchemy\\ext\\asyncio\\__init__.py',
+   'DATA'),
+  ('sqlalchemy\\ext\\asyncio\\base.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\sqlalchemy\\ext\\asyncio\\base.py',
+   'DATA'),
+  ('sqlalchemy\\ext\\asyncio\\engine.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\sqlalchemy\\ext\\asyncio\\engine.py',
+   'DATA'),
+  ('sqlalchemy\\ext\\asyncio\\exc.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\sqlalchemy\\ext\\asyncio\\exc.py',
+   'DATA'),
+  ('sqlalchemy\\ext\\asyncio\\result.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\sqlalchemy\\ext\\asyncio\\result.py',
+   'DATA'),
+  ('sqlalchemy\\ext\\asyncio\\scoping.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\sqlalchemy\\ext\\asyncio\\scoping.py',
+   'DATA'),
+  ('sqlalchemy\\ext\\asyncio\\session.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\sqlalchemy\\ext\\asyncio\\session.py',
+   'DATA'),
+  ('sqlalchemy\\ext\\automap.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\sqlalchemy\\ext\\automap.py',
+   'DATA'),
+  ('sqlalchemy\\ext\\baked.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\sqlalchemy\\ext\\baked.py',
+   'DATA'),
+  ('sqlalchemy\\ext\\compiler.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\sqlalchemy\\ext\\compiler.py',
+   'DATA'),
+  ('sqlalchemy\\ext\\declarative\\__init__.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\sqlalchemy\\ext\\declarative\\__init__.py',
+   'DATA'),
+  ('sqlalchemy\\ext\\declarative\\extensions.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\sqlalchemy\\ext\\declarative\\extensions.py',
+   'DATA'),
+  ('sqlalchemy\\ext\\horizontal_shard.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\sqlalchemy\\ext\\horizontal_shard.py',
+   'DATA'),
+  ('sqlalchemy\\ext\\hybrid.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\sqlalchemy\\ext\\hybrid.py',
+   'DATA'),
+  ('sqlalchemy\\ext\\indexable.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\sqlalchemy\\ext\\indexable.py',
+   'DATA'),
+  ('sqlalchemy\\ext\\instrumentation.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\sqlalchemy\\ext\\instrumentation.py',
+   'DATA'),
+  ('sqlalchemy\\ext\\mutable.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\sqlalchemy\\ext\\mutable.py',
+   'DATA'),
+  ('sqlalchemy\\ext\\mypy\\__init__.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\sqlalchemy\\ext\\mypy\\__init__.py',
+   'DATA'),
+  ('sqlalchemy\\ext\\mypy\\apply.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\sqlalchemy\\ext\\mypy\\apply.py',
+   'DATA'),
+  ('sqlalchemy\\ext\\mypy\\decl_class.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\sqlalchemy\\ext\\mypy\\decl_class.py',
+   'DATA'),
+  ('sqlalchemy\\ext\\mypy\\infer.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\sqlalchemy\\ext\\mypy\\infer.py',
+   'DATA'),
+  ('sqlalchemy\\ext\\mypy\\names.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\sqlalchemy\\ext\\mypy\\names.py',
+   'DATA'),
+  ('sqlalchemy\\ext\\mypy\\plugin.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\sqlalchemy\\ext\\mypy\\plugin.py',
+   'DATA'),
+  ('sqlalchemy\\ext\\mypy\\util.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\sqlalchemy\\ext\\mypy\\util.py',
+   'DATA'),
+  ('sqlalchemy\\ext\\orderinglist.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\sqlalchemy\\ext\\orderinglist.py',
+   'DATA'),
+  ('sqlalchemy\\ext\\serializer.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\sqlalchemy\\ext\\serializer.py',
+   'DATA'),
+  ('sqlalchemy\\future\\__init__.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\sqlalchemy\\future\\__init__.py',
+   'DATA'),
+  ('sqlalchemy\\future\\engine.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\sqlalchemy\\future\\engine.py',
+   'DATA'),
+  ('sqlalchemy\\inspection.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\sqlalchemy\\inspection.py',
+   'DATA'),
+  ('sqlalchemy\\log.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\sqlalchemy\\log.py',
+   'DATA'),
+  ('sqlalchemy\\orm\\__init__.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\sqlalchemy\\orm\\__init__.py',
+   'DATA'),
+  ('sqlalchemy\\orm\\_orm_constructors.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\sqlalchemy\\orm\\_orm_constructors.py',
+   'DATA'),
+  ('sqlalchemy\\orm\\_typing.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\sqlalchemy\\orm\\_typing.py',
+   'DATA'),
+  ('sqlalchemy\\orm\\attributes.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\sqlalchemy\\orm\\attributes.py',
+   'DATA'),
+  ('sqlalchemy\\orm\\base.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\sqlalchemy\\orm\\base.py',
+   'DATA'),
+  ('sqlalchemy\\orm\\bulk_persistence.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\sqlalchemy\\orm\\bulk_persistence.py',
+   'DATA'),
+  ('sqlalchemy\\orm\\clsregistry.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\sqlalchemy\\orm\\clsregistry.py',
+   'DATA'),
+  ('sqlalchemy\\orm\\collections.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\sqlalchemy\\orm\\collections.py',
+   'DATA'),
+  ('sqlalchemy\\orm\\context.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\sqlalchemy\\orm\\context.py',
+   'DATA'),
+  ('sqlalchemy\\orm\\decl_api.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\sqlalchemy\\orm\\decl_api.py',
+   'DATA'),
+  ('sqlalchemy\\orm\\decl_base.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\sqlalchemy\\orm\\decl_base.py',
+   'DATA'),
+  ('sqlalchemy\\orm\\dependency.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\sqlalchemy\\orm\\dependency.py',
+   'DATA'),
+  ('sqlalchemy\\orm\\descriptor_props.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\sqlalchemy\\orm\\descriptor_props.py',
+   'DATA'),
+  ('sqlalchemy\\orm\\dynamic.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\sqlalchemy\\orm\\dynamic.py',
+   'DATA'),
+  ('sqlalchemy\\orm\\evaluator.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\sqlalchemy\\orm\\evaluator.py',
+   'DATA'),
+  ('sqlalchemy\\orm\\events.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\sqlalchemy\\orm\\events.py',
+   'DATA'),
+  ('sqlalchemy\\orm\\exc.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\sqlalchemy\\orm\\exc.py',
+   'DATA'),
+  ('sqlalchemy\\orm\\identity.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\sqlalchemy\\orm\\identity.py',
+   'DATA'),
+  ('sqlalchemy\\orm\\instrumentation.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\sqlalchemy\\orm\\instrumentation.py',
+   'DATA'),
+  ('sqlalchemy\\orm\\interfaces.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\sqlalchemy\\orm\\interfaces.py',
+   'DATA'),
+  ('sqlalchemy\\orm\\loading.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\sqlalchemy\\orm\\loading.py',
+   'DATA'),
+  ('sqlalchemy\\orm\\mapped_collection.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\sqlalchemy\\orm\\mapped_collection.py',
+   'DATA'),
+  ('sqlalchemy\\orm\\mapper.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\sqlalchemy\\orm\\mapper.py',
+   'DATA'),
+  ('sqlalchemy\\orm\\path_registry.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\sqlalchemy\\orm\\path_registry.py',
+   'DATA'),
+  ('sqlalchemy\\orm\\persistence.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\sqlalchemy\\orm\\persistence.py',
+   'DATA'),
+  ('sqlalchemy\\orm\\properties.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\sqlalchemy\\orm\\properties.py',
+   'DATA'),
+  ('sqlalchemy\\orm\\query.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\sqlalchemy\\orm\\query.py',
+   'DATA'),
+  ('sqlalchemy\\orm\\relationships.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\sqlalchemy\\orm\\relationships.py',
+   'DATA'),
+  ('sqlalchemy\\orm\\scoping.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\sqlalchemy\\orm\\scoping.py',
+   'DATA'),
+  ('sqlalchemy\\orm\\session.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\sqlalchemy\\orm\\session.py',
+   'DATA'),
+  ('sqlalchemy\\orm\\state.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\sqlalchemy\\orm\\state.py',
+   'DATA'),
+  ('sqlalchemy\\orm\\state_changes.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\sqlalchemy\\orm\\state_changes.py',
+   'DATA'),
+  ('sqlalchemy\\orm\\strategies.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\sqlalchemy\\orm\\strategies.py',
+   'DATA'),
+  ('sqlalchemy\\orm\\strategy_options.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\sqlalchemy\\orm\\strategy_options.py',
+   'DATA'),
+  ('sqlalchemy\\orm\\sync.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\sqlalchemy\\orm\\sync.py',
+   'DATA'),
+  ('sqlalchemy\\orm\\unitofwork.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\sqlalchemy\\orm\\unitofwork.py',
+   'DATA'),
+  ('sqlalchemy\\orm\\util.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\sqlalchemy\\orm\\util.py',
+   'DATA'),
+  ('sqlalchemy\\orm\\writeonly.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\sqlalchemy\\orm\\writeonly.py',
+   'DATA'),
+  ('sqlalchemy\\pool\\__init__.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\sqlalchemy\\pool\\__init__.py',
+   'DATA'),
+  ('sqlalchemy\\pool\\base.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\sqlalchemy\\pool\\base.py',
+   'DATA'),
+  ('sqlalchemy\\pool\\events.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\sqlalchemy\\pool\\events.py',
+   'DATA'),
+  ('sqlalchemy\\pool\\impl.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\sqlalchemy\\pool\\impl.py',
+   'DATA'),
+  ('sqlalchemy\\py.typed',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\sqlalchemy\\py.typed',
+   'DATA'),
+  ('sqlalchemy\\schema.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\sqlalchemy\\schema.py',
+   'DATA'),
+  ('sqlalchemy\\sql\\__init__.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\sqlalchemy\\sql\\__init__.py',
+   'DATA'),
+  ('sqlalchemy\\sql\\_dml_constructors.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\sqlalchemy\\sql\\_dml_constructors.py',
+   'DATA'),
+  ('sqlalchemy\\sql\\_elements_constructors.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\sqlalchemy\\sql\\_elements_constructors.py',
+   'DATA'),
+  ('sqlalchemy\\sql\\_orm_types.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\sqlalchemy\\sql\\_orm_types.py',
+   'DATA'),
+  ('sqlalchemy\\sql\\_py_util.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\sqlalchemy\\sql\\_py_util.py',
+   'DATA'),
+  ('sqlalchemy\\sql\\_selectable_constructors.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\sqlalchemy\\sql\\_selectable_constructors.py',
+   'DATA'),
+  ('sqlalchemy\\sql\\_typing.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\sqlalchemy\\sql\\_typing.py',
+   'DATA'),
+  ('sqlalchemy\\sql\\annotation.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\sqlalchemy\\sql\\annotation.py',
+   'DATA'),
+  ('sqlalchemy\\sql\\base.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\sqlalchemy\\sql\\base.py',
+   'DATA'),
+  ('sqlalchemy\\sql\\cache_key.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\sqlalchemy\\sql\\cache_key.py',
+   'DATA'),
+  ('sqlalchemy\\sql\\coercions.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\sqlalchemy\\sql\\coercions.py',
+   'DATA'),
+  ('sqlalchemy\\sql\\compiler.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\sqlalchemy\\sql\\compiler.py',
+   'DATA'),
+  ('sqlalchemy\\sql\\crud.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\sqlalchemy\\sql\\crud.py',
+   'DATA'),
+  ('sqlalchemy\\sql\\ddl.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\sqlalchemy\\sql\\ddl.py',
+   'DATA'),
+  ('sqlalchemy\\sql\\default_comparator.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\sqlalchemy\\sql\\default_comparator.py',
+   'DATA'),
+  ('sqlalchemy\\sql\\dml.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\sqlalchemy\\sql\\dml.py',
+   'DATA'),
+  ('sqlalchemy\\sql\\elements.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\sqlalchemy\\sql\\elements.py',
+   'DATA'),
+  ('sqlalchemy\\sql\\events.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\sqlalchemy\\sql\\events.py',
+   'DATA'),
+  ('sqlalchemy\\sql\\expression.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\sqlalchemy\\sql\\expression.py',
+   'DATA'),
+  ('sqlalchemy\\sql\\functions.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\sqlalchemy\\sql\\functions.py',
+   'DATA'),
+  ('sqlalchemy\\sql\\lambdas.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\sqlalchemy\\sql\\lambdas.py',
+   'DATA'),
+  ('sqlalchemy\\sql\\naming.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\sqlalchemy\\sql\\naming.py',
+   'DATA'),
+  ('sqlalchemy\\sql\\operators.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\sqlalchemy\\sql\\operators.py',
+   'DATA'),
+  ('sqlalchemy\\sql\\roles.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\sqlalchemy\\sql\\roles.py',
+   'DATA'),
+  ('sqlalchemy\\sql\\schema.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\sqlalchemy\\sql\\schema.py',
+   'DATA'),
+  ('sqlalchemy\\sql\\selectable.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\sqlalchemy\\sql\\selectable.py',
+   'DATA'),
+  ('sqlalchemy\\sql\\sqltypes.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\sqlalchemy\\sql\\sqltypes.py',
+   'DATA'),
+  ('sqlalchemy\\sql\\traversals.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\sqlalchemy\\sql\\traversals.py',
+   'DATA'),
+  ('sqlalchemy\\sql\\type_api.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\sqlalchemy\\sql\\type_api.py',
+   'DATA'),
+  ('sqlalchemy\\sql\\util.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\sqlalchemy\\sql\\util.py',
+   'DATA'),
+  ('sqlalchemy\\sql\\visitors.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\sqlalchemy\\sql\\visitors.py',
+   'DATA'),
+  ('sqlalchemy\\testing\\__init__.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\sqlalchemy\\testing\\__init__.py',
+   'DATA'),
+  ('sqlalchemy\\testing\\assertions.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\sqlalchemy\\testing\\assertions.py',
+   'DATA'),
+  ('sqlalchemy\\testing\\assertsql.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\sqlalchemy\\testing\\assertsql.py',
+   'DATA'),
+  ('sqlalchemy\\testing\\asyncio.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\sqlalchemy\\testing\\asyncio.py',
+   'DATA'),
+  ('sqlalchemy\\testing\\config.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\sqlalchemy\\testing\\config.py',
+   'DATA'),
+  ('sqlalchemy\\testing\\engines.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\sqlalchemy\\testing\\engines.py',
+   'DATA'),
+  ('sqlalchemy\\testing\\entities.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\sqlalchemy\\testing\\entities.py',
+   'DATA'),
+  ('sqlalchemy\\testing\\exclusions.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\sqlalchemy\\testing\\exclusions.py',
+   'DATA'),
+  ('sqlalchemy\\testing\\fixtures\\__init__.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\sqlalchemy\\testing\\fixtures\\__init__.py',
+   'DATA'),
+  ('sqlalchemy\\testing\\fixtures\\base.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\sqlalchemy\\testing\\fixtures\\base.py',
+   'DATA'),
+  ('sqlalchemy\\testing\\fixtures\\mypy.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\sqlalchemy\\testing\\fixtures\\mypy.py',
+   'DATA'),
+  ('sqlalchemy\\testing\\fixtures\\orm.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\sqlalchemy\\testing\\fixtures\\orm.py',
+   'DATA'),
+  ('sqlalchemy\\testing\\fixtures\\sql.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\sqlalchemy\\testing\\fixtures\\sql.py',
+   'DATA'),
+  ('sqlalchemy\\testing\\pickleable.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\sqlalchemy\\testing\\pickleable.py',
+   'DATA'),
+  ('sqlalchemy\\testing\\plugin\\__init__.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\sqlalchemy\\testing\\plugin\\__init__.py',
+   'DATA'),
+  ('sqlalchemy\\testing\\plugin\\bootstrap.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\sqlalchemy\\testing\\plugin\\bootstrap.py',
+   'DATA'),
+  ('sqlalchemy\\testing\\plugin\\plugin_base.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\sqlalchemy\\testing\\plugin\\plugin_base.py',
+   'DATA'),
+  ('sqlalchemy\\testing\\plugin\\pytestplugin.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\sqlalchemy\\testing\\plugin\\pytestplugin.py',
+   'DATA'),
+  ('sqlalchemy\\testing\\profiling.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\sqlalchemy\\testing\\profiling.py',
+   'DATA'),
+  ('sqlalchemy\\testing\\provision.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\sqlalchemy\\testing\\provision.py',
+   'DATA'),
+  ('sqlalchemy\\testing\\requirements.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\sqlalchemy\\testing\\requirements.py',
+   'DATA'),
+  ('sqlalchemy\\testing\\schema.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\sqlalchemy\\testing\\schema.py',
+   'DATA'),
+  ('sqlalchemy\\testing\\suite\\__init__.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\sqlalchemy\\testing\\suite\\__init__.py',
+   'DATA'),
+  ('sqlalchemy\\testing\\suite\\test_cte.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\sqlalchemy\\testing\\suite\\test_cte.py',
+   'DATA'),
+  ('sqlalchemy\\testing\\suite\\test_ddl.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\sqlalchemy\\testing\\suite\\test_ddl.py',
+   'DATA'),
+  ('sqlalchemy\\testing\\suite\\test_deprecations.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\sqlalchemy\\testing\\suite\\test_deprecations.py',
+   'DATA'),
+  ('sqlalchemy\\testing\\suite\\test_dialect.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\sqlalchemy\\testing\\suite\\test_dialect.py',
+   'DATA'),
+  ('sqlalchemy\\testing\\suite\\test_insert.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\sqlalchemy\\testing\\suite\\test_insert.py',
+   'DATA'),
+  ('sqlalchemy\\testing\\suite\\test_reflection.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\sqlalchemy\\testing\\suite\\test_reflection.py',
+   'DATA'),
+  ('sqlalchemy\\testing\\suite\\test_results.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\sqlalchemy\\testing\\suite\\test_results.py',
+   'DATA'),
+  ('sqlalchemy\\testing\\suite\\test_rowcount.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\sqlalchemy\\testing\\suite\\test_rowcount.py',
+   'DATA'),
+  ('sqlalchemy\\testing\\suite\\test_select.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\sqlalchemy\\testing\\suite\\test_select.py',
+   'DATA'),
+  ('sqlalchemy\\testing\\suite\\test_sequence.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\sqlalchemy\\testing\\suite\\test_sequence.py',
+   'DATA'),
+  ('sqlalchemy\\testing\\suite\\test_types.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\sqlalchemy\\testing\\suite\\test_types.py',
+   'DATA'),
+  ('sqlalchemy\\testing\\suite\\test_unicode_ddl.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\sqlalchemy\\testing\\suite\\test_unicode_ddl.py',
+   'DATA'),
+  ('sqlalchemy\\testing\\suite\\test_update_delete.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\sqlalchemy\\testing\\suite\\test_update_delete.py',
+   'DATA'),
+  ('sqlalchemy\\testing\\util.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\sqlalchemy\\testing\\util.py',
+   'DATA'),
+  ('sqlalchemy\\testing\\warnings.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\sqlalchemy\\testing\\warnings.py',
+   'DATA'),
+  ('sqlalchemy\\types.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\sqlalchemy\\types.py',
+   'DATA'),
+  ('sqlalchemy\\util\\__init__.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\sqlalchemy\\util\\__init__.py',
+   'DATA'),
+  ('sqlalchemy\\util\\_collections.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\sqlalchemy\\util\\_collections.py',
+   'DATA'),
+  ('sqlalchemy\\util\\_concurrency_py3k.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\sqlalchemy\\util\\_concurrency_py3k.py',
+   'DATA'),
+  ('sqlalchemy\\util\\_has_cy.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\sqlalchemy\\util\\_has_cy.py',
+   'DATA'),
+  ('sqlalchemy\\util\\_py_collections.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\sqlalchemy\\util\\_py_collections.py',
+   'DATA'),
+  ('sqlalchemy\\util\\compat.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\sqlalchemy\\util\\compat.py',
+   'DATA'),
+  ('sqlalchemy\\util\\concurrency.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\sqlalchemy\\util\\concurrency.py',
+   'DATA'),
+  ('sqlalchemy\\util\\deprecations.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\sqlalchemy\\util\\deprecations.py',
+   'DATA'),
+  ('sqlalchemy\\util\\langhelpers.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\sqlalchemy\\util\\langhelpers.py',
+   'DATA'),
+  ('sqlalchemy\\util\\preloaded.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\sqlalchemy\\util\\preloaded.py',
+   'DATA'),
+  ('sqlalchemy\\util\\queue.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\sqlalchemy\\util\\queue.py',
+   'DATA'),
+  ('sqlalchemy\\util\\tool_support.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\sqlalchemy\\util\\tool_support.py',
+   'DATA'),
+  ('sqlalchemy\\util\\topological.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\sqlalchemy\\util\\topological.py',
+   'DATA'),
+  ('sqlalchemy\\util\\typing.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\sqlalchemy\\util\\typing.py',
+   'DATA'),
+  ('starlette-1.3.1.dist-info\\INSTALLER',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\starlette-1.3.1.dist-info\\INSTALLER',
+   'DATA'),
+  ('starlette-1.3.1.dist-info\\METADATA',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\starlette-1.3.1.dist-info\\METADATA',
+   'DATA'),
+  ('starlette-1.3.1.dist-info\\RECORD',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\starlette-1.3.1.dist-info\\RECORD',
+   'DATA'),
+  ('starlette-1.3.1.dist-info\\WHEEL',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\starlette-1.3.1.dist-info\\WHEEL',
+   'DATA'),
+  ('starlette-1.3.1.dist-info\\licenses\\LICENSE.md',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\starlette-1.3.1.dist-info\\licenses\\LICENSE.md',
+   'DATA'),
+  ('starlette\\__init__.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\starlette\\__init__.py',
+   'DATA'),
+  ('starlette\\_exception_handler.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\starlette\\_exception_handler.py',
+   'DATA'),
+  ('starlette\\_utils.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\starlette\\_utils.py',
+   'DATA'),
+  ('starlette\\applications.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\starlette\\applications.py',
+   'DATA'),
+  ('starlette\\authentication.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\starlette\\authentication.py',
+   'DATA'),
+  ('starlette\\background.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\starlette\\background.py',
+   'DATA'),
+  ('starlette\\concurrency.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\starlette\\concurrency.py',
+   'DATA'),
+  ('starlette\\config.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\starlette\\config.py',
+   'DATA'),
+  ('starlette\\convertors.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\starlette\\convertors.py',
+   'DATA'),
+  ('starlette\\datastructures.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\starlette\\datastructures.py',
+   'DATA'),
+  ('starlette\\endpoints.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\starlette\\endpoints.py',
+   'DATA'),
+  ('starlette\\exceptions.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\starlette\\exceptions.py',
+   'DATA'),
+  ('starlette\\formparsers.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\starlette\\formparsers.py',
+   'DATA'),
+  ('starlette\\middleware\\__init__.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\starlette\\middleware\\__init__.py',
+   'DATA'),
+  ('starlette\\middleware\\authentication.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\starlette\\middleware\\authentication.py',
+   'DATA'),
+  ('starlette\\middleware\\base.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\starlette\\middleware\\base.py',
+   'DATA'),
+  ('starlette\\middleware\\cors.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\starlette\\middleware\\cors.py',
+   'DATA'),
+  ('starlette\\middleware\\errors.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\starlette\\middleware\\errors.py',
+   'DATA'),
+  ('starlette\\middleware\\exceptions.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\starlette\\middleware\\exceptions.py',
+   'DATA'),
+  ('starlette\\middleware\\gzip.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\starlette\\middleware\\gzip.py',
+   'DATA'),
+  ('starlette\\middleware\\httpsredirect.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\starlette\\middleware\\httpsredirect.py',
+   'DATA'),
+  ('starlette\\middleware\\sessions.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\starlette\\middleware\\sessions.py',
+   'DATA'),
+  ('starlette\\middleware\\trustedhost.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\starlette\\middleware\\trustedhost.py',
+   'DATA'),
+  ('starlette\\middleware\\wsgi.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\starlette\\middleware\\wsgi.py',
+   'DATA'),
+  ('starlette\\py.typed',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\starlette\\py.typed',
+   'DATA'),
+  ('starlette\\requests.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\starlette\\requests.py',
+   'DATA'),
+  ('starlette\\responses.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\starlette\\responses.py',
+   'DATA'),
+  ('starlette\\routing.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\starlette\\routing.py',
+   'DATA'),
+  ('starlette\\schemas.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\starlette\\schemas.py',
+   'DATA'),
+  ('starlette\\staticfiles.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\starlette\\staticfiles.py',
+   'DATA'),
+  ('starlette\\status.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\starlette\\status.py',
+   'DATA'),
+  ('starlette\\templating.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\starlette\\templating.py',
+   'DATA'),
+  ('starlette\\testclient.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\starlette\\testclient.py',
+   'DATA'),
+  ('starlette\\types.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\starlette\\types.py',
+   'DATA'),
+  ('starlette\\websockets.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\starlette\\websockets.py',
+   'DATA'),
+  ('uvicorn-0.49.0.dist-info\\INSTALLER',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\uvicorn-0.49.0.dist-info\\INSTALLER',
+   'DATA'),
+  ('uvicorn-0.49.0.dist-info\\METADATA',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\uvicorn-0.49.0.dist-info\\METADATA',
+   'DATA'),
+  ('uvicorn-0.49.0.dist-info\\RECORD',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\uvicorn-0.49.0.dist-info\\RECORD',
+   'DATA'),
+  ('uvicorn-0.49.0.dist-info\\REQUESTED',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\uvicorn-0.49.0.dist-info\\REQUESTED',
+   'DATA'),
+  ('uvicorn-0.49.0.dist-info\\WHEEL',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\uvicorn-0.49.0.dist-info\\WHEEL',
+   'DATA'),
+  ('uvicorn-0.49.0.dist-info\\entry_points.txt',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\uvicorn-0.49.0.dist-info\\entry_points.txt',
+   'DATA'),
+  ('uvicorn-0.49.0.dist-info\\licenses\\LICENSE.md',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\uvicorn-0.49.0.dist-info\\licenses\\LICENSE.md',
+   'DATA'),
+  ('uvicorn\\__init__.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\uvicorn\\__init__.py',
+   'DATA'),
+  ('uvicorn\\__main__.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\uvicorn\\__main__.py',
+   'DATA'),
+  ('uvicorn\\_compat.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\uvicorn\\_compat.py',
+   'DATA'),
+  ('uvicorn\\_subprocess.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\uvicorn\\_subprocess.py',
+   'DATA'),
+  ('uvicorn\\_types.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\uvicorn\\_types.py',
+   'DATA'),
+  ('uvicorn\\config.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\uvicorn\\config.py',
+   'DATA'),
+  ('uvicorn\\importer.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\uvicorn\\importer.py',
+   'DATA'),
+  ('uvicorn\\lifespan\\__init__.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\uvicorn\\lifespan\\__init__.py',
+   'DATA'),
+  ('uvicorn\\lifespan\\off.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\uvicorn\\lifespan\\off.py',
+   'DATA'),
+  ('uvicorn\\lifespan\\on.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\uvicorn\\lifespan\\on.py',
+   'DATA'),
+  ('uvicorn\\logging.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\uvicorn\\logging.py',
+   'DATA'),
+  ('uvicorn\\loops\\__init__.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\uvicorn\\loops\\__init__.py',
+   'DATA'),
+  ('uvicorn\\loops\\asyncio.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\uvicorn\\loops\\asyncio.py',
+   'DATA'),
+  ('uvicorn\\loops\\auto.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\uvicorn\\loops\\auto.py',
+   'DATA'),
+  ('uvicorn\\loops\\uvloop.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\uvicorn\\loops\\uvloop.py',
+   'DATA'),
+  ('uvicorn\\main.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\uvicorn\\main.py',
+   'DATA'),
+  ('uvicorn\\middleware\\__init__.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\uvicorn\\middleware\\__init__.py',
+   'DATA'),
+  ('uvicorn\\middleware\\asgi2.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\uvicorn\\middleware\\asgi2.py',
+   'DATA'),
+  ('uvicorn\\middleware\\message_logger.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\uvicorn\\middleware\\message_logger.py',
+   'DATA'),
+  ('uvicorn\\middleware\\proxy_headers.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\uvicorn\\middleware\\proxy_headers.py',
+   'DATA'),
+  ('uvicorn\\middleware\\wsgi.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\uvicorn\\middleware\\wsgi.py',
+   'DATA'),
+  ('uvicorn\\protocols\\__init__.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\uvicorn\\protocols\\__init__.py',
+   'DATA'),
+  ('uvicorn\\protocols\\http\\__init__.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\uvicorn\\protocols\\http\\__init__.py',
+   'DATA'),
+  ('uvicorn\\protocols\\http\\auto.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\uvicorn\\protocols\\http\\auto.py',
+   'DATA'),
+  ('uvicorn\\protocols\\http\\flow_control.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\uvicorn\\protocols\\http\\flow_control.py',
+   'DATA'),
+  ('uvicorn\\protocols\\http\\h11_impl.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\uvicorn\\protocols\\http\\h11_impl.py',
+   'DATA'),
+  ('uvicorn\\protocols\\http\\httptools_impl.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\uvicorn\\protocols\\http\\httptools_impl.py',
+   'DATA'),
+  ('uvicorn\\protocols\\utils.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\uvicorn\\protocols\\utils.py',
+   'DATA'),
+  ('uvicorn\\protocols\\websockets\\__init__.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\uvicorn\\protocols\\websockets\\__init__.py',
+   'DATA'),
+  ('uvicorn\\protocols\\websockets\\auto.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\uvicorn\\protocols\\websockets\\auto.py',
+   'DATA'),
+  ('uvicorn\\protocols\\websockets\\websockets_impl.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\uvicorn\\protocols\\websockets\\websockets_impl.py',
+   'DATA'),
+  ('uvicorn\\protocols\\websockets\\websockets_sansio_impl.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\uvicorn\\protocols\\websockets\\websockets_sansio_impl.py',
+   'DATA'),
+  ('uvicorn\\protocols\\websockets\\wsproto_impl.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\uvicorn\\protocols\\websockets\\wsproto_impl.py',
+   'DATA'),
+  ('uvicorn\\py.typed',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\uvicorn\\py.typed',
+   'DATA'),
+  ('uvicorn\\server.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\uvicorn\\server.py',
+   'DATA'),
+  ('uvicorn\\supervisors\\__init__.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\uvicorn\\supervisors\\__init__.py',
+   'DATA'),
+  ('uvicorn\\supervisors\\basereload.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\uvicorn\\supervisors\\basereload.py',
+   'DATA'),
+  ('uvicorn\\supervisors\\multiprocess.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\uvicorn\\supervisors\\multiprocess.py',
+   'DATA'),
+  ('uvicorn\\supervisors\\statreload.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\uvicorn\\supervisors\\statreload.py',
+   'DATA'),
+  ('uvicorn\\supervisors\\watchfilesreload.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\uvicorn\\supervisors\\watchfilesreload.py',
+   'DATA'),
+  ('uvicorn\\workers.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\uvicorn\\workers.py',
+   'DATA'),
+  ('webview\\__init__.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\webview\\__init__.py',
+   'DATA'),
+  ('webview\\__pyinstaller\\__init__.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\webview\\__pyinstaller\\__init__.py',
+   'DATA'),
+  ('webview\\__pyinstaller\\hook-webview.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\webview\\__pyinstaller\\hook-webview.py',
+   'DATA'),
+  ('webview\\_version.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\webview\\_version.py',
+   'DATA'),
+  ('webview\\dom\\__init__.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\webview\\dom\\__init__.py',
+   'DATA'),
+  ('webview\\dom\\classlist.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\webview\\dom\\classlist.py',
+   'DATA'),
+  ('webview\\dom\\dom.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\webview\\dom\\dom.py',
+   'DATA'),
+  ('webview\\dom\\element.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\webview\\dom\\element.py',
+   'DATA'),
+  ('webview\\dom\\event.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\webview\\dom\\event.py',
+   'DATA'),
+  ('webview\\dom\\propsdict.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\webview\\dom\\propsdict.py',
+   'DATA'),
+  ('webview\\errors.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\webview\\errors.py',
+   'DATA'),
+  ('webview\\event.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\webview\\event.py',
+   'DATA'),
+  ('webview\\guilib.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\webview\\guilib.py',
+   'DATA'),
+  ('webview\\http.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\webview\\http.py',
+   'DATA'),
+  ('webview\\js\\api.js',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\webview\\js\\api.js',
+   'DATA'),
+  ('webview\\js\\customize.js',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\webview\\js\\customize.js',
+   'DATA'),
+  ('webview\\js\\finish.js',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\webview\\js\\finish.js',
+   'DATA'),
+  ('webview\\js\\lib\\dom_json.js',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\webview\\js\\lib\\dom_json.js',
+   'DATA'),
+  ('webview\\js\\lib\\polyfill.js',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\webview\\js\\lib\\polyfill.js',
+   'DATA'),
+  ('webview\\js\\state.js',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\webview\\js\\state.js',
+   'DATA'),
+  ('webview\\lib\\pywebview-android.jar',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\webview\\lib\\pywebview-android.jar',
+   'DATA'),
+  ('webview\\localization.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\webview\\localization.py',
+   'DATA'),
+  ('webview\\menu.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\webview\\menu.py',
+   'DATA'),
+  ('webview\\models.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\webview\\models.py',
+   'DATA'),
+  ('webview\\platforms\\__init__.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\webview\\platforms\\__init__.py',
+   'DATA'),
+  ('webview\\platforms\\android\\__init__.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\webview\\platforms\\android\\__init__.py',
+   'DATA'),
+  ('webview\\platforms\\android\\app.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\webview\\platforms\\android\\app.py',
+   'DATA'),
+  ('webview\\platforms\\android\\base.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\webview\\platforms\\android\\base.py',
+   'DATA'),
+  ('webview\\platforms\\android\\event.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\webview\\platforms\\android\\event.py',
+   'DATA'),
+  ('webview\\platforms\\android\\jclass\\__init__.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\webview\\platforms\\android\\jclass\\__init__.py',
+   'DATA'),
+  ('webview\\platforms\\android\\jclass\\app.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\webview\\platforms\\android\\jclass\\app.py',
+   'DATA'),
+  ('webview\\platforms\\android\\jclass\\content.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\webview\\platforms\\android\\jclass\\content.py',
+   'DATA'),
+  ('webview\\platforms\\android\\jclass\\net.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\webview\\platforms\\android\\jclass\\net.py',
+   'DATA'),
+  ('webview\\platforms\\android\\jclass\\os.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\webview\\platforms\\android\\jclass\\os.py',
+   'DATA'),
+  ('webview\\platforms\\android\\jclass\\view.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\webview\\platforms\\android\\jclass\\view.py',
+   'DATA'),
+  ('webview\\platforms\\android\\jclass\\webkit.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\webview\\platforms\\android\\jclass\\webkit.py',
+   'DATA'),
+  ('webview\\platforms\\android\\jinterface\\__init__.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\webview\\platforms\\android\\jinterface\\__init__.py',
+   'DATA'),
+  ('webview\\platforms\\android\\jinterface\\pywebview.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\webview\\platforms\\android\\jinterface\\pywebview.py',
+   'DATA'),
+  ('webview\\platforms\\android\\jinterface\\view.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\webview\\platforms\\android\\jinterface\\view.py',
+   'DATA'),
+  ('webview\\platforms\\android\\jinterface\\webkit.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\webview\\platforms\\android\\jinterface\\webkit.py',
+   'DATA'),
+  ('webview\\platforms\\cef.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\webview\\platforms\\cef.py',
+   'DATA'),
+  ('webview\\platforms\\cocoa.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\webview\\platforms\\cocoa.py',
+   'DATA'),
+  ('webview\\platforms\\edgechromium.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\webview\\platforms\\edgechromium.py',
+   'DATA'),
+  ('webview\\platforms\\gtk.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\webview\\platforms\\gtk.py',
+   'DATA'),
+  ('webview\\platforms\\mshtml.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\webview\\platforms\\mshtml.py',
+   'DATA'),
+  ('webview\\platforms\\qt.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\webview\\platforms\\qt.py',
+   'DATA'),
+  ('webview\\platforms\\win32.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\webview\\platforms\\win32.py',
+   'DATA'),
+  ('webview\\platforms\\winforms.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\webview\\platforms\\winforms.py',
+   'DATA'),
+  ('webview\\py.typed',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\webview\\py.typed',
+   'DATA'),
+  ('webview\\screen.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\webview\\screen.py',
+   'DATA'),
+  ('webview\\state.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\webview\\state.py',
+   'DATA'),
+  ('webview\\util.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\webview\\util.py',
+   'DATA'),
+  ('webview\\window.py',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\webview\\window.py',
+   'DATA'),
+  ('pythonnet\\runtime\\Python.Runtime.deps.json',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\pythonnet\\runtime\\Python.Runtime.deps.json',
+   'DATA'),
+  ('pythonnet\\runtime\\Python.Runtime.xml',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\pythonnet\\runtime\\Python.Runtime.xml',
+   'DATA'),
+  ('setuptools\\_vendor\\jaraco\\text\\Lorem ipsum.txt',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\setuptools\\_vendor\\jaraco\\text\\Lorem '
+   'ipsum.txt',
+   'DATA'),
+  ('setuptools\\_vendor\\importlib_metadata-8.7.1.dist-info\\REQUESTED',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\setuptools\\_vendor\\importlib_metadata-8.7.1.dist-info\\REQUESTED',
+   'DATA'),
+  ('setuptools\\_vendor\\importlib_metadata-8.7.1.dist-info\\WHEEL',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\setuptools\\_vendor\\importlib_metadata-8.7.1.dist-info\\WHEEL',
+   'DATA'),
+  ('setuptools\\_vendor\\importlib_metadata-8.7.1.dist-info\\top_level.txt',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\setuptools\\_vendor\\importlib_metadata-8.7.1.dist-info\\top_level.txt',
+   'DATA'),
+  ('setuptools\\_vendor\\importlib_metadata-8.7.1.dist-info\\licenses\\LICENSE',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\setuptools\\_vendor\\importlib_metadata-8.7.1.dist-info\\licenses\\LICENSE',
+   'DATA'),
+  ('setuptools\\_vendor\\importlib_metadata-8.7.1.dist-info\\INSTALLER',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\setuptools\\_vendor\\importlib_metadata-8.7.1.dist-info\\INSTALLER',
+   'DATA'),
+  ('setuptools\\_vendor\\importlib_metadata-8.7.1.dist-info\\METADATA',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\setuptools\\_vendor\\importlib_metadata-8.7.1.dist-info\\METADATA',
+   'DATA'),
+  ('setuptools\\_vendor\\importlib_metadata-8.7.1.dist-info\\RECORD',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\setuptools\\_vendor\\importlib_metadata-8.7.1.dist-info\\RECORD',
+   'DATA'),
+  ('websockets-16.0.dist-info\\WHEEL',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\websockets-16.0.dist-info\\WHEEL',
+   'DATA'),
+  ('websockets-16.0.dist-info\\licenses\\LICENSE',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\websockets-16.0.dist-info\\licenses\\LICENSE',
+   'DATA'),
+  ('click-8.4.1.dist-info\\INSTALLER',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\click-8.4.1.dist-info\\INSTALLER',
+   'DATA'),
+  ('click-8.4.1.dist-info\\WHEEL',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\click-8.4.1.dist-info\\WHEEL',
+   'DATA'),
+  ('websockets-16.0.dist-info\\top_level.txt',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\websockets-16.0.dist-info\\top_level.txt',
+   'DATA'),
+  ('click-8.4.1.dist-info\\RECORD',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\click-8.4.1.dist-info\\RECORD',
+   'DATA'),
+  ('websockets-16.0.dist-info\\METADATA',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\websockets-16.0.dist-info\\METADATA',
+   'DATA'),
+  ('websockets-16.0.dist-info\\INSTALLER',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\websockets-16.0.dist-info\\INSTALLER',
+   'DATA'),
+  ('websockets-16.0.dist-info\\RECORD',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\websockets-16.0.dist-info\\RECORD',
+   'DATA'),
+  ('click-8.4.1.dist-info\\METADATA',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\click-8.4.1.dist-info\\METADATA',
+   'DATA'),
+  ('click-8.4.1.dist-info\\licenses\\LICENSE.txt',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\click-8.4.1.dist-info\\licenses\\LICENSE.txt',
+   'DATA'),
+  ('websockets-16.0.dist-info\\entry_points.txt',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\websockets-16.0.dist-info\\entry_points.txt',
+   'DATA'),
+  ('base_library.zip',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\build\\PanolEscolar_EEST4\\base_library.zip',
+   'DATA')],
+ [],
+ False,
+ False,
+ 1785875830,
+ [('runw.exe',
+   'C:\\Users\\Valen\\Desktop\\Proyecto Pañol\\Proyecto '
+   'Pañol\\panol-escolar\\backend\\venv\\Lib\\site-packages\\PyInstaller\\bootloader\\Windows-64bit-intel\\runw.exe',
+   'EXECUTABLE')],
+ 'C:\\Program Files\\Python312\\python312.dll')

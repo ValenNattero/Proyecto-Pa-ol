@@ -75,7 +75,7 @@ function CargaHerramientas() {
           setProximosCodigos(data.siguientes);
         }
       }
-    } catch (_e) {
+    } catch {
       // Si hay error de red temporal, mantener el estado anterior
     }
   }, [rows.length]);

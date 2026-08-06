@@ -176,11 +176,18 @@ function ModificacionHerramientas() {
   // Filter tools
   const filteredTools = herramientas.filter((h) => {
     if (searchQuery.trim()) {
-      const q = searchQuery.toLowerCase().trim();
-      const matchCod = h.codigo && h.codigo.toString().toLowerCase().includes(q);
-      const matchDesc = h.descripcion && h.descripcion.toLowerCase().includes(q);
-      const matchMarca = h.marca && h.marca.toLowerCase().includes(q);
-      if (!matchCod && !matchDesc && !matchMarca) return false;
+      const cleanTerm = searchQuery.trim().replace(/^#/, '');
+      if (/^\d+$/.test(cleanTerm)) {
+        const numCode = String(parseInt(cleanTerm, 10));
+        const isExactCode = String(h.codigo) === cleanTerm || String(h.codigo) === numCode;
+        if (!isExactCode) return false;
+      } else {
+        const q = searchQuery.toLowerCase().trim();
+        const matchCod = h.codigo && h.codigo.toString().toLowerCase().includes(q);
+        const matchDesc = h.descripcion && h.descripcion.toLowerCase().includes(q);
+        const matchMarca = h.marca && h.marca.toLowerCase().includes(q);
+        if (!matchCod && !matchDesc && !matchMarca) return false;
+      }
     }
     if (filterCategoria && h.categoria !== filterCategoria) {
       return false;

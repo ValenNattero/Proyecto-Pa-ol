@@ -1,14 +1,14 @@
 import React, { useState, useEffect } from 'react';
-import { useNavigate, useLocation } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import HamburgerMenu from '../components/HamburgerMenu';
 import { getSession, saveRetiros } from '../utils/storage';
 import '../App.css';
 
 const CARGOS = [
-  "ESTUDIANTE DE PRIMERO PRIMERA",
-  "ESTUDIANTE DE PRIMERO SEGUNDA",
-  "ESTUDIANTE DE PRIMERO TERCERA",
-  "ESTUDIANTE DE PRIMERO CUARTA",
+  "ESTUDIANTE - PRIMERO PRIMERA",
+  "ESTUDIANTE - PRIMERO SEGUNDA",
+  "ESTUDIANTE - PRIMERO TERCERA",
+  "ESTUDIANTE - PRIMERO CUARTA",
   "ESTUDIANTE - SEGUNDO PRIMERA",
   "ESTUDIANTE - SEGUNDO SEGUNDA",
   "ESTUDIANTE - SEGUNDO TERCERA",
@@ -41,7 +41,6 @@ const CARGOS = [
 
 function Retiro() {
   const navigate = useNavigate();
-  const location = useLocation();
   const [panolero, setPanolero] = useState(null);
   const [solicitante, setSolicitante] = useState({ nombre: '', apellido: '', cargo: '' });
   const [codigo, setCodigo] = useState('');
@@ -64,20 +63,20 @@ function Retiro() {
   const handleAdd = async (e) => {
     e.preventDefault();
     if (codigo.trim() !== '') {
-      const codeStr = codigo.trim();
+      const codeStr = codigo.trim().replace(/^#/, '');
       setCodigo(''); // Limpiar el input para mejor UX
       
       try {
-        const response = await fetch(`http://127.0.0.1:8000/herramientas/buscar?q=${codeStr}`);
+        const response = await fetch(`http://127.0.0.1:8000/herramientas/buscar?q=${encodeURIComponent(codeStr)}`);
         if (response.ok) {
           const data = await response.json();
-          const tool = data.find(t => t.codigo === codeStr);
+          const tool = data.find(t => String(t.codigo) === codeStr || (/^\d+$/.test(codeStr) && String(t.codigo) === String(parseInt(codeStr, 10)))) || data[0];
           const desc = tool ? tool.descripcion : "Herramienta no encontrada";
-          setHerramientas(prev => [...prev, { id: tool?.id, codigo: codeStr, descripcion: desc, checked: true }]);
+          setHerramientas(prev => [...prev, { id: tool?.id, codigo: tool ? tool.codigo : codeStr, descripcion: desc, checked: true }]);
         } else {
           setHerramientas(prev => [...prev, { id: null, codigo: codeStr, descripcion: "Error al buscar", checked: true }]);
         }
-      } catch (err) {
+      } catch {
         setHerramientas(prev => [...prev, { id: null, codigo: codeStr, descripcion: "Error de conexión", checked: true }]);
       }
     }

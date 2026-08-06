@@ -136,3 +136,29 @@ Con el backend en ejecución, abrir una terminal en la carpeta `backend` y corre
 python qa_test_suite.py
 ```
 *Se ejecutarán automáticamente las 9 pruebas de integración certificando que el sistema funciona sin errores, bugs ni problemas de seguridad.*
+
+---
+
+## 🖥️ Ejecución como Programa de Escritorio Windows (`.EXE`)
+
+Para utilizar el sistema sin necesidad de comandos de terminal ni navegadores separados, se generó el programa independiente de escritorio:
+- **Archivo:** `PanolEscolar_EEST4.exe` (ubicado en la carpeta raíz del proyecto).
+- **Tecnología:** Empaqueta en un solo ejecutable el servidor backend **FastAPI**, la base de datos **SQLite**, el bundle de producción de **React** y un contenedor de ventana nativa con **PyWebview**.
+
+### ¿Cómo ejecutarlo?
+1. Hacé doble clic sobre el archivo **`PanolEscolar_EEST4.exe`** en tu carpeta de proyecto.
+2. Se iniciará una ventana de aplicación de escritorio nativa de Windows con el sistema Pañol Escolar listo para utilizar.
+3. Al cerrar la ventana, el servidor en segundo plano se detiene automáticamente.
+
+### ¿Cómo regenerar el archivo `.exe` en caso de realizar cambios?
+Si en el futuro modificás el código (frontend o backend) y querés crear un nuevo ejecutable actualizado:
+1. Abrí la terminal en la carpeta `backend`:
+   ```bash
+   cd backend
+   ```
+2. Ejecutá el script automatizado de construcción:
+   ```bash
+   .\venv\Scripts\python.exe build_exe.py
+   ```
+   *Este script compilará automáticamente el frontend (`npm run build`), empaquetará la aplicación con PyInstaller y dejará el archivo `PanolEscolar_EEST4.exe` actualizado en la carpeta raíz del proyecto.*
+

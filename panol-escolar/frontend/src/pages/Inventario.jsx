@@ -75,11 +75,18 @@ function Inventario() {
   const listaHerramientas = itemsAll
     .filter(h => {
       if (q.trim()) {
-        const term = q.toLowerCase().trim();
-        const matchCodigo = h.codigo && h.codigo.toString().toLowerCase().includes(term);
-        const matchDesc = h.descripcion && h.descripcion.toLowerCase().includes(term);
-        const matchMarca = h.marca && h.marca.toLowerCase().includes(term);
-        if (!matchCodigo && !matchDesc && !matchMarca) return false;
+        const cleanTerm = q.trim().replace(/^#/, '');
+        if (/^\d+$/.test(cleanTerm)) {
+          const numCode = String(parseInt(cleanTerm, 10));
+          const isExactCode = String(h.codigo) === cleanTerm || String(h.codigo) === numCode;
+          if (!isExactCode) return false;
+        } else {
+          const term = q.toLowerCase().trim();
+          const matchCodigo = h.codigo && h.codigo.toString().toLowerCase().includes(term);
+          const matchDesc = h.descripcion && h.descripcion.toLowerCase().includes(term);
+          const matchMarca = h.marca && h.marca.toLowerCase().includes(term);
+          if (!matchCodigo && !matchDesc && !matchMarca) return false;
+        }
       }
       if (categoria && h.categoria !== categoria) {
         return false;

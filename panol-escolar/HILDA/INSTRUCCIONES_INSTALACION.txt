@@ -1,0 +1,21 @@
+=========================================================
+   SISTEMA DE GESTIÓN - PAÑOL ESCOLAR EEST N°4
+=========================================================
+
+INSTRUCCIONES PARA INSTALAR EN LA COMPU DE LA ESCUELA:
+
+1. Copiar toda esta carpeta ('Panol_Escolar_EEST4_Portable') a la PC de destino
+   (puedes ponerla en el Escritorio, Disco C, Documentos, etc.).
+
+2. Para abrir el sistema, haz doble clic en 'PanolEscolar_EEST4.exe'.
+   -> Se abrirá directamente la ventana de aplicación de escritorio.
+
+3. ¿Qué contiene la carpeta 'data'?
+   -> Contiene el archivo 'panol.db', que es la base de datos con todas las herramientas
+      ya cargadas en el inventario y el usuario Super Administrador (SalvucciPablo / EEST4base).
+   -> IMPORTANTE: No borres la carpeta 'data', ya que allí se guardarán todos los retiros y devoluciones.
+
+4. REQUISITOS:
+   -> El sistema es 100% independiente y autónomo.
+   -> NO requiere instalar Python, ni Node.js, ni servidores adicionales.
+   -> NO requiere conexión a Internet.

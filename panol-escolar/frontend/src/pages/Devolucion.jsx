@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { useNavigate, useLocation } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import HamburgerMenu from '../components/HamburgerMenu';
 import { getSession, getRetiros, clearRetiros } from '../utils/storage';
 import { ArrowUpDown } from 'lucide-react';
@@ -7,7 +7,6 @@ import '../App.css';
 
 function Devolucion() {
   const navigate = useNavigate();
-  const location = useLocation();
   const [panolero, setPanolero] = useState(null);
   const [filtroCodigo, setFiltroCodigo] = useState('');
   const [filtroDescripcion, setFiltroDescripcion] = useState('');
@@ -63,8 +62,17 @@ function Devolucion() {
 
   const herramientasFiltradas = herramientas
     .filter(h => {
-      const matchCodigo = h.codigo.toLowerCase().includes(filtroCodigo.toLowerCase());
-      const matchDesc = h.descripcion.toLowerCase().includes(filtroDescripcion.toLowerCase());
+      let matchCodigo = true;
+      if (filtroCodigo.trim()) {
+        const cleanCode = filtroCodigo.trim().replace(/^#/, '');
+        if (/^\d+$/.test(cleanCode)) {
+          const numCode = String(parseInt(cleanCode, 10));
+          matchCodigo = String(h.codigo) === cleanCode || String(h.codigo) === numCode;
+        } else {
+          matchCodigo = String(h.codigo).toLowerCase().includes(filtroCodigo.toLowerCase());
+        }
+      }
+      const matchDesc = (h.descripcion || '').toLowerCase().includes(filtroDescripcion.toLowerCase());
       return matchCodigo && matchDesc;
     })
     .sort((a, b) => {

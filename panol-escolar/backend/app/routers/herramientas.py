@@ -66,13 +66,20 @@ def buscar_herramientas(
     db: Session = Depends(get_db)
 ):
     query = db.query(models.Herramienta)
-    if q:
-        query = query.filter(
-            or_(
-                models.Herramienta.codigo.ilike(f"%{q}%"),
-                models.Herramienta.descripcion.ilike(f"%{q}%")
+    if q and q.strip():
+        q_clean = q.strip().lstrip('#').strip()
+        if q_clean.isdigit():
+            num_code = str(int(q_clean))
+            query = query.filter(
+                models.Herramienta.codigo.in_([q_clean, num_code])
             )
-        )
+        else:
+            query = query.filter(
+                or_(
+                    models.Herramienta.codigo.ilike(f"%{q_clean}%"),
+                    models.Herramienta.descripcion.ilike(f"%{q_clean}%")
+                )
+            )
     return query.all()
 
 @router.get("/inventario")

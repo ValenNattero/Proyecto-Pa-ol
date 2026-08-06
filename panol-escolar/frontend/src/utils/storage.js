@@ -18,7 +18,7 @@ export const getSession = () => {
     return null;
   }
   // Renueva la sesión por otros 15 minutos
-  const { timestamp, ...activeUser } = session;
+  const { timestamp: _timestamp, ...activeUser } = session;
   saveSession(activeUser);
   return activeUser;
 };
